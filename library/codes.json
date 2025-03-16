@@ -256,6 +256,7 @@
         "url": "https://www.reddit.com/r/bytebeat/comments/1io5qmi/6th_wave_my_entry_for_bytebattle_season_3/",
         "date": "Feb 12, 2025",
         "sampleRate": 48000,
+        "stereo": true,
         "file": "feeshbread.js",
         "fileOriginal": true
     },
