@@ -10,18 +10,22 @@ html {
 	color-scheme: dark;
 	background-color: #000;
 	color: #c5c8c6;
-	font: var(--font-size) monospace;
+	font: var(--font-size) sans-serif;
 }
 
 body {
 	margin: 0;
 }
 
-a, a:visited {
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
 	color: #89c2ff;
 }
 
-a:hover {
+a:hover, a:active {
 	color: #ed88fb !important;
 }
 
@@ -214,6 +218,7 @@ button[name="close"] {
 
 #error {
 	color: #f92672;
+	font: 14px/14px monospace;
 	word-break: break-all;
 }
 
@@ -251,7 +256,7 @@ button[name="close"] {
 	border-radius: 3px;
 	background-image: linear-gradient(to bottom, #424242, #171b22);
 	color: #ced5e1;
-	font: var(--font-size)/var(--font-size) monospace;
+	font: var(--font-size)/var(--font-size) sans-serif;
 	white-space: nowrap;
 	cursor: pointer;
 }
@@ -268,6 +273,10 @@ button[name="close"] {
 
 .code-stereo {
 	color: #008040;
+}
+
+.code-exotic {
+	color: #a61107;
 }
 
 .entry {
@@ -368,7 +377,7 @@ button[name="close"] {
 	border-radius: var(--control-corners);
 	background-image: linear-gradient(to bottom, #959595, #242a37);
 	color: #e3e3e3;
-	font: bold var(--font-size)/var(--control-size) monospace;
+	font: bold var(--font-size)/var(--control-size) sans-serif;
 	cursor: pointer;
 }
 
@@ -552,6 +561,40 @@ button[name="close"] {
 }
 
 /* ==[ Adaptive screen ] ================================================================================== */
+
+@media screen and (max-height: 768px) and (min-width: 768px) {
+ 	#container-fixed {
+ 		flex-shrink: 0;
+ 		max-width: 516px;
+ 		height: 100%;
+ 	}
+ 
+ 	#container-scroll {
+ 		display: block !important;
+ 		height: 100%;
+ 		margin-top: 0;
+ 		margin-left: 6px;
+ 		padding-right: 6px;
+ 	}
+ 
+ 	#content {
+ 		flex-flow: row;
+ 		align-items: start;
+ 	}
+ 
+ 	#control-counter {
+ 		width: 66px;
+ 	}
+ 
+ 	#control-expand {
+ 		display: none;
+ 	}
+ 
+ 	#editor-container {
+ 		flex: auto;
+ 		resize: none;
+ 	}
+ }
 
 @media screen and (max-width: 768px) {
 	#container-fixed, #container-scroll {

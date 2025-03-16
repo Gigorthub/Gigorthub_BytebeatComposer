@@ -1,0 +1,242 @@
+[
+    {
+        "author": "hrllobrothers4",
+        "description": "Electronic pulsation 2 (more tools used)",
+        "mode": "Signed Bytebeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/13skeoj/electronic_pulsation_2_more_tools_used/",
+        "date": "May 26, 2023",
+        "sampleRate": 44100,
+        "stereo": true,
+        "file": "hrllobrothers4.js",
+        "fileOriginal": true
+    },
+    {
+        "author": "Absolute197",
+        "children": [
+            {
+                "description": "i added lowpass filter thingy to chipbeat and made a cool beat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15ifzjn/i_added_lowpass_filter_thingy_to_chipbeat_and/",
+                "date": "Aug 04, 2023",
+                "sampleRate": 48000,
+                "file": "absolute197-4.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "percussion with instruments",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/951.html#2148",
+                "date": "Aug 31, 2023",
+                "sampleRate": 48000,
+                "file": "absolute197.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Dark Sunset",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/951.html#2293",
+                "date": "Sep 16, 2023",
+                "sampleRate": 27050,
+                "file": "absolute197-2.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "1985 chars",
+                "url": "https://dollchan.net/btb/res/951.html#2382",
+                "date": "Oct 02, 2023",
+                "sampleRate": 48000,
+                "file": "absolute197-3.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "404",
+                "url": "https://dollchan.net/btb/res/951.html#2472",
+                "date": "Oct 16, 2023",
+                "sampleRate": 25200,
+                "codeOriginal": "t%=(2**20)+(2**19),p=x=>t*2**(parseInt(x,36)/12),fm=(t,c,m,n,o,v1,v2)=>sin((sin(t/64)*v1+(cos(t/32)*sin(t/64)/1.5*v2))+(((sin(t/32)*(cos(t/16)+m)+n*1.5)*(1+o)))*c(t/16)),x=t>>15,((((fm(b1=2*p('58A8'[3&t>>15])/1.43/2,sin,1.3,.5,.8,.5,.2))*33+64+(fm(b2=p('C55F'[3&t>>15])/1.43,sin,1.1,.5,.7,.54,.3))*33+64)+(fm(m1=p('8AC8AF8AH8AJFC7C'[15&t>>13])/1.43,sin,sin(m1/31.5+cos(m1/4)*(1.7+sin(t/32768))*2),.2,.5,.2,.2)*(7+(31&-t>>8)))*(x>7)+(1.4*fm(m2=p('58A5CDC838A5CFCA'[15&t>>13])/1.43*4,x=>asin(sin(m2/16)),1.5,1.9,-.8,1,1.5)*33*(x>23)))/2+32+(2*cos((b=.993**(t&16383)*127))*32+64+(sin(t/6|t/13)*128)/(12+(t&16383)/64)*8*(1&-t>>13)*(1&t>>14)+64+(sin(sin(sin(sin(sin(sin(t/1.32))+(t/.94))+(t/2.3))+(t*(75+(t%6)))))*128+128)*(-t>>6&31)/128*(1&-t>>11)+129)*(x>35)/1.5)/2"
+            },
+            {
+                "description": "Remix of \"cool loop i guess\" by RealZynx92",
+                "url": "https://www.reddit.com/r/bytebeat/comments/17o4odp/remix_of_cool_loop_i_guess_by_realzynx92_made_by/",
+                "date": "Nov 05, 2023",
+                "sampleRate": 44100,
+                "file": "absolute197-5.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "made in a hotel at 11pm at march 25th, 2024",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ipawls/well_you_guys_wanted_a_list_of_old_bytebeats_from/",
+                "date": "Mar 25, 2024",
+                "sampleRate": 37000,
+                "codeOriginal": [
+                    "t||(a=b=c=0),a+=sin(sin(sin(sin(g=t/64*PI*.77*2**(((t%([5,7,4,7,78,4,3,4][t>>12&7]-(2*(t<262144))+(3*(-t>>12&1))))*7+[0,0,4,10,0,0,2,-4][t>>16&7])/12)))+cos(g/2))+sin(g/4)*(-t>>10&31)/12+cos(g)/2*(1.6+sin(t/65536*PI))+sin(g/2+cos(g))*(t>262144)*(1.5+sin(t/65536*PI))/1.5),a/=2,b+=a/3-b/4,c+=b/3-c/3,(c*1.5+(k=(x,b,p,u,$,dc)=>min(max(sin(sqrt(t&8191)**x*p)*(.9999**(t&8191))*b*'1001011001101000'[(t-u)>>$&15],-1),1))(.4,4,13,0,13)*1.8*(t>262144)+k(.6,1,30,400,t>>7>>(-t>>12>>(t>>14&3)&1))*min(t>>12,128)/128)*.6",
+                    "// made at 11 pm march 25th"
+                ]
+            }
+        ]
+    },
+    {
+        "author": "awogler9124812041",
+        "description": "ultimate bitbeat",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/199r12o/ultimate_bitbeat/",
+        "date": "Jan 18, 2024",
+        "sampleRate": 9000,
+        "stereo": true,
+        "codeOriginal": "a=(((t>>12&31)==31)?(t/((t>>11&1)?4:2))>>(((t/((t>>11&1)?4:2))>>(t/(t>>11&1?28:14)))&7):(t>>5&t>>9|t>>6&t>>10|t>>9&t>>11|t/4%9&t>>6|t/6&t>>12|t/10&t>>14|t/4&t>>15|t/6&t>>16|t/8&t>>17|t/12&t>>18)),[((a&1)+(a&2)/2-1)/2,((a&1)+(a%4)/3-1)/2]"
+    },
+    {
+        "author": "NewFall2020",
+        "description": "88 metronomes playing at the same time (Pendulum Wave / Whitney's Music Box created in Bytebeat !!!)",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1bfvpdq/88_metronomes_playing_at_the_same_time_pendulum/",
+        "date": "Mar 16, 2024",
+        "sampleRate": 48000,
+        "file": "newfall1.js",
+        "fileOriginal": true
+    },
+    {
+        "author": "BaenHoHoHo",
+        "description": "remade amaybeuserXV's thing",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1cocs84/remade_amaybeuserxvs_thing/",
+        "date": "May 10, 2024",
+        "sampleRate": 48000,
+        "stereo": true,
+        "codeOriginal": "(t/=$=48e3)?(H=G*135.5/60/$,R=++G,l=b=f=w=(D+=(G<(Â=2**18.38)&&(ẞ=i=>3/2*sin(sin(5.5*sin(sin(R/i*2**([2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,4,4,4,4,2,2,0,-3,4,4,4,4,2,2,0,-3,-2,-2,-2,-2,-4,-4,-6,-9,-2,-2,-2,-2,-4,-4,-6,-9][H*4&63]/12+1)*PI/32)*2/3)*.45**(G<Â&&(H&3==3?2*H&3==3?H%.25:H%.5:H%1))+(G>Â&&H%.25)*1.625)**15))(3)+ẞ(8)+ẞ(6)+ẞ(4)+ẞ(2))+(G>(Ä=2**18.379)&&ẞ(16)*2**ẞ(4)*-ẞ(8)+ẞ(12)+ẞ(8)+ẞ(4)+ẞ(24)*2/3)*2-D/24)/2,l+=A[_=R%j],b+=k[$=R%i],f+=B[È=R%I],w+=L[ö=R%Q],l+=A[_]=l*2/3,b+=k[$]=b*2/3,f+=B[È]=f*2/3,w+=L[ö]=w*2/3,[l/4+f/4,b/4+w/4].map(i=>i/48+(Ë=random()*cos(8*R)**3*1e-8**(H%.25))*H/16*(G<Ä)+(G>Ä&&Ë)+(G>Ä&&sin(sin(63*(H%.5)**.5)**3)*'1001011001101000'[2*H&15]*.001**(H%.5)*16)+(G<Ä&&(ª+=sin(R/3|R/9|R/6)*(H&1)*1e-5**(H%1)-ª/16*H/5))/5*H/5+(G>Ä&&((Ø+=random()-Ø,Œ+=Ø/8-Œ/15)*(sin(H*PI*4)+1)*2-3)*(H&1)*1e-5**(H%1)*4))):(A=(a=H=>Array(H).fill(D=G=Ø=Œ=ª=0))(j=11325),k=a(i=16864),B=a(I=14862),L=a(Q=10484))"
+    },
+    {
+        "author": "Zopium",
+        "children": [
+            {
+                "description": "title theme of some mario bootleg be like",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f0toc9/title_theme_of_some_mario_bootleg_be_like/",
+                "date": "Aug 25, 2024",
+                "sampleRate": 32000,
+                "file": "psub2.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "stimmer 7",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f4twd4/stimmer_7/",
+                "date": "Aug 30, 2024",
+                "codeOriginal": "c=[1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.35,,,,,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,2,,1.35,,,2.1,,2,2,1.8,1.8,2,1.8,,,,1.8,,1.2,,,2,,1.8,1.8,1.59,1.59,1.8,1.59,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,][(t>>11)%144],t*(4|t>>13&3)>>(~t>>11&1)&128|t*4*c*(~t>>9&3)&127"
+            },
+            {
+                "description": "inside castle (Scanned Version)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i7fejr/inside_castle_scanned_version/",
+                "date": "Jan 22, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "a=t=>(p=[-2,3,-2,6,3,5,1,-4,0,3,0,-2,2,5,2][(t>>13)%16],z=p=>t*2**(p/12)*3.2,(z(p)&128)/1.5)*(1-t%8192/12E3),",
+                    "b=t=>(p=[,-2,,-2,,,3,,,,0,,,,-4,-2,,-2,,-2,,,3,,,,2,,,2,-2][(t>>13)%32],z=p=>t*2**(p/12)*3.2*2,(z(p)&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>64),",
+                    "main=a(t)+a(t-12168)/2+a(t-24336)/4+a(t-36504)/8+a(t-48672)/16,",
+                    "s=(((z(3-48)&127)+16&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>14),main+s,",
+                    "c1=b(t)+b(t-12168)/2+b(t-24336)/4+b(t-36504)/8+b(t-48672)/16,",
+                    "d=((t%1?r1:r1=random()*(~t>>6&63)*[1,1,1,0][t>>12&3])+(cbrt(t+16384&32767)*0xff&64))*((t>>13&127)>28),min(d+main+s+c1,255)"
+                ]
+            },
+            {
+                "description": "99 bottles of beer",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1j9kn6y/99_bottles_of_beer/",
+                "date": "Mar 12, 2025",
+                "file": "psub.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "0xBD",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jb5gxa/0xbd/",
+                "date": "Mar 14, 2025",
+                "codeOriginal": "((t>>10^(t>>10)-1^7)%9*t/((t>>13&3)+(t>>15&3)+1)*2&95^((((t>>1)*(t>>1)&255)/((t&4095)+1)*192)*(t>126976)))+((t*2/((t>>15&3)+1)&63)*(t>>11&1)*(t>262144))+((t>>t/((t>>13&3)+1)&64)*(t>393216))"
+            }
+        ]
+    },
+    {
+        "author": "Consistent_Nerve_185",
+        "children": [
+            {
+                "description": "good music",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f9szsh/good_music/",
+                "date": "Sep 05, 2024",
+                "sampleRate": 48000,
+                "exotic": true,
+                "file": "ConsistentNerve185.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "new song ig",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1fcxucd/new_song_ig/",
+                "date": "Sep 09, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "exotic": true,
+                "file": "ConsistentNerve185-2.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Powerful Plasma",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1fhcrs1/powerful_plasma/",
+                "date": "Sep 15, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "exotic": true,
+                "file": "ConsistentNerve185-1.js",
+                "fileOriginal": true
+            }
+        ]
+    },
+    {
+        "author": "Two2Fall",
+        "children": [
+            {
+                "description": "Synth",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i89qzj/synth/",
+                "date": "Jan 23, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "e=12288,l=16384,i=8192,u=4096,y=(x,y,z)=>(x/3%85+y/3%85+z/3%85)/2,ms=x=>(t*2**(-parseInt(x,36)/12)),s=x=>(t*2**(parseInt(x,36)/12)),x=j=>(",
+                    "min(max((w=t=>((s(['79CE79C979CE7AC7','579C579E579G579H'][1&t>>17][15&t>>13])|t>>5)-(t>>6)%128)%256/4-32,w(t)+(w(t-u*j)/2)+(w(t-u*j*2)/2)+(b=(y(ms('5797'[3&t>>17]),t/2*2**([2,0,-2,0][t>>17&3]),s('7535'[3&t>>17])))*(t/l%2)*(1-t%i/1e4))+64)-96-32,-64),63))*2,x(1)"
+                ]
+            },
+            {
+                "description": "Drums And Stereo",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i89qzj/synth/",
+                "date": "Jan 23, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": [
+                    "e=12288,l=16384,i=8192,u=4096,y=(x,y,z)=>(x/3%85+y/3%85+z/3%85)/2,ms=x=>(t*2**(-parseInt(x,36)/12)),s=x=>(t*2**(parseInt(x,36)/12)),x=j=>(",
+                    "min(max((w=t=>((s(['79CE79C979CE7AC7','579C579E579G579H'][1&t>>17][15&t>>13])|t>>5)-(t>>6)%128)%256/4-32,w(t)+(w(t-u*j)/2)+(w(t-u*j*2)/2)+(b=(y(ms('5797'[3&t>>17]),t/2*2**([2,0,-2,0][t>>17&3]),s('7535'[3&t>>17])))*(t/l%2)*(1-t%i/1e4))+64)-96+((128*tanh(cbrt(sin((t&l-1)**.5))))*(1-t/l%1)*(1&-t>>14))+(64*random()*(1-t/i%1)**4)+((t*sin(t>>2)&128)*(1-t/(l*2)%1)*(1&t>>15))/2-32,-64),63))*(1-t%e/24e3)*2+sin(t/(j/4e8)),[x(1),x(2)]"
+                ]
+            },
+            {
+                "description": "RealityWave",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1iljxsw/two2fall_music_4/",
+                "date": "Feb 09, 2025",
+                "sampleRate": 69000,
+                "stereo": true,
+                "codeOriginal": "l=8192,e=24576,u=16384,i=32768,s=(x,t)=>t*2**(parseInt(x,36)/12)%256-128,song=j=>(r=(t*.95)*j,m=t=>(t*=(t>=0),(s(\"7C7F7C7H7C7J7C7M8C8F8C8H8C8J8C8M\"[31&t>>14],r/2))%256*((1-t/u%1)**(t&i*16?2:1))/1.5),a=b=>(((s('FFHJ'[3&t>>16],r/2*b)%256/3)+(s('CCCC'[3&t>>16],r/2*b)%256/3)+(s('78'[1&t>>18],r/2*b)%256/3))*(t%32768/32768)*1.75),min(max(m(t)+(m(t-e)/2)+(m(t-e*2)/4)+a(j)+256*1.3*tanh(2*sin((t%16384)**.5))*((1-t/16384%1)**3)*(1&-t>>14)+((96*j*random()%256-16)*(1-t/8192%1)**3)+(((t*sin(t>>3)&128)%256-64)*(1-t/32768%1)*(1&t>>15)),-64),63))*(1-t%l/24e3)*1.75,[song(.995),song(1.005)]"
+            }
+        ]
+    },
+    {
+        "author": "Decent-Manager-6169",
+        "description": "Chords Are Warmthed",
+        "mode": "Floatbeat",
+        "url": "https://dollchan.net/btb/res/520.html#5509",
+        "date": "Feb 22, 2025",
+        "sampleRate": 32000,
+        "stereo": true,
+        "codeOriginal": [
+            "n=440/32000*128*2**(10.4/12),",
+            "vi=63+sin(t/1e3)*8,",
+            "Fl=10-(t>>9&127)*0.07,",
+            "De=((t%65536)%12288)+2E3,",
+            "",
+            "St=c=>((t?f+=((((t+vi*c)*n/4*2**([[0,4,7,12],[-1,0,4,11],[0,5,7,12],[2,5,7,14]][t>>16&3][t>>0&3]/12)&127)/128-.5)/De*6e3)-f/Fl:f=0)/Fl),",
+            "[St(0),St(2.5)]"
+        ]
+    }
+]

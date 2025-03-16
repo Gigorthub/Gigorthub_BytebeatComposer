@@ -247,7 +247,7 @@ globalThis.bytebeat = new class {
 	}
 	generateLibraryEntry({
 		author, children, codeMinified, codeOriginal, date, description, file, fileFormatted, fileMinified,
-		fileOriginal, mode, remixed, sampleRate, starred, stereo, url
+		fileOriginal, mode, remixed, sampleRate, starred, stereo, url, exotic
 	}) {
 		let entry = '';
 		if(description) {
@@ -280,7 +280,7 @@ globalThis.bytebeat = new class {
 			}${ rDescription && rAuthor ? ' by ' + rAuthor : '' })`;
 		}
 
-		if(date || sampleRate || mode || stereo) {
+		if(date || sampleRate || mode || stereo || exotic) {
 			let infoStr = date ? `(${ date })` : '';
 			if(sampleRate) {
 				infoStr += `${ infoStr ? ' ' : '' }${ sampleRate }Hz`;
@@ -290,6 +290,9 @@ globalThis.bytebeat = new class {
 			}
 			if(stereo) {
 				infoStr += `${ infoStr ? ' ' : '' }<span class="code-stereo">Stereo</span>`;
+			}
+			if(exotic) {
+				infoStr += `${ infoStr ? ' ' : '' }<span class="code-exotic">EXOTIC</span>`;
 			}
 			entry += ` <span class="code-info">${ infoStr }</span>`;
 		}
@@ -607,7 +610,7 @@ globalThis.bytebeat = new class {
 		}
 	}
 	onresizeWindow() {
-		const isSmallWindow = window.innerWidth <= 768;
+		const isSmallWindow = window.innerWidth <= 768 || window.innerHeight <= 768;
 		if(this.canvasWidth === 1024) {
 			if(isSmallWindow) {
 				this.canvasWidth = this.canvasElem.width = 512;

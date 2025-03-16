@@ -4,9 +4,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Bytebeat player with a collection of many formulas from around the internet">
-	<title>Bytebeat 1.1</title>
-	<link rel="canonical" href="https://cokufaqikk.github.io/bytebeat/"/>
+	<title>BSII's bbeat player</title>
+	<link rel="canonical" href="https://bsquareii.github.io/BSquare_BytebeatComposer"/>
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="bytebeat.css?version=2023022000">
 	<link rel="modulepreload" href="./scripts/audioProcessor.mjs?version=2023022000">
@@ -62,6 +61,11 @@
 					<option value="Bytebeat" selected>bytebeat</option>
 					<option value="Signed Bytebeat">signed bytebeat</option>
 					<option value="Floatbeat">floatbeat</option>
+					<option value="Bitbeat" title="Only uses LSB. (deprecated exotic mode)">Bitbeat</option>
+					<option value="2048" title="Uses 11 bits instead of 8. (deprecated exotic mode)">2048</option>
+					<option value="logmode" title="Deprecated exotic mode.">Logmode</option>
+					<!--option value="loghack" title="Deprecated exotic mode.">LogHack</option>
+					<option value="loghack2" title="Deprecated exotic mode.">LogHack2</option-->
 				</select>
 				<div class="controls-group controls-grow">
 					<input type="text" id="control-samplerate" title="Set sample rate (in Hz) then press Enter">
@@ -122,57 +126,44 @@
 					<a href="https://www.youtube.com/watch?v=tCRPUv8V22o" target="_blank">YouTube video #3</a><br>
 					<br>
 					This website is a live editing bytebeats player. It has a collection of bytebeat music I found on the internet, and also the music I created.<br>
-					You can choose between bytebeat, signed bytebeat and floatbeat formats. Bytebeat expects output is an unsigned 8bit value (0 to 255). Signed bytebeat assumes output is a signed 8bit value (-127 to 128). Floatbeat assumes output is -1.0 to 1.0.<br>
+					You can choose between bytebeat, signed bytebeat and floatbeat formats.<br>
+					<br>
+					<b>Bytebeat:</b> expects output is an unsigned 8bit value (0 to 255).<br>
+					<b>Signed bytebeat:</b> assumes output is a signed 8bit value (-127 to 128).<br>
+					<b>Floatbeat:</b> assumes output is -1.0 to 1.0.<br>
 					<br>
 					This website is the fork of <a href="http://entropedia.co.uk/generative_music/" target="_blank">8-bit Generative Composer</a> by <a href="http://twitter.com/paul_hayes/" target="_blank">@paul_hayes</a>.<br>
-					Forked by SthephanShi aka Viraya.
+					Forked by SthephanShi aka Viraya.<br>
+					<br>
+					Custom functions by Chasyxx include: <ul>
+						<li>bitC: <b>(X,Y,Z)</b> => <i>X</i>&amp;<i>Y</i>?<i>Z</i>:0</li>
+						<li>br: <b>(T,SIZE)</b> => Bit reverses <i>SIZE</i> bits of <i>T</i>, discards the other bits</li>
+						<li><b><i>sinf, cosf, tanf</i>: (X)</b> => <i>sin, cos, tan</i> but inputting t will output the same freqency as t by itself. AKA the function loops around every 256 "steps" instead of every 2pi steps</li>
+						<li>regG: <b>(T,regEx)</b> => takes a string of <i>T</i>'s bits, and tests against <i>regEx</i> for a match. Outputs a boolean.</li>
+					</ul>
+					<b>Note:</b> Using any of these functions makes your code exotic, entailing that it will not be added to the dollChan library.<br>
+					They are just a novelty, and use them at your own risk. I would remove them (and the exotic modes) if it weren't for compatibility.
 				</article>
 			</details>
 			<details class="library-content">
 				<summary class="library-header">
-					<h1>Publiched &mdash; random codes from various sources</h1>
+					<h1>Codes taken from other sites/sources around the internet</h1>
 					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
 				</summary>
-				<div id="library-publiched" class="library-container"></div>
+				<div id="library-codes" class="library-container"></div>
 			</details>
 			<details class="library-content">
 				<summary class="library-header">
-					<h1>Classic &mdash; C compatible code with one variable (t)</h1>
+					<h1>BSquareII &mdash; codes made by the creator of website</h1>
 					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
 				</summary>
-				<div id="library-classic" class="library-container"></div>
-			</details>
-			<details class="library-content">
-				<summary class="library-header">
-					<h1>Compact JS &mdash; compact JavaScript code</h1>
-					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
-				</summary>
-				<div id="library-compact-js" class="library-container"></div>
-			</details>
-			<details class="library-content">
-				<summary class="library-header">
-					<h1>Big JS &mdash; big JavaScript code</h1>
-					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
-				</summary>
-				<div id="library-big-js" class="library-container"></div>
-			</details>
-			<details class="library-content">
-				<summary class="library-header">
-					<h1>Floatbeat &mdash; assumes output is -1.0 to 1.0<h1>
-					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
-				</summary>
-				<div id="library-floatbeat" class="library-container"></div>
-			</details>
-			<details class="library-content">
-				<summary class="library-header">
-					<h1>SthephanShi &mdash; code SthephanShi created</h1>
-					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
-				</summary>
-				<div id="library-sthephanshi" class="library-container"></div>
+				<div id="library-bsquareii" class="library-container"></div>
 			</details>
 			<footer>
-				<a class="link" href="/btb/" title="Bytebeat discussion threads" target="_blank">&gt;&gt; Discussion threads</a><br>
-				<a class="link" href="https://github.com/SthephanShinkufag/bytebeat-composer" title="Github repo" target="_blank">&gt;&gt; Github</a>
+				<a class="link" href="https://dollchan.net/btb" title="Bytebeat discussion threads" target="_blank">&gt;&gt; Discussion threads</a><br>
+				<a class="link" href="https://github.com/BSquareII/BSquare_BytebeatComposer" title="Github repo" target="_blank">&gt;&gt; Github</a><br>
+				<a class="link" href="https://anouserxd.neocities.org" target="_blank">&gt;&gt; My neocities website</a><br>
+				Fork created on Feb 26, 2025
 			</footer>
 		</section>
 	</main>
