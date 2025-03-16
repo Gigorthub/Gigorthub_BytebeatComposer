@@ -225,6 +225,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1igw3dm/underworld/",
                 "date": "Feb 03, 2025",
                 "sampleRate": 67000,
+                "stereo": true,
                 "file": "two2fall.js",
                 "fileOriginal": true
             },
