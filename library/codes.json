@@ -105,6 +105,15 @@
         "codeOriginal": "(t/=$=48e3)?(H=G*135.5/60/$,R=++G,l=b=f=w=(D+=(G<(Â=2**18.38)&&(ẞ=i=>3/2*sin(sin(5.5*sin(sin(R/i*2**([2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,4,4,4,4,2,2,0,-3,4,4,4,4,2,2,0,-3,-2,-2,-2,-2,-4,-4,-6,-9,-2,-2,-2,-2,-4,-4,-6,-9][H*4&63]/12+1)*PI/32)*2/3)*.45**(G<Â&&(H&3==3?2*H&3==3?H%.25:H%.5:H%1))+(G>Â&&H%.25)*1.625)**15))(3)+ẞ(8)+ẞ(6)+ẞ(4)+ẞ(2))+(G>(Ä=2**18.379)&&ẞ(16)*2**ẞ(4)*-ẞ(8)+ẞ(12)+ẞ(8)+ẞ(4)+ẞ(24)*2/3)*2-D/24)/2,l+=A[_=R%j],b+=k[$=R%i],f+=B[È=R%I],w+=L[ö=R%Q],l+=A[_]=l*2/3,b+=k[$]=b*2/3,f+=B[È]=f*2/3,w+=L[ö]=w*2/3,[l/4+f/4,b/4+w/4].map(i=>i/48+(Ë=random()*cos(8*R)**3*1e-8**(H%.25))*H/16*(G<Ä)+(G>Ä&&Ë)+(G>Ä&&sin(sin(63*(H%.5)**.5)**3)*'1001011001101000'[2*H&15]*.001**(H%.5)*16)+(G<Ä&&(ª+=sin(R/3|R/9|R/6)*(H&1)*1e-5**(H%1)-ª/16*H/5))/5*H/5+(G>Ä&&((Ø+=random()-Ø,Œ+=Ø/8-Œ/15)*(sin(H*PI*4)+1)*2-3)*(H&1)*1e-5**(H%1)*4))):(A=(a=H=>Array(H).fill(D=G=Ø=Œ=ª=0))(j=11325),k=a(i=16864),B=a(I=14862),L=a(Q=10484))"
     },
     {
+        "author": "SRB2er",
+        "description": "want a byte of my food?",
+        "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
+        "date": "Aug 10, 2024",
+        "sampleRate": 32000,
+        "file": "SRB2er.js",
+        "fileOriginal": true
+    },
+    {
         "author": "Zopium",
         "children": [
             {
@@ -211,6 +220,15 @@
                 ]
             },
             {
+                "description": "Underworld",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1igw3dm/underworld/",
+                "date": "Feb 03, 2025",
+                "sampleRate": 67000,
+                "file": "two2fall.js",
+                "fileOriginal": true
+            },
+            {
                 "description": "RealityWave",
                 "mode": "Signed Bytebeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1iljxsw/two2fall_music_4/",
@@ -218,25 +236,57 @@
                 "sampleRate": 69000,
                 "stereo": true,
                 "codeOriginal": "l=8192,e=24576,u=16384,i=32768,s=(x,t)=>t*2**(parseInt(x,36)/12)%256-128,song=j=>(r=(t*.95)*j,m=t=>(t*=(t>=0),(s(\"7C7F7C7H7C7J7C7M8C8F8C8H8C8J8C8M\"[31&t>>14],r/2))%256*((1-t/u%1)**(t&i*16?2:1))/1.5),a=b=>(((s('FFHJ'[3&t>>16],r/2*b)%256/3)+(s('CCCC'[3&t>>16],r/2*b)%256/3)+(s('78'[1&t>>18],r/2*b)%256/3))*(t%32768/32768)*1.75),min(max(m(t)+(m(t-e)/2)+(m(t-e*2)/4)+a(j)+256*1.3*tanh(2*sin((t%16384)**.5))*((1-t/16384%1)**3)*(1&-t>>14)+((96*j*random()%256-16)*(1-t/8192%1)**3)+(((t*sin(t>>3)&128)%256-64)*(1-t/32768%1)*(1&t>>15)),-64),63))*(1-t%l/24e3)*1.75,[song(.995),song(1.005)]"
+            },
+            {
+                "description": "You win!",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1irlzmr/you_win/",
+                "date": "Feb 17, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "song=j=>(l=[8,4,2,1][t>>19&3],u=[1,1.25,1.5,1.25][t>>17&3],r=t*j,m=t=>(t*=(t>=0),((r*2/1.08/l*[.75,1.5,2.25,3.35][t>>13&3])*u&-t>>5)+(t>>6)%128)%256/2,b=((r/1.08/l*u)%256/2),d=256*tanh(sin((t%8192)**.5))*((1-t/8192%1)**.125)*(1&-t>>13)+(64*random()*(1-t/8192%1)**3)+(((r*sin(r>>3)&255)%256-128)*(1-t/16384%1))*(1&t>>14),mel=m(t)+(m(t-12288)/2)+(m(t-24576)/4)+(m(t-49152)/8),min(max([m(t)+(m(t-12288)/2)+(m(t-24576)/4)+(m(t-49152)/8)-128,mel+b-192,mel+b-192,mel+b-192,mel+b-192+d,mel+b-192+d,mel+b-192+d,mel+b-192+d,mel-128,mel-128,mel-128,mel-128][t>>19]||0,-128),127)),[song(1.005),song(.995)]"
             }
         ]
     },
     {
-        "author": "Decent-Manager-6169",
-        "description": "Chords Are Warmthed",
+        "author": "feeshbread",
+        "description": "6th Wave",
         "mode": "Floatbeat",
-        "url": "https://dollchan.net/btb/res/520.html#5509",
-        "date": "Feb 22, 2025",
-        "sampleRate": 32000,
-        "stereo": true,
-        "codeOriginal": [
-            "n=440/32000*128*2**(10.4/12),",
-            "vi=63+sin(t/1e3)*8,",
-            "Fl=10-(t>>9&127)*0.07,",
-            "De=((t%65536)%12288)+2E3,",
-            "",
-            "St=c=>((t?f+=((((t+vi*c)*n/4*2**([[0,4,7,12],[-1,0,4,11],[0,5,7,12],[2,5,7,14]][t>>16&3][t>>0&3]/12)&127)/128-.5)/De*6e3)-f/Fl:f=0)/Fl),",
-            "[St(0),St(2.5)]"
+        "url": "https://www.reddit.com/r/bytebeat/comments/1io5qmi/6th_wave_my_entry_for_bytebattle_season_3/",
+        "date": "Feb 12, 2025",
+        "sampleRate": 48000,
+        "file": "feeshbread.js",
+        "fileOriginal": true
+    },
+    {
+        "author": "Decent-Manager-6169",
+        "children": [
+            {
+                "description": "Chords Are Warmthed",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/520.html#5509",
+                "date": "Feb 22, 2025",
+                "sampleRate": 32000,
+                "stereo": true,
+                "codeOriginal": [
+                    "n=440/32000*128*2**(10.4/12),",
+                    "vi=63+sin(t/1e3)*8,",
+                    "Fl=10-(t>>9&127)*0.07,",
+                    "De=((t%65536)%12288)+2E3,",
+                    "",
+                    "St=c=>((t?f+=((((t+vi*c)*n/4*2**([[0,4,7,12],[-1,0,4,11],[0,5,7,12],[2,5,7,14]][t>>16&3][t>>0&3]/12)&127)/128-.5)/De*6e3)-f/Fl:f=0)/Fl),",
+                    "[St(0),St(2.5)]"
+                ]
+            },
+            {
+                "description": "Simple Drums and Chord (Revamp)",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/520.html#5526",
+                "date": "Feb 25, 2025",
+                "sampleRate": 32000,
+                "file": "decentmanager.js",
+                "fileOriginal": true
+            }
         ]
     }
 ]
