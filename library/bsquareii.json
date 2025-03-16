@@ -25,6 +25,14 @@
         "codeOriginal": "br(t>>7&t|t>>5&31|t>>10&t<<2&63|t>>2&t>>9&t*8&127,12)"
     },
     {
+        "description": "0xFEA172C71E",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/15n1y12/0xfea172c71e_minibake/",
+        "date": "Aug 10, 2023",
+        "sampleRate": 64000,
+        "codeOriginal": "this.T??=0,r=(x,y,z)=>(T++||(a=Array(y).fill(0)),x=x%256+a[v=T%a.length],a[v]=x*z,x),tri=x=>asin(sin(x*PI/16)),saw=x=>atan(tan(x*PI/128)),w=T*(0xFEA172C71E*((T>>13)+1)).toString(7)[(T>>14)%7]/PI/2*2**([0,2,3,5][T>>17&3]/12),[A,B,C]=[[-5,-3,0],[-3,-1,2],[-2,0,3],[0,2,5]][T>>17&3],r(-saw(w)/8+sin(4*cbrt(T&65536?T%8192:T%16384))/2+((tri(T/PI*2**(A/12))+tri(T/PI*2**(B/12))+tri(T/PI*2**(C/12)))*(T%131072/131072))/8*(T>524288)+((T*random()&255)*(~T>>5&255)>>8)/512*(T>1048576)*'1010110101101101'[T>>13&15],16384,.5)/2"
+    },
+    {
         "description": "outside the window",
         "url": "https://www.reddit.com/r/bytebeat/comments/18y2kiz/outside_the_window/",
         "date": "Jan 04, 2024",
