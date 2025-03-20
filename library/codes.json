@@ -1,5 +1,64 @@
 [
     {
+        "author": "BaenHoHoHo",
+        "children": [
+            {
+                "description": "shredder remis",
+                "url": "https://dollchan.net/btb/res/117.html#134",
+                "date": "Aug 08, 2022",
+                "sampleRate": 16000,
+                "codeOriginal": "t=t/2,((a=((~t>>max(t>>10&15,t>>12&15)&t*'H$TT`0l6'.charCodeAt(t>>11&7)/19)*(10-(t>>16)))/4&63,b=(t>>6&63)+(3e2/(t/128%2**5)&63),c=(t*'H$TT`0l6'.charCodeAt(t>>11&7)/19)/2&63,d=abs(cos(t/'84'[t>>11&1]*'6689'[t>>13&3]/16*4))*32,e=t/16>>c/8&127,a+b+c+d+e)/2+abs(sin(t*PI/4096))*64+64)/1.25"
+            },
+            {
+                "description": "teeto remsirrfjfewijeifjwie scooby doo",
+                "url": "https://dollchan.net/btb/res/117.html#135",
+                "date": "Aug 09, 2022",
+                "sampleRate": 44100,
+                "codeOriginal": "t*=5/22,(a=(t>>10<<(t>>2)%([8,9,10,11][(t>>11)%4]-(t>>15)%4))/4&63,b=([3e4,3e5][t>>12&1]/(t&[4095,4095,2047,4095][t>>12&3])&128)/2,c=sqrt(1e7*(t/512%2**[3,2,1,0,2,2,3,3,4,4,4,4,3,2,1,0][t>>11&15])/3)&64,d=((random()*256|t>>4)/4&63)*'10000000'[t>>12&7]+((t*3*'4040004040400'[t>>9&15])*'01111111'[t>>12&7]/4&63)+sin(t*PI/2048)*64+64,a+b+c+d)/1.5"
+            },
+            {
+                "description": "isislovecruft remis",
+                "url": "https://dollchan.net/btb/res/117.html#140",
+                "date": "Aug 12, 2022",
+                "sampleRate": 36000,
+                "codeOriginal": "t=t>>2,(a=cbrt(sin(t*PI/16*'12345678'[t>>14&7]))*64+64,b=((~t>>'23232324'[t>>14&7])*(2+(42&2*t*(7&t>>10))<(24&t*((3&t>>14)+2))))&255,c=(3e3/(t/512%2**'33313330'[t>>12&7])&128),d=127*(2+(42&2*t/4*(7&t>>10))<(24&t*((3&t>>14)+2))),a+b+c+d)/2.5"
+            },
+            {
+                "description": "Dancing Robot {floatbeat}",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/117.html#2570",
+                "date": "Oct 27, 2023",
+                "sampleRate": 30720,
+                "codeOriginal": "r=1.7,(16-((t/2.56*2**([0,-1,0,4,0,-1,4,-3,0,-1,0,4,7,5,4,5,-1,4,7,5,-1,4,5,4,0,4,5,4,-1,2,5,-1][(t/r>>12)%32]/12)&31)+8&32))*1.0005**(-t/r%4096)/64+((t/2.55*2**(-'00113351'[t/r>>14&7]/12)*(t/r>>12&1)&127)+32&128)/384+(t/r>2**18&&(64-(sqrt(t/r+256&8191)*128&128))*1.0003**(-t/r&8191)/2E3)"
+            },
+            {
+                "description": "what2",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/117.html#2621",
+                "date": "Nov 12, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "k=t/1.4,w=(t,y)=>{x=0;for(i=0;i<12;i++)x+=cos(sin(t*PI/256-.15*cos(t*i*PI/128)*(.9998**(y%65536))+cbrt(sin(t*PI/256)))/2**asin(sin(t*PI/256)));return x*(255&-y>>8)/1e4},(w(t*2**('0358'[k>>16&3]/12),k)+w(t*1.99*2**([-9,-5,-12,-11][k>>16&3]/12),k)+w(t*1.49*2**([0,3,-4,5][k>>16&3]/12),k)+w((k&8192?-t:t)*'12348642'[k>>[11,12][k>>14&1]&7]*2**('0358'[k>>16&3]/12),1)-.5)*(k>>9&31)**.5/8+(t*6*t/30%256)/444*(.997**(k%4096))*(255&k>>6)/256+sin((k%16384)**.3)/4+sin((k%16384)**.2)/4+max(-1,min(1,(t*63*t/31.1%256)*(1&k>>14)*(.9997**(k%16384))/128+sin(3*log(k+16384&32767))/2))/3"
+            },
+            {
+                "description": "remade amaybeuserXV's thing",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1cocs84/remade_amaybeuserxvs_thing/",
+                "date": "May 10, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "(t/=$=48e3)?(H=G*135.5/60/$,R=++G,l=b=f=w=(D+=(G<(Â=2**18.38)&&(ẞ=i=>3/2*sin(sin(5.5*sin(sin(R/i*2**([2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,4,4,4,4,2,2,0,-3,4,4,4,4,2,2,0,-3,-2,-2,-2,-2,-4,-4,-6,-9,-2,-2,-2,-2,-4,-4,-6,-9][H*4&63]/12+1)*PI/32)*2/3)*.45**(G<Â&&(H&3==3?2*H&3==3?H%.25:H%.5:H%1))+(G>Â&&H%.25)*1.625)**15))(3)+ẞ(8)+ẞ(6)+ẞ(4)+ẞ(2))+(G>(Ä=2**18.379)&&ẞ(16)*2**ẞ(4)*-ẞ(8)+ẞ(12)+ẞ(8)+ẞ(4)+ẞ(24)*2/3)*2-D/24)/2,l+=A[_=R%j],b+=k[$=R%i],f+=B[È=R%I],w+=L[ö=R%Q],l+=A[_]=l*2/3,b+=k[$]=b*2/3,f+=B[È]=f*2/3,w+=L[ö]=w*2/3,[l/4+f/4,b/4+w/4].map(i=>i/48+(Ë=random()*cos(8*R)**3*1e-8**(H%.25))*H/16*(G<Ä)+(G>Ä&&Ë)+(G>Ä&&sin(sin(63*(H%.5)**.5)**3)*'1001011001101000'[2*H&15]*.001**(H%.5)*16)+(G<Ä&&(ª+=sin(R/3|R/9|R/6)*(H&1)*1e-5**(H%1)-ª/16*H/5))/5*H/5+(G>Ä&&((Ø+=random()-Ø,Œ+=Ø/8-Œ/15)*(sin(H*PI*4)+1)*2-3)*(H&1)*1e-5**(H%1)*4))):(A=(a=H=>Array(H).fill(D=G=Ø=Œ=ª=0))(j=11325),k=a(i=16864),B=a(I=14862),L=a(Q=10484))"
+            },
+            {
+                "description": "im late asf eurgfhh..",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/14stz6i/comment/mh1dy1c/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button",
+                "date": "Mar 10, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": "t?(r=(n=96)**abs(sin((h=a+=PI*2**(('0x'+'023578BC'[(y=4*b++/3)>>14&7])/12-.16))/128+sin(h/128.5+cos(h/255))+atan2(cos(h/64),sin(h/128)*6)+abs(sin(h/129))))/n*(y/16384%1)**.12*(1-y/16384%1)**.7+A[2*b%R|0],A[b%R|0]=(c+=(r*2/3-c)/256,r*2/3-c+A[.995*b%R|0]/3+A[b*2/3%R|0]/4))/2:this.A??=Array(R=24575).fill(a=b=c=0)"
+            }
+        ]
+    },
+    {
         "author": "NewFall2020",
         "children": [
             {
@@ -7,6 +66,7 @@
                 "url": "https://www.reddit.com/r/Enhanced_Bytebeat/comments/x20u3x/test1_54545khz/",
                 "date": "Aug 31, 2022",
                 "sampleRate": 54545,
+                "exotic": true,
                 "codeOriginal": [
                     "t/=6.2,",
                     "a=32*(sinf(t/4*'24684864'[t>>10&7]*'44564467'[t>>14&7]/2%128))*2,",
@@ -126,7 +186,7 @@
                 ]
             },
             {
-                "description": "idk",
+                "description": "\"Dancing Robot with filter\" remix",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1ixi4nx/comment/mf6a3q8/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button",
                 "date": "Feb 27, 2025",
                 "sampleRate": 27300,
@@ -221,28 +281,6 @@
         "sampleRate": 9000,
         "stereo": true,
         "codeOriginal": "a=(((t>>12&31)==31)?(t/((t>>11&1)?4:2))>>(((t/((t>>11&1)?4:2))>>(t/(t>>11&1?28:14)))&7):(t>>5&t>>9|t>>6&t>>10|t>>9&t>>11|t/4%9&t>>6|t/6&t>>12|t/10&t>>14|t/4&t>>15|t/6&t>>16|t/8&t>>17|t/12&t>>18)),[((a&1)+(a&2)/2-1)/2,((a&1)+(a%4)/3-1)/2]"
-    },
-    {
-        "author": "BaenHoHoHo",
-        "children": [
-            {
-                "description": "remade amaybeuserXV's thing",
-                "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1cocs84/remade_amaybeuserxvs_thing/",
-                "date": "May 10, 2024",
-                "sampleRate": 48000,
-                "stereo": true,
-                "codeOriginal": "(t/=$=48e3)?(H=G*135.5/60/$,R=++G,l=b=f=w=(D+=(G<(Â=2**18.38)&&(ẞ=i=>3/2*sin(sin(5.5*sin(sin(R/i*2**([2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,2,2,2,2,0,0,-2,-5,4,4,4,4,2,2,0,-3,4,4,4,4,2,2,0,-3,-2,-2,-2,-2,-4,-4,-6,-9,-2,-2,-2,-2,-4,-4,-6,-9][H*4&63]/12+1)*PI/32)*2/3)*.45**(G<Â&&(H&3==3?2*H&3==3?H%.25:H%.5:H%1))+(G>Â&&H%.25)*1.625)**15))(3)+ẞ(8)+ẞ(6)+ẞ(4)+ẞ(2))+(G>(Ä=2**18.379)&&ẞ(16)*2**ẞ(4)*-ẞ(8)+ẞ(12)+ẞ(8)+ẞ(4)+ẞ(24)*2/3)*2-D/24)/2,l+=A[_=R%j],b+=k[$=R%i],f+=B[È=R%I],w+=L[ö=R%Q],l+=A[_]=l*2/3,b+=k[$]=b*2/3,f+=B[È]=f*2/3,w+=L[ö]=w*2/3,[l/4+f/4,b/4+w/4].map(i=>i/48+(Ë=random()*cos(8*R)**3*1e-8**(H%.25))*H/16*(G<Ä)+(G>Ä&&Ë)+(G>Ä&&sin(sin(63*(H%.5)**.5)**3)*'1001011001101000'[2*H&15]*.001**(H%.5)*16)+(G<Ä&&(ª+=sin(R/3|R/9|R/6)*(H&1)*1e-5**(H%1)-ª/16*H/5))/5*H/5+(G>Ä&&((Ø+=random()-Ø,Œ+=Ø/8-Œ/15)*(sin(H*PI*4)+1)*2-3)*(H&1)*1e-5**(H%1)*4))):(A=(a=H=>Array(H).fill(D=G=Ø=Œ=ª=0))(j=11325),k=a(i=16864),B=a(I=14862),L=a(Q=10484))"
-            },
-            {
-                "description": "im late asf eurgfhh..",
-                "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/14stz6i/comment/mh1dy1c/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button",
-                "date": "Mar 10, 2025",
-                "sampleRate": 48000,
-                "codeOriginal": "t?(r=(n=96)**abs(sin((h=a+=PI*2**(('0x'+'023578BC'[(y=4*b++/3)>>14&7])/12-.16))/128+sin(h/128.5+cos(h/255))+atan2(cos(h/64),sin(h/128)*6)+abs(sin(h/129))))/n*(y/16384%1)**.12*(1-y/16384%1)**.7+A[2*b%R|0],A[b%R|0]=(c+=(r*2/3-c)/256,r*2/3-c+A[.995*b%R|0]/3+A[b*2/3%R|0]/4))/2:this.A??=Array(R=24575).fill(a=b=c=0)"
-            }
-        ]
     },
     {
         "author": "SRB2er",
