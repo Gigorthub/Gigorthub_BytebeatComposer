@@ -283,6 +283,23 @@
         "codeOriginal": "a=(((t>>12&31)==31)?(t/((t>>11&1)?4:2))>>(((t/((t>>11&1)?4:2))>>(t/(t>>11&1?28:14)))&7):(t>>5&t>>9|t>>6&t>>10|t>>9&t>>11|t/4%9&t>>6|t/6&t>>12|t/10&t>>14|t/4&t>>15|t/6&t>>16|t/8&t>>17|t/12&t>>18)),[((a&1)+(a&2)/2-1)/2,((a&1)+(a%4)/3-1)/2]"
     },
     {
+        "author": "fendoap",
+        "description": "Byte_Tech",
+        "url": "https://demozoo.org/music/337714/",
+        "date": "Feb 09, 2024",
+        "sampleRate": 44100,
+        "codeOriginal": [
+            "",
+            "s=4.6e4,a=(t/(s/10)|0),b=a%4==0|a%32==2,c=128,d=(a>>1)%32,f=d%8==0|d==31,",
+            "e=((t/(12-(a%6*4)+12)^19)%12),(a>128)*(a%8==3)*(t^t/2%32-16)+",
+            "+3*f*e*(a%8+2)%c*2",
+            "+!f*(",
+            "((t/16^17)%64)*(a%4+1)*!b",
+            "+tanh((1+1e1*(a%64==2))*cos(35* log((5*t%s))))*c*b",
+            ")+c"
+        ]
+    },
+    {
         "author": "SRB2er",
         "description": "want a byte of my food?",
         "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
@@ -442,6 +459,34 @@
                 "sampleRate": 48000,
                 "stereo": true,
                 "codeOriginal": "song=j=>(l=[8,4,2,1][t>>19&3],u=[1,1.25,1.5,1.25][t>>17&3],r=t*j,m=t=>(t*=(t>=0),((r*2/1.08/l*[.75,1.5,2.25,3.35][t>>13&3])*u&-t>>5)+(t>>6)%128)%256/2,b=((r/1.08/l*u)%256/2),d=256*tanh(sin((t%8192)**.5))*((1-t/8192%1)**.125)*(1&-t>>13)+(64*random()*(1-t/8192%1)**3)+(((r*sin(r>>3)&255)%256-128)*(1-t/16384%1))*(1&t>>14),mel=m(t)+(m(t-12288)/2)+(m(t-24576)/4)+(m(t-49152)/8),min(max([m(t)+(m(t-12288)/2)+(m(t-24576)/4)+(m(t-49152)/8)-128,mel+b-192,mel+b-192,mel+b-192,mel+b-192+d,mel+b-192+d,mel+b-192+d,mel+b-192+d,mel-128,mel-128,mel-128,mel-128][t>>19]||0,-128),127)),[song(1.005),song(.995)]"
+            }
+        ]
+    },
+    {
+        "author": "eSlashMachine",
+        "children": [
+            {
+                "description": "sunset house meets this remix chain",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ihwhea/sunset_house_meets_this_remix_chain_remixes_of/",
+                "date": "Feb 04, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "eslash.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Packagestep",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jfczl0/packagestep/",
+                "date": "Mar 20, 2025",
+                "sampleRate": 32000,
+                "stereo": true,
+                "codeOriginal": [
+                    "[(((((((((t>>(t&32768?t&65536?1:2:4)&t)+(t>>(t&262144?3:4)+(t|t>>(t&262144?2:4))|(t&262144?t>>1:t))))|-t)&255)*(t>>6&255)>>9))+(((tan(sin(40*sqrt(t%16384)**.4))))*40)+((t&16384?(200*random())*(-t>>7&255)>>8:0)+((200*random())*(-t>>4&230)>>10.5))>>1)*1.4)-60,(((((((((t>>(t&32768?t&65536?1:2:4)&t)+(t>>(t&262144?3:4)+(t|t>>(t&262144?2:4))|(t&262144?t>>1:t))))|-t)&255)*(t>>6&255)>>9))+(((tan(sin(40*sqrt(t%16384)**.4))))*39)+((t&16384?(200*random())*(-t>>7&255)>>8:0)+((200*random())*(-t>>4&230)>>10.5))>>1)*1.4)-60] ",
+                    "",
+                    "// the reason I did the stereo without variables is to recall random() and make it sound different. this is why it isn't compressed into a variable which causes it not to work the way I want it to"
+                ]
             }
         ]
     },
