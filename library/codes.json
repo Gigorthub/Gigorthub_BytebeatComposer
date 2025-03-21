@@ -126,12 +126,45 @@
         "author": "Absolute197",
         "children": [
             {
+                "description": "halfsine teardrop",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15dacmr/halfsine_teardrop/",
+                "date": "Jul 30, 2023",
+                "sampleRate": 39600,
+                "codeOriginal": [
+                    "Math.cos(t*Math.PI/48*[1,1.2,1,1.2,1,1.5,1,1.5,1.2,1.6,1.2,1.6,1.2,1.8,1.2,1.8][15&t>>14])*6+50+",
+                    "Math.sin(t*Math.PI/64*[1,1,1.5,1.6][3&t>>15])*5+",
+                    "Math.exp(Math.cos(t*Math.PI/24*[3,2.4,1.6,1][3&t>>14]))*(15&-t>>10)/6+",
+                    "Math.exp(Math.sin(t*Math.PI/32))+",
+                    "Math.exp(Math.cos(t*Math.PI/48*[1,1.5][1&t>>14])*(15&-t>>9)/6)+",
+                    "(Math.exp(Math.sin(t*1.2*[1,0.75][1&t>>13]/12)*2.06+(1.3*Math.sin(t/1024))))/1.5+",
+                    "(Math.exp(1.74*Math.cos(t*Math.PI/64*[2,2.4,1.8,1.5,1.2,1,1,1.2][7&t>>13]))/0.75*Math.exp(0.75*Math.sin(t/(1+(31&t>>8)))))"
+            },
+            {
                 "description": "i added lowpass filter thingy to chipbeat and made a cool beat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/15ifzjn/i_added_lowpass_filter_thingy_to_chipbeat_and/",
                 "date": "Aug 04, 2023",
                 "sampleRate": 48000,
                 "file": "absolute197-4.js",
                 "fileOriginal": true
+            },
+            {
+                "description": "added clamp() and mix()",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15ijm9y/added_clamp_and_mix/",
+                "date": "Aug 04, 2023",
+                "sampleRate": 48000,
+                "file": "absolute197-6.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "def.x",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15wtl7v/defx/",
+                "date": "Aug 21, 2023",
+                "codeOriginal": [
+                    "sin(((t/1.5) + cos(t/8) + 24*sin(t/512)) * 54) / (2+(t & (4095-(d=2048)+eval('ddd0dd0d'[7&t>>12])))/128) * ((t%8192)>(t&16384?4096:2048))+",
+                    "(int(pow(int(2+t/1024%3),3)*64/(t%pow(2.5,int(8+t/1024%2))))&1)/3.8+",
+                    "",
+                    "int(8*2**('3520'[3&t>>14]/12)*t/int(2+t/256%4)/256%.5-.35)/(27+(t&(d-1))/8)*25"
             },
             {
                 "description": "percussion with instruments",
