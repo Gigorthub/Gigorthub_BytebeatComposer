@@ -298,13 +298,17 @@ globalThis.bytebeat = new class {
 		}
 		const songData = codeOriginal || codeMinified || file ? JSON.stringify({ sampleRate, mode }) : '';
 		if(codeMinified) {
+		let fix=0;
+		for(let codeArray=0;codeArray<codeOriginal.length;codeArray++){
+		    fix+=codeOriginal[codeArray].length;
+		}
 			if(codeOriginal) {
 				entry += ` <span class="code-length" title="Size in characters">${
 					codeMinified.length }c</span><button class="code-button code-toggle"` +
 					' title="Minified version shown. Click to view the original version.">+</button>';
 			}
 		} else if(codeOriginal) {
-			entry += ` <span class="code-length" title="Size in characters">${ codeOriginal.length }c</span>`;
+			entry += ` <span class="code-length" title="Size in characters">${ fix }c</span>`;
 		}
 		if(file) {
 			if(fileFormatted) {
