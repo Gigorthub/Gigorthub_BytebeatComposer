@@ -288,6 +288,7 @@
     },
     {
         "description": "Amethyst music",
+        "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/3.html#1810",
         "date": "Aug 04, 2023",
         "sampleRate": 48000,
