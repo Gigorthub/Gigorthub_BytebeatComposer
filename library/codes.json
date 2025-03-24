@@ -24,6 +24,29 @@
                 "codeOriginal": "t=t>>2,(a=cbrt(sin(t*PI/16*'12345678'[t>>14&7]))*64+64,b=((~t>>'23232324'[t>>14&7])*(2+(42&2*t*(7&t>>10))<(24&t*((3&t>>14)+2))))&255,c=(3e3/(t/512%2**'33313330'[t>>12&7])&128),d=127*(2+(42&2*t/4*(7&t>>10))<(24&t*((3&t>>14)+2))),a+b+c+d)/2.5"
             },
             {
+                "description": "aturned777 remix i made 16 days ago",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15ur5gl/aturned777_remix_i_made_16_days_ago/",
+                "date": "Aug 18, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "a2='11111112',y=z=>t*z%8192,a=sin(t*PI/256/(4+(t>>15&15))*[4,8,16,32][t>>17&3]*(1+(t>>13&3))*(1+(-t>>12&1)))*32+(~[~t>>9,t>>10][t>>13&1]&31)*1.2,(((0xAB>>(a>>7&7)&255)-75)/(.9998**-y(1))/2+38+((2.8**(-t/1024*a2[t>>13&7]%8+8)/a2[t>>13&7]&96)*(.9996**y(a2[t>>13&7]))+(random()*(t>>12&1)*512)/(.9995**-y(1)))*(t>>18&3)*[0,1,.5,.25][t>>18&3]+((t*2*(t>>13&1)/(4+(t>>15&15))*[.5,1,1,2][t>>17&3]&127)+32&128)/(.9999**-y(1))/4/3*12+sin((t/(2+(t>>10&7))|1)**3)*64*(t>>13&1)/(.9997**-y(1))+64)/1.7"
+            },
+            {
+                "description": "foldedface67 (remix of facableboldfolds)",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/165q7dh/foldedface67_remix_of_facableboldfolds/",
+                "date": "Aug 30, 2023",
+                "sampleRate": 64000,
+                "codeOriginal": "this.v??=0,o=32,r=(w,i,s)=>(v++||(a=Array(round(o*s)).fill(0)),w=w%256+a[k=v%a.length],a[k]=w*i,w),w=v*2/o,saw=x=>4*x/1E3%.256,tri=x=>asin(sin(x*PI/256)),r(saw(-w*2**('0257'[w>>13&3]/12)*(0xf01dedface67>>(w>>9&21).toString(6)&5))-sin(1.78**(-w/96%16+8))/3+.2+random()*(-w/6&255)/(1+(w/3&2048?w/3>>10&1:w/3>>9&1))/1024*(w>131072)+(tri(w*128*2**(-'01'[w>>13&1]/12))/4+tri(w*1.24*128*2**(-'02'[w>>13&1]/12))/4)*(w>>5&255)/1024*(w>65536),.5,768)/1.5"
+            },
+            {
+                "description": "chio",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/17br56a/chio/",
+                "date": "Oct 19, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "t*=.75,this.l??=Array(12287).fill(0),n=min(1,t/2048%8),m=(t?(o+=2**(1-n*(t>>14&7)/12+1)):o=0)%256*(-t>>6&255)+l[_=t%l.length|0],l[_-1]=m/1.5,(t?x=(32*x-m)/33:x=0)/62E3+.75"
+            },
+            {
                 "description": "Dancing Robot {floatbeat}",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/117.html#2570",
@@ -304,8 +327,14 @@
         ]
     },
     {
-        "author": "aturned777",
+        "author": "aturned777 (Kehkeown_Uai)",
         "children": [
+            {
+                "description": "harmonic pulsation",
+                "url": "https://dollchan.net/btb/res/3.html#864",
+                "date": "Apr 18, 2023",
+                "codeOriginal": "(1+(t>>16))*(t<<(8+(t>>8))^(t-(t^-(t^16380&t>>1)*t<<(t>>8)|t<<8^t>>4|t>>3)))"
+            }
             {
                 "url": "https://dollchan.net/btb/res/3.html#1903",
                 "date": "Aug 13, 2023",

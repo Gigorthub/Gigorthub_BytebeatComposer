@@ -1,5 +1,16 @@
 [
     {
+        "description": "Pleasure To Paso (Unfinished/Not Full Version)",
+        "url": "https://www.reddit.com/r/bytebeat/comments/13im4qr/pleasure_to_paso_unfinishednot_full_version/",
+        "date": "May 15, 2023",
+        "sampleRate": 48000,
+        "codeOriginal": [
+            "t/=1.5,",
+            "a=t*[.425,.425,.85,.425,.425,.85,.425,.425,.85,.425,.425,.85,.425,.425,.375,.425,.425,.425,.85,.425,.425,.85,.425,.425,.85,.425,.425,.85,.425,.425,.375,.425,.5,.5,1,.5,.5,1,.5,.5,1,.5,.5,1,.5,.5,1,.5,.575,.575,1.15,.575,.575,1.15,.575,.575,1.15,.575,.575,1.15,.625,1.25,.575,1][(t>>12)%64],",
+            "a&128+(t*sin(t>>3)*(t>>14&1)&~t>>7&127)^(1e5/(t&16383))"
+        ]
+    },
+    {
         "description": "Another reverb and stereo music cuz why not",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14b7srw/another_reverb_and_stereo_music_cuz_why_not/",
@@ -23,6 +34,13 @@
         "date": "Jul 13, 2023",
         "exotic": true,
         "codeOriginal": "br(t>>7&t|t>>5&31|t>>10&t<<2&63|t>>2&t>>9&t*8&127,12)"
+    },
+    {
+        "description": "Remix of Decent-Manager-6169's stuff",
+        "url": "https://www.reddit.com/r/bytebeat/comments/15gcz52/remix_of_decentmanager6169s_stuff/",
+        "date": "Aug 02, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "T=t*1.25,a=t*2.25*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,][T>>12&127]/12),(((a/1.5%225+a/1.5%150+a/1.5%100+a/1.5%75)/2.15&128)+((t*sin(t>>3)&128)*([b=~T>>6,b,b,~T>>4,b,b,b,~T>>5][T>>15&7]&255)>>8)*(T>>14&1)+(sin(1e4/(T&4095)))*64+64+((t*random()&127)*(~T>>4&255)>>8))/2"
     },
     {
         "description": "0xFEA172C71E",
