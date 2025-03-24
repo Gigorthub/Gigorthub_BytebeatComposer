@@ -308,7 +308,7 @@ globalThis.bytebeat = new class {
  			for(let codeArray=0;codeArray<codeOriginal.length;codeArray++){
  				fix+=codeOriginal[codeArray].length;
 			}
-			const fix2=fix+codeArray-1;
+			const fix2=fix+codeOriginal.length-1;
 			entry += ` <span class="code-length" title="Size in characters">${ fix2 }c</span>`;
 		}
 		if(file) {
