@@ -334,7 +334,7 @@
                 "url": "https://dollchan.net/btb/res/3.html#864",
                 "date": "Apr 18, 2023",
                 "codeOriginal": "(1+(t>>16))*(t<<(8+(t>>8))^(t-(t^-(t^16380&t>>1)*t<<(t>>8)|t<<8^t>>4|t>>3)))"
-            }
+            },
             {
                 "url": "https://dollchan.net/btb/res/3.html#1903",
                 "date": "Aug 13, 2023",
