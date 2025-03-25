@@ -178,6 +178,7 @@
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/13a1cj0/newbies_please_read_serious_message_the_final/",
                 "date": "May 06, 2023",
+                "stereo": true,
                 "sampleRate": 48000,
                 "codeOriginal": "t?0:v=Array(r=48e3).fill(0),e=t<r*64,s=0|t/12e3,m=min(t/1e6,1)*e*sin(t/((25|t/192e3%4)-s%16))+v[t%r],v[t%r]=m/1.4,u=x=>((t>r*32)*e*(sin((s%4?1e3:4e4)/(t%12e3))+((0|t/r%2)*!(0|t/6e3%2)*random()*t/r%1-0.5))+m*x(t/6e3))/4,[u(sin),u(cos)]"
             },
