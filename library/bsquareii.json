@@ -11,6 +11,13 @@
         ]
     },
     {
+        "description": "DJ G minor Bach with sinewave changed to sawtooth",
+        "mode": "Signed Bytebeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/13uep2x/dj_g_minor_bach_with_sinewave_changed_to_sawtooth/",
+        "date": "May 28, 2023",
+        "codeOriginal": "t%=528e3,82*atan(tan(t*2**(\"B*918/916-918/91B*918/916-918/91>*;2:1;26/;2:1;2>*;2:1;26/;2:1;2A*;291;28/;291;2A*;291;28/;291;2B*=-;,=-91=-;,=-B*=-;,=-91=-;,=-E*>6=4>692>6=4>6E*>6=4>692>6=4>6D*<3:1<380<3:1<3D*<3:1<380<3:1<3D(=4<3=481=4<3=4D(=4<3=481=4<3=4B(:18/:16.:18/:1B(:18/:16.:18/:1B&;2:1;26/;2:1;2B&;2:1;26/;2:1;2@&;,9*;,8/;,9*;,@&;,9*;,8/;,9*;,@%=-;,=-91=-;,=-@%=-;,=-91=-;,=->*=-;,=-92=-;,=->*=-;,=-92=-;,=->,8/6-8/428/6-8/>,8/6-8/428/6-8/=-412/4192412141=-412/4192412141;-6341613/634163;-6341613/634163;,8/6-8/528/6-8/;,8/6-8/528/6\".charCodeAt(t>>10)/12-8.5)))/3+(64*random()*(-t>>4&255)>>6)*(t&4096)/16e3+48*sin(8e3/(t&4095))-24"
+    },
+    {
         "description": "Another reverb and stereo music cuz why not",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14b7srw/another_reverb_and_stereo_music_cuz_why_not/",
@@ -43,12 +50,43 @@
         "codeOriginal": "T=t*1.25,a=t*2.25*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,][T>>12&127]/12),(((a/1.5%225+a/1.5%150+a/1.5%100+a/1.5%75)/2.15&128)+((t*sin(t>>3)&128)*([b=~T>>6,b,b,~T>>4,b,b,b,~T>>5][T>>15&7]&255)>>8)*(T>>14&1)+(sin(1e4/(T&4095)))*64+64+((t*random()&127)*(~T>>4&255)>>8))/2"
     },
     {
+        "description": "Synthesizer 2 (remix)",
+        "url": "https://www.reddit.com/r/bytebeat/comments/15jhm3e/synthesizer_2_remix/",
+        "date": "Aug 06, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "p=x=>t*2**(x/12),A=p(a=[0,3,4,7,0,5,8,10,0,6,9,11,0,8,10,12,-2,0,1,3,-1,1,3,5,-1,3,4,6,-1,4,6,7][t>>12&31])%256/3+1.51*p(a)%256/3+2.01*p(a)%256/3,B=p(b=[-12,-14][t>>16&1])%256/2+1.005*p(b)%256/2,(A+B)/2"
+    },
+    {
         "description": "0xFEA172C71E",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/15n1y12/0xfea172c71e_minibake/",
         "date": "Aug 10, 2023",
         "sampleRate": 64000,
         "codeOriginal": "this.T??=0,r=(x,y,z)=>(T++||(a=Array(y).fill(0)),x=x%256+a[v=T%a.length],a[v]=x*z,x),tri=x=>asin(sin(x*PI/16)),saw=x=>atan(tan(x*PI/128)),w=T*(0xFEA172C71E*((T>>13)+1)).toString(7)[(T>>14)%7]/PI/2*2**([0,2,3,5][T>>17&3]/12),[A,B,C]=[[-5,-3,0],[-3,-1,2],[-2,0,3],[0,2,5]][T>>17&3],r(-saw(w)/8+sin(4*cbrt(T&65536?T%8192:T%16384))/2+((tri(T/PI*2**(A/12))+tri(T/PI*2**(B/12))+tri(T/PI*2**(C/12)))*(T%131072/131072))/8*(T>524288)+((T*random()&255)*(~T>>5&255)>>8)/512*(T>1048576)*'1010110101101101'[T>>13&15],16384,.5)/2"
+    },
+    {
+        "description": "first remix of \"Pyramid Dungeon\"",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/161j3if/first_remix_of_pyramid_dungeon/",
+        "date": "Aug 26, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "p=x=>t*2**(x/12),m=2**([t>>13&5,7-(t>>13&5),7,4+3*(t>>17&2)][t>>16&3]/12),((m*t/2&32)+(m*t/8&31)+32*tan(PI/4*sin(m*t*PI/125)**(m*t/(8-2*(t>>17&1))&t>>12&62)))/192+cbrt(sin(12*cbrt(t%16384)))/4+p('0x'+'04737744047377AA'[t>>15&15])%256/1024+((t*sin(t>>3)&255)*(~t>>6&255)>>8)/512*(t>>14&1)+((t*random()&255)*(~t>>4&255)>>8)/1024-.7"
+    },
+    {
+        "description": "New remix of Longline Theory",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/16oxyl4/new_remix_of_longline_theory_by_bsquareii/",
+        "date": "Sep 22, 2023",
+        "sampleRate": 32500,
+        "codeOriginal": [
+            "t?0:x=y=0,",
+            "p=t=>2**(++t/12),",
+            "a=[p(2),p(5),p(4),p(4),p(4),p(4),,,p(9),p(9),,p(5),,p(2),p(7),p(9)],",
+            "x+=[...a,...a,...a,p(7),p(5),p(4),p(4),p(-3),p(-3),,,p(7),p(9),p(7),p(5),p(4),p(4),p(4),p(-3)][t>>12&63]||0,",
+            "y+=[p(-10),p(-10),p(-2),p(-17)][t>>16&3],",
+            "u=t?(u*(n=32+32*sin(t*PI/262144))+((sign(sin(y*PI/128))+sign(sin(y*PI/129)))/5))/(1+n):0,",
+            "u+(t>262144)*sin(tan(x*PI/256))/5+(t>>14&1)*(t>262144)*sign(sin(t*sin(t*PI>>4)))/(5+(t%16384)/512)+(t>262144)*sign(sin(t*random()))/(5+(t%4096)/128)"
+        ]
     },
     {
         "description": "outside the window",

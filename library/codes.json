@@ -17,11 +17,23 @@
                 "codeOriginal": "t*=5/22,(a=(t>>10<<(t>>2)%([8,9,10,11][(t>>11)%4]-(t>>15)%4))/4&63,b=([3e4,3e5][t>>12&1]/(t&[4095,4095,2047,4095][t>>12&3])&128)/2,c=sqrt(1e7*(t/512%2**[3,2,1,0,2,2,3,3,4,4,4,4,3,2,1,0][t>>11&15])/3)&64,d=((random()*256|t>>4)/4&63)*'10000000'[t>>12&7]+((t*3*'4040004040400'[t>>9&15])*'01111111'[t>>12&7]/4&63)+sin(t*PI/2048)*64+64,a+b+c+d)/1.5"
             },
             {
-                "description": "isislovecruft remis",
-                "url": "https://dollchan.net/btb/res/117.html#140",
-                "date": "Aug 12, 2022",
-                "sampleRate": 36000,
-                "codeOriginal": "t=t>>2,(a=cbrt(sin(t*PI/16*'12345678'[t>>14&7]))*64+64,b=((~t>>'23232324'[t>>14&7])*(2+(42&2*t*(7&t>>10))<(24&t*((3&t>>14)+2))))&255,c=(3e3/(t/512%2**'33313330'[t>>12&7])&128),d=127*(2+(42&2*t/4*(7&t>>10))<(24&t*((3&t>>14)+2))),a+b+c+d)/2.5"
+                "description": "Longline Theory Remix Again",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/143f3p2/longline_theory_remix_again_less_distortion/",
+                "date": "Jun 07, 2023",
+                "codeOriginal": [
+                    "SB=(0xffff<t),",
+                    "c=t>>10,n=32,z=2048,i=3,",
+                    "st=function(pt=0){return[3,3,4.7,2][c*2/n&3]*t*pt/2},",
+                    "st=st(1.6)%256/4+st(1.569125)%256/4+64,",
+                    "m=function(v=0){return v.charCodeAt(c&[15,15,15,31][t>>14&i])/33*t*4-t*4},",
+                    "sn=((t*Math.sin(t)&255)*(t*1.025&1)*-(255&-t>>3)>>9)*[1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,2,2,1,1,1,1,2,2,1,1][t>>10&31]*SB/3-1,",
+                    "dr=(1024*Math.log2(t&z-1)&64)*SB/2+128,",
+                    "dr2=(2048*Math.log1p(t&[4095,8191][t>>12&1])&96)*SB/2,",
+                    "h=m(`IQNNNN!!]]!Q!IW]WQNN??!!W]WQNNN?`)%256,",
+                    "s=(((h*4%256/32)*1.1*(h*3%256/32)/1**(h*.97%256/32)/4)%256*6*-(255&-t>>4|128)>>8)*SB,",
+                    "Math.min(479,Math.max((st-s+sn+dr+dr2)+127),511)-96;"
+                ]
             },
             {
                 "description": "i remixed decent-manager-6169's thing because idk",
@@ -31,6 +43,13 @@
                 "sampleRate": 48000,
                 "file": "baenhohoho.js",
                 "fileOriginal": true
+            },
+            {
+                "description": "isislovecruft remis",
+                "url": "https://dollchan.net/btb/res/117.html#140",
+                "date": "Aug 12, 2022",
+                "sampleRate": 36000,
+                "codeOriginal": "t=t>>2,(a=cbrt(sin(t*PI/16*'12345678'[t>>14&7]))*64+64,b=((~t>>'23232324'[t>>14&7])*(2+(42&2*t*(7&t>>10))<(24&t*((3&t>>14)+2))))&255,c=(3e3/(t/512%2**'33313330'[t>>12&7])&128),d=127*(2+(42&2*t/4*(7&t>>10))<(24&t*((3&t>>14)+2))),a+b+c+d)/2.5"
             },
             {
                 "description": "aturned777 remix i made 16 days ago",
