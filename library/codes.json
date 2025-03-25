@@ -24,6 +24,15 @@
                 "codeOriginal": "t=t>>2,(a=cbrt(sin(t*PI/16*'12345678'[t>>14&7]))*64+64,b=((~t>>'23232324'[t>>14&7])*(2+(42&2*t*(7&t>>10))<(24&t*((3&t>>14)+2))))&255,c=(3e3/(t/512%2**'33313330'[t>>12&7])&128),d=127*(2+(42&2*t/4*(7&t>>10))<(24&t*((3&t>>14)+2))),a+b+c+d)/2.5"
             },
             {
+                "description": "i remixed decent-manager-6169's thing because idk",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/14iubkv/i_remixed_decentmanager6169s_thing_because_idk/",
+                "date": "Jun 25, 2023",
+                "sampleRate": 48000,
+                "file": "baenhohoho.js",
+                "fileOriginal": true
+            },
+            {
                 "description": "aturned777 remix i made 16 days ago",
                 "url": "https://www.reddit.com/r/bytebeat/comments/15ur5gl/aturned777_remix_i_made_16_days_ago/",
                 "date": "Aug 18, 2023",
@@ -61,6 +70,14 @@
                 "date": "Nov 12, 2023",
                 "sampleRate": 48000,
                 "codeOriginal": "k=t/1.4,w=(t,y)=>{x=0;for(i=0;i<12;i++)x+=cos(sin(t*PI/256-.15*cos(t*i*PI/128)*(.9998**(y%65536))+cbrt(sin(t*PI/256)))/2**asin(sin(t*PI/256)));return x*(255&-y>>8)/1e4},(w(t*2**('0358'[k>>16&3]/12),k)+w(t*1.99*2**([-9,-5,-12,-11][k>>16&3]/12),k)+w(t*1.49*2**([0,3,-4,5][k>>16&3]/12),k)+w((k&8192?-t:t)*'12348642'[k>>[11,12][k>>14&1]&7]*2**('0358'[k>>16&3]/12),1)-.5)*(k>>9&31)**.5/8+(t*6*t/30%256)/444*(.997**(k%4096))*(255&k>>6)/256+sin((k%16384)**.3)/4+sin((k%16384)**.2)/4+max(-1,min(1,(t*63*t/31.1%256)*(1&k>>14)*(.9997**(k%16384))/128+sin(3*log(k+16384&32767))/2))/3"
+            },
+            {
+                "description": "untitledsong_2",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ce2nc9/untitledsong_2/",
+                "date": "Apr 27, 2024",
+                "sampleRate": 48000,
+                "codeOriginal": "p=p=>t*2**(parseInt(p,36)/12),r=(b,d)=>b.repeat(d),(t/=1.5)?(Q=2*tanh(sin(p((r('CGLL',2)+r('BEJJ',2)+r('9DII',4))[t>>13&31])*PI/127%6))*.9997**(t%16384)+A[F=t%A.length|0],A[F/2]=Q/2,(k+=Q-k/8)/16):A=Array(8192).fill(k=0)"
             },
             {
                 "description": "remade amaybeuserXV's thing",
