@@ -136,12 +136,24 @@
     },
     {
         "author": "Iwaku",
-        "description": "Sinewave Beach: an ambient experiment",
-        "mode": "Floatbeat",
-        "url": "https://dollchan.net/btb/res/3.html#1081",
-        "date": "May 25, 2023",
-        "sampleRate": 48000,
-        "codeOriginal": "t?0:a=Array(r=96e3).fill(0),m=sin(t/'ViNQMbeytqFstfAYQJoLIBHNmkgASRmMbPQdpTSzxSJwygwyNLWJwwOypjAXOzaG'.charCodeAt(0|t/r%64)*5)/3+a[t%r],a[t%r]=m/1.7,min(t/1e6,1)*(m+sin(t/8e4)*sin(t/r/2)*random()/4)/2"
+        "children": [
+            {
+                "description": "Sinewave Beach: an ambient experiment",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#1081",
+                "date": "May 25, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "t?0:a=Array(r=96e3).fill(0),m=sin(t/'ViNQMbeytqFstfAYQJoLIBHNmkgASRmMbPQdpTSzxSJwygwyNLWJwwOypjAXOzaG'.charCodeAt(0|t/r%64)*5)/3+a[t%r],a[t%r]=m/1.7,min(t/1e6,1)*(m+sin(t/8e4)*sin(t/r/2)*random()/4)/2"
+            },
+            {
+                "description": "FM.relax()",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#2480",
+                "date": "Oct 17, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "x=0.1,sin(sin(sin(sin(x*t*PI/2e4)+x*t*PI/16)+t*PI/5e2)+t*PI/5e4)"
+            }
+        ]
     },
     {
         "author": "hrllobrothers4",
@@ -213,6 +225,40 @@
                 "fileOriginal": true
             },
             {
+                "description": "Fire in the dark",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15p7yuu/fire_in_the_dark/",
+                "date": "Aug 12, 2023",
+                "sampleRate": 40000,
+                "codeOriginal": [
+                    "a=(t*[1,1.125][1&t>>17]*2**([3,6,5,10,5,13,5,15][7&t>>13]/12)/4&63),",
+                    "b=(t*2**('0305'[3&t>>16]/12)/8.01&63),",
+                    "c=random()*(-t>>9&31)*'01'[1&t>>14]*1.5,",
+                    "d=(1.5*t*[1,1.125][1&t>>17]*2**([3,6,5,10,5,13,5,15][7&t>>13]/12)/4&63),",
+                    "e=max(min(64*sin(sqrt(t&16383)*2),30),t>>7&31)*2.68,",
+                    "f=(sin(t>>2)*t&44)*(-t>>10&31)/16*'01'[1&t>>14]*1.7,",
+                    "g=sin(t/3^t/17|t/9)*(-t>>8&31)*'0110'[3&t>>13]+40,",
+                    "h=sin(t/33^e*9)*(-t>>9&31)+40,",
+                    "i=sin(t/9>>1^t>>3|t/5>>2^~-t/7)*(-t>>7&31)+16,",
+                    "",
+                    "",
+                    "[a,a,a,a,a+b,a+b,a+b+c,a+b+c+d,a+b+c+e,a+b+c+f,a+b+c+d+f+g,a+b+c+d+e+f+g,a+b+c+d+e+f+g+h,a+b+c+d+f+g,a+b+c+e+f+h,a+b+d+e+f,a+b+e,a+b,a+b,a][t>>17]/2"
+                ]
+            },
+            {
+                "description": "saw chords",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15v6l6i/saw_chords/",
+                "date": "Aug 19, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "r=p=>t*2**(p/12),a=((r(['1348','1349'][1&t>>16][3&t>>13])/2&63)+(r([0,2,-3,-2][3&t>>15])/8&63)),",
+                    "",
+                    "a*(262144>t)+(b=(r('3864'[3&t>>14])/4*[1,1.5][1&t>>16]&63))*((262144+131072)>t)+",
+                    "random()*(-t>>8&127)*((262144+131072)<t)*((262144+131072+32768)>t)+",
+                    "",
+                    "((((random()*(-t>>7&31)**3/1024*'0010'[3&t>>12]*3+((sin(sqrt(t&16383)*1.3)*9+64)*'1110'[3&t>>13]))*2+3)&254)/1.5+((a&255)+(b&255)&255)/2)*((262155+131072+32768)<t)"
+                ]
+            },
+            {
                 "description": "def.x",
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/15wtl7v/defx/",
@@ -265,6 +311,21 @@
                 "date": "Oct 16, 2023",
                 "sampleRate": 25200,
                 "codeOriginal": "t%=(2**20)+(2**19),p=x=>t*2**(parseInt(x,36)/12),fm=(t,c,m,n,o,v1,v2)=>sin((sin(t/64)*v1+(cos(t/32)*sin(t/64)/1.5*v2))+(((sin(t/32)*(cos(t/16)+m)+n*1.5)*(1+o)))*c(t/16)),x=t>>15,((((fm(b1=2*p('58A8'[3&t>>15])/1.43/2,sin,1.3,.5,.8,.5,.2))*33+64+(fm(b2=p('C55F'[3&t>>15])/1.43,sin,1.1,.5,.7,.54,.3))*33+64)+(fm(m1=p('8AC8AF8AH8AJFC7C'[15&t>>13])/1.43,sin,sin(m1/31.5+cos(m1/4)*(1.7+sin(t/32768))*2),.2,.5,.2,.2)*(7+(31&-t>>8)))*(x>7)+(1.4*fm(m2=p('58A5CDC838A5CFCA'[15&t>>13])/1.43*4,x=>asin(sin(m2/16)),1.5,1.9,-.8,1,1.5)*33*(x>23)))/2+32+(2*cos((b=.993**(t&16383)*127))*32+64+(sin(t/6|t/13)*128)/(12+(t&16383)/64)*8*(1&-t>>13)*(1&t>>14)+64+(sin(sin(sin(sin(sin(sin(t/1.32))+(t/.94))+(t/2.3))+(t*(75+(t%6)))))*128+128)*(-t>>6&31)/128*(1&-t>>11)+129)*(x>35)/1.5)/2"
+            },
+            {
+                "description": "൭𐀬ņť",
+                "url": "https://dollchan.net/btb/res/951.html#2542",
+                "date": "Oct 24, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "t*=.5,t?(a+=random()-a-.5,b+=(a*3-b)/24,c+=(b*3-c/1.5)/5+(a/5)):a=b=c=0,((max(min(b-c-a/5,.2),-.2)*(-t>>9&31)/32*(1&t>>14)+max(min(cos(8*cbrt(t%16384)),.5),-.5)/1.3)/1+sin(sin(sin(sin(sin(t/4.3)+t/3.2)+t/1.5)+t/.85)+t/.73)/3/(2+(t%2**13)/64))*1.5+1.2*sin(sin(sin(sin((F=t/32*PI*2**([[0,3,5,7],[0,3,5,8],[0,5,8,10],[0,5,8,12]][3&t>>15][3&t>>12]/12)))+F+sin(F/2))+F/2)+sin(F/4)+F/2)/sqrt(t%4096/2e3+.1)/7+sin(sin(sin(sin((V=t*PI/32*2**([0,3,5,[12,10,8,1][3&t>>15]][3&t>>13]/12)))+sin(V/2)*(-t>>8&31)/8))+cos(V*2)/3*(-t>>8&31)/24/(1.05+sin(V*2))+V)/6"
+            },
+            {
+                "description": "some epic fm song made for halloween",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#2579",
+                "date": "Oct 31, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "a=t*1.44*[1,1.2,1.5,1.6][t>>13&3]*[1,1,1.2,1.5][t>>16&3],b=t/2*1.44*[1,1.5][t>>15&1]*[1,1.2][t>>17&1],(sin(sin(a/128*PI)+a/64*PI)/5+abs(sin(a/128*PI)+sin(a/256*PI))/3+(cbrt(sin(a/128*PI)+cos(cos(a/64*PI)+a/256*PI))/8)+asin(sin(a/128*PI)**3)/(t%2**13/1024+2)*1.2)/3-.1+(sin(sin(sin(b/64*PI)+(b+sin(t/1024)*23)/64*PI))/4+sin(sin(b/64*PI)+sin((b+sin(t/1024)*23)/128*PI))/3+sin(sin(sin(sin(b/128*PI)+b/64*PI)+sin(b/128*PI)*(-t>>10&31)/8))/1.3)/4*(t>524288)+(((random()-.5)/(t%2**(15-'0012011101210123'[t>>14&15])+200)*144+sin(t/29|t/5)*(~t>>'77877678'[t>>14&7]>>1&31)/192)*(t>1048576)+min(max((asin(sin(pow(.999,t&(16383/'11121214'[t>>14&7]))*64))/4+1.15*sin(t/1.005>>3|t/1.5>>2|t/1.85>>4)/((t>>'8778876788678789'[t>>13&15]&63)/4+1)/5)*4*(t>1572864),-1),1))/1.2"
             },
             {
                 "description": "Remix of \"cool loop i guess\" by RealZynx92",
