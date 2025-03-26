@@ -561,6 +561,85 @@
         ]
     },
     {
+        "author": "Consistent_Nerve_185",
+        "children": [
+            {
+                "description": "ok",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ekg5at/ok/",
+                "date": "Aug 05, 2024",
+                "sampleRate": 48000,
+                "codeOriginal": "c=0.5,m=t/48000*44100,tick='14121428'[int(m/4096*c/2)%8],a=0.9995**(m&8191/c/tick)*1000,Crp=sin(1.5*sin(a/20+2*sin(a/40)))+sin(a/80+3*sin(a/80)),h=((Crp/5)+random()*a/1000*a/10000),b=((random()/256)*(-m>>([8,7,6,6,7,7,7,8,8,7,6,6,8,8,8,7][m>>13&15])&63)),n=(t*2**([1,8,12,15+[0,3,5,9][m>>15&3]][m>>0&3]/12)&255)/700,(m>(2097152+524288)?0:(m<524288?h:(m>2097152?h:(m>1048576?h+b+n:h+b))))"
+            },
+            {
+                "description": "Banjo or smth",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1enxwuq/banjo_or_smth/",
+                "date": "Aug 09, 2024",
+                "sampleRate": 48000,
+                "exotic": true,
+                "codeOriginal": "h=(n,s)=>((sinf(t*n*3)+sinf(t*n))/((t>>s&3)+2)),xp=(n,s)=>(\"0123456788998876543210012101210121001234455443210012233221100001122233221100012322110011132345432210012233223322100001234433221100012322110001245332101234567889988776655553210012344332211001232123212321232123212332100000000000000012122112321100000000000000\"[t*n&255]*28.4)/((t>>s&7)+1),((xp(2**(\"26972627\"[t>>13&7]/12),10))/512)+(h(2**(\"2976\"[t>>15&3]/12),11)+sin(4e4/(t&16383)))/3"
+            },
+            {
+                "description": "i think I am good at this now",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f1iedb/i_think_i_am_good_at_this_now/",
+                "date": "Aug 26, 2024",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "t?0:A=Array(n=round(32768/2/2/1.333333*2)).fill(0),",
+                    "tri=k=>t*k*2&256?t*k*2:-t*k*2-1,sqrd=(w,d,c)=>((w&128)/256)*(-((-t>>d&255)/255)*-c*2),",
+                    "a=sqrd(t*2**([\"2\",\"0\",\"0\",\"3\"][t>>16&3][t>>13&7]/12),5,((t>>9)>127?127:t>>9)),",
+                    "b=(tri(2**(\"27030337\"[t>>15&7]/12)/2)&255)/2,",
+                    "c=(random()+1)*(-t>>8&63)*(t>>15&1),",
+                    "f=a+b+c,ev=f/3+A[t%n],A[t%n]=ev/2,ev"
+                ]
+            },
+            {
+                "description": "Phonk but not",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f2acnl/phonk_but_not/",
+                "date": "Aug 27, 2024",
+                "sampleRate": 48000,
+                "exotic": true,
+                "codeOriginal": [
+                    "m=2e4,",
+                    "o=n=>isNaN(n)?0:n,",
+                    "pluck=(n,s)=>o((sinf(t*n)+sinf(t*n*2)+sinf(t*n*4))/((t>>s&63)/3+2)/2.3),",
+                    "a=pluck(2**([9,m,9,m,9,10,9,m,9,m,9,m,12,10,9,m,9,m,9,m,9,10,9,m,9,m,9,m,7,m,9][t>>13&31]/12),7),b=(((random()*(-t>>7&63)/127)-0.25)*((t>>13&13)%5%2)),a+b"
+                ]
+            },
+            {
+                "description": "good music",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f9szsh/good_music/",
+                "date": "Sep 05, 2024",
+                "sampleRate": 48000,
+                "exotic": true,
+                "file": "ConsistentNerve185.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "new song ig",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1fcxucd/new_song_ig/",
+                "date": "Sep 09, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "exotic": true,
+                "file": "ConsistentNerve185-2.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Powerful Plasma",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1fhcrs1/powerful_plasma/",
+                "date": "Sep 15, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "exotic": true,
+                "file": "ConsistentNerve185-1.js",
+                "fileOriginal": true
+            }
+        ]
+    },
+    {
         "author": "SRB2er",
         "description": "want a byte of my food?",
         "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
@@ -612,40 +691,6 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/1jb5gxa/0xbd/",
                 "date": "Mar 14, 2025",
                 "codeOriginal": "((t>>10^(t>>10)-1^7)%9*t/((t>>13&3)+(t>>15&3)+1)*2&95^((((t>>1)*(t>>1)&255)/((t&4095)+1)*192)*(t>126976)))+((t*2/((t>>15&3)+1)&63)*(t>>11&1)*(t>262144))+((t>>t/((t>>13&3)+1)&64)*(t>393216))"
-            }
-        ]
-    },
-    {
-        "author": "Consistent_Nerve_185",
-        "children": [
-            {
-                "description": "good music",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1f9szsh/good_music/",
-                "date": "Sep 05, 2024",
-                "sampleRate": 48000,
-                "exotic": true,
-                "file": "ConsistentNerve185.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "new song ig",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1fcxucd/new_song_ig/",
-                "date": "Sep 09, 2024",
-                "sampleRate": 48000,
-                "stereo": true,
-                "exotic": true,
-                "file": "ConsistentNerve185-2.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "Powerful Plasma",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1fhcrs1/powerful_plasma/",
-                "date": "Sep 15, 2024",
-                "sampleRate": 48000,
-                "stereo": true,
-                "exotic": true,
-                "file": "ConsistentNerve185-1.js",
-                "fileOriginal": true
             }
         ]
     },
