@@ -118,6 +118,13 @@
         ]
     },
     {
+        "description": "sparta remix thingy i guess",
+        "url": "https://www.reddit.com/r/bytebeat/comments/ws17bj/sparta_remix_thingy_i_guess_well_i_tried_lol_cuz/",
+        "date": "Aug 19, 2022",
+        "sampleRate": 11025,
+        "codeOriginal": "(((((((t*[4,4.2,3.55,4.2][(t>>13) % 4]/([2,1][(t>>11) % 2]))%128 + (25000/log10(t%4096))/5)%256 / 2) * 1 + sin(t/[5,4.75,5.8,4.75][(t>>13) % 4]/4)*((100+(t % 4096))/60)+64) | t>>11)%256 * -(t & 2**19 ? (t & 2**15 & 2**13 ? (2**floor(log2(1 / (1-((t%2**19)/2**19))))) : (1-((t % 2**15)>>10))) : 2**floor(log2(1 / (1-((t%2**19)/2**19)))))) ^ random()*(50000/((t+4096)%8192)) ^ ((t>>18 & t>>17 & t>>16 & 1) ? random()*((t>>8)%256) : 255)/3)"
+    },
+    {
         "author": "NewFall2020",
         "children": [
             {
@@ -152,7 +159,7 @@
                 ]
             },
             {
-                "description": "88 metronomes playing at the same time (Pendulum Wave / Whitney's Music Box created in Bytebeat !!!)",
+                "description": "88 metronomes playing at the same time",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1bfvpdq/88_metronomes_playing_at_the_same_time_pendulum/",
                 "date": "Mar 16, 2024",
                 "sampleRate": 48000,
@@ -210,7 +217,7 @@
     },
     {
         "author": "hrllobrothers4",
-        "description": "Electronic pulsation 2 (more tools used)",
+        "description": "Electronic pulsation 2",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/13skeoj/electronic_pulsation_2_more_tools_used/",
         "date": "May 26, 2023",
@@ -237,6 +244,13 @@
                 "date": "Jun 28, 2023",
                 "sampleRate": 35000,
                 "codeOriginal": "40+((t*[1,1,1.06,1.06,1.2,1.2,1.5,1.6][7&t>>14]*(-t>>10&3)&255)*(-t>>'9878'[3&t>>14]&31)/100+([1,1.2,1.4,1.6][3&t>>17])+(t/[1,1,0,1.25,1,0,1.5,0][7&t>>13]/[1,2,4,8][3&t>>11]&64)+(t*sin(t*44100>>(19-[0,1,2,3][1&t>>15]))&140)/[3,Infinity][1&t>>14]*(16383&-t*'12'[1&t>>15])/1e4+(t&1)*36*(-t>>7&31)/10*'01101001'[7&t>>'1234'[3&t>>17]]+50+tanh(sin(4e4/(t>>'12'[1&t>>14]&28600)))*96)/4"
+            },
+            {
+                "description": "Ultimate True Phonk",
+                "url": "https://www.reddit.com/r/bytebeat/comments/14ttcjt/ultimate_true_phonk/",
+                "date": "Jul 08, 2023",
+                "sampleRate": 36000,
+                "codeOriginal": "this.D??=0,f=(g,n)=>(D=(D*g+(n&255))/(g+1)),c=t*2**([0,NaN,0,NaN,3,3,1,0,0,0,5,5,-2,-2][15&t>>13]/12)*[1,1.1,1.21,1.32][3&t>>18],f(128-(10000<t)*8-(20000<t)*8-(30000<t)*8-(50000<t)*11-(65000<t)*9-(75000<t)*10-(90000<t)*12-(120000<t)*13-(150000<t)*12-(200000<t)*13-(250000<t)-(300000<t)*11-(340000<t)*5-(400000<t)*4,c/2%48+c/3%63.75+c/6%32.25)*(-t>>'8878'[3&t>>13]&31)/33+random()*(-t>>8&31)*'0010'[3&t>>13]*(786432<t)+('01101100'[7&t>>13]*t*sin(t>>3)&150)*(-t>>'77878887'[7&t>>13]&31)/128*(1048576<t)+(2e5/(t&[16370,8180,16370,16370][3&t>>14])&59*(1572864<t))"
             },
             {
                 "description": "halfsine teardrop",
@@ -298,6 +312,24 @@
                 ]
             },
             {
+                "description": "q()",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15p6c4i/q/",
+                "date": "Aug 12, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": [
+                    "q = (a,b) => (a&255)>>b,",
+                    "x = t>>13,",
+                    "f = t>>14,",
+                    "p = t>>17,",
+                    "q(t * 2 ** ((x&31)/12),q(t>>5,6))/8 +",
+                    "q(t * 2 ** ('95754400'[7&t>>3>>(3&t>>8)]/12),q(5,6))/8 * (p>1)+",
+                    "q(32*t/((x&63)&(f&127)),t>>8&31)/2 + q(t*9,q(t>>(f&3)>>(f&t>>9&7)>>3,5))/4 * (p>1) +",
+                    "q(t*t/(t&t>>7),7) * (-t>>9&31) * (p>2) +",
+                    "q(t>>8&t*[1,1,.8,.9][f>>2&3],2) * (p>3)+",
+                    "q((t>>(t>>9))*(x&31),1)/1.25*(p>4)"
+                ]
+            },
+            {
                 "description": "saw chords",
                 "url": "https://www.reddit.com/r/bytebeat/comments/15v6l6i/saw_chords/",
                 "date": "Aug 19, 2023",
@@ -322,6 +354,14 @@
                     "",
                     "int(8*2**('3520'[3&t>>14]/12)*t/int(2+t/256%4)/256%.5-.35)/(27+(t&(d-1))/8)*25"
                 ]
+            },
+            {
+                "description": "cowbell}>?1!1?1?1!",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15zigva/cowbell1111/",
+                "date": "Aug 23, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "r=t/23.5,(tan(sin(r))/3+(tan(sin(r*[1.5,1.8,1.6,1.5][3&t>>15]))/3))/(3+(t&(32767/'11242418'[7&t>>14]))/128)"
             },
             {
                 "description": "percussion with instruments",
