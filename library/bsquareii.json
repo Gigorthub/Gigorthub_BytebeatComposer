@@ -103,6 +103,24 @@
         "codeOriginal": "t?(C=cos,S=sin,[(N=(T,S,C)=>(l=t>>14,a=PI*T/64*2**((((l/2&5|2)^l/8&3+(2*l&6)/3)+t%([0,0,2,3,0,-9,2,-11][l/2&7]+4)*7)/12),S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/4**7)+C(t*PI/24e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/3e4))+cbrt(S(3*cbrt(k=t%4**7)))*2*.997**k+(random()-.5)*8*.999**(t%4096)*(1381127833>>(t>>12)&1)+S(t/2)*4*.998**(t%8192)*(t>>13&1)))(t,S,C),N(t*128/127,C,S)].map(k=>(b+=c+=(k-b-15*c)/256*8*abs(sin(t/4e5))))):b=c=0"
     },
     {
+        "url": "https://www.reddit.com/r/DollchanBytebeat/comments/1h9wbr8/another_new_subreddit_for_bytebeat/",
+        "date": "Dec 08, 2024",
+        "sampleRate": 32000,
+        "stereo": true,
+        "file": "anuxd4.js",
+        "fileOriginal": true
+    },
+    {
+        "description": "\"anxious\" with reverb V2",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/DollchanBytebeat/comments/1heb73a/comment/m266r78/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button",
+        "date": "Dec 15, 2024",
+        "sampleRate": 48000,
+        "stereo": true,
+        "file": "anuxd3.js",
+        "fileOriginal": true
+    },
+    {
         "description": "Zack's bytewave engine but it's the nutshack",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1htzu3k/zacks_bytewave_engine_but_its_the_nutshack/",
