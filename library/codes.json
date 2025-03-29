@@ -118,6 +118,7 @@
         ]
     },
     {
+        "author": "Danidanijr",
         "description": "sparta remix thingy i guess",
         "url": "https://www.reddit.com/r/bytebeat/comments/ws17bj/sparta_remix_thingy_i_guess_well_i_tried_lol_cuz/",
         "date": "Aug 19, 2022",
@@ -178,6 +179,25 @@
         ]
     },
     {
+        "author": "SleepingLugia (leejh20)",
+        "children": [
+            {
+                "description": "i have no idea",
+                "url": "https://www.reddit.com/r/bytebeat/comments/12qobb4/i_have_no_idea/",
+                "date": "Apr 18, 2023",
+                "codeOriginal": "t*2**(((88269>>(b=((a=t>>14)/4^t>>10)%6)*4)%16-5+(b<2)*(49280>>((132>>a%4*2)%4*2+b%2)*3)%8)/12)*8|t>>6&t>>7^t>>4"
+            },
+            {
+                "description": "random percussion thing",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#1335",
+                "date": "Jun 19, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "t>0?(C=t/s/6*20,D=1-(C*2&1),n=U,U='0010'[C%4|0]*D,(U-n)>0?A=a=0:A+=1/s,n=V,V='1001001011010000'[C*2%16|0]*(1-(C*4&1)),(V-n)>0?B=0:B+=1/s,c=200*(1+3/u(8e2,l)),a=(a+c/s*p)%p,c=3e3/(.1+B*8e2),b=(b+c/s)%1,c=random()*2-1,k=c*v(B*200,2)+sin(b*2*p)*v(B*9,6)*.6,d=1-.4/m(20),f+=d*(c-f),g+=d*(f-g),c=(c-g)*(v(A*80/m(11)-3.3,2)+v(A*95,2)*2),h=c+cos(a*2+(g+sin(p+p+a*4)*v(A*30,4))/3)*v(A*30/m(9),4)*(A>l),o(h)+o(k)):(p=PI,m=a=>1+A*a,o=n=>atan(2*n)/2,u=(a,d)=>A-d>0?1+(A-d)*a:1,v=(x,y)=>exp(-(x**y)),A=B=4,U=V=a=b=f=g=0,l=.013,s=32e3)"
+            }
+        ]
+    },
+    {
         "author": "Iwaku",
         "children": [
             {
@@ -225,15 +245,6 @@
         "stereo": true,
         "file": "hrllobrothers4.js",
         "fileOriginal": true
-    },
-    {
-        "author": "leejh20",
-        "description": "random percussion thing",
-        "mode": "Floatbeat",
-        "url": "https://dollchan.net/btb/res/3.html#1335",
-        "date": "Jun 19, 2023",
-        "sampleRate": 32000,
-        "codeOriginal": "t>0?(C=t/s/6*20,D=1-(C*2&1),n=U,U='0010'[C%4|0]*D,(U-n)>0?A=a=0:A+=1/s,n=V,V='1001001011010000'[C*2%16|0]*(1-(C*4&1)),(V-n)>0?B=0:B+=1/s,c=200*(1+3/u(8e2,l)),a=(a+c/s*p)%p,c=3e3/(.1+B*8e2),b=(b+c/s)%1,c=random()*2-1,k=c*v(B*200,2)+sin(b*2*p)*v(B*9,6)*.6,d=1-.4/m(20),f+=d*(c-f),g+=d*(f-g),c=(c-g)*(v(A*80/m(11)-3.3,2)+v(A*95,2)*2),h=c+cos(a*2+(g+sin(p+p+a*4)*v(A*30,4))/3)*v(A*30/m(9),4)*(A>l),o(h)+o(k)):(p=PI,m=a=>1+A*a,o=n=>atan(2*n)/2,u=(a,d)=>A-d>0?1+(A-d)*a:1,v=(x,y)=>exp(-(x**y)),A=B=4,U=V=a=b=f=g=0,l=.013,s=32e3)"
     },
     {
         "author": "Absolute197",
@@ -503,6 +514,96 @@
         ]
     },
     {
+        "author": "Zopium",
+        "children": [
+            {
+                "description": "hydrogen fucker 6",
+                "url": "https://www.reddit.com/r/bytebeat/comments/14olc42/hydrogen_fucker_6/",
+                "date": "Jul 02, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "d=t>>2,h=(d/2/(4+(d>>13&3))*128|d>>(d>>12&15))%256/3,k=(sqrt(t&16383)*16)&64,q=(t*random()&63|t>>8&63)*(1&t>>14),",
+                    "",
+                    "",
+                    "h+k+q"
+                ]
+            },
+            {
+                "description": "hydrogen fucker 8",
+                "url": "https://dollchan.net/btb/res/284.html#2933",
+                "date": "Jan 26, 2024",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "T=(t*4/[4,5,6,7][t>>15&3]&t>>(10+(t>>18&1)))%256/2,",
+                    "k=1e5/(t&16383)&63,",
+                    "s=t*random()&31&~t>>[7,7,7,7,7,7,7,6][t>>14&7],",
+                    "T2=[t*4/[4,5,6,7][t>>15&3]&31+8e3/(t&16383),8e3/(t&16383)&63][t>>15&1],",
+                    "c=(t*random()&63&~t>>[8,8,8,8,6,8,6,7][t>>13&7])+((t/8<<(t-20000>>10))*(1&t>>15)&127),",
+                    "H=((t*16/((t>>15&3)+4)|t/4>>(t>>14&15))+4e5/(t/4&4095)&~t>>6)%256/2,",
+                    "",
+                    "a=[T,T+k,T+k+s,T+k+s+T2,H+k+s+T2,H+k+s+T2,H+k+s,H+k,H][t>>19],",
+                    "b=[a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a][t>>16]"
+                ]
+            },
+            {
+                "description": "title theme of some mario bootleg be like",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f0toc9/title_theme_of_some_mario_bootleg_be_like/",
+                "date": "Aug 25, 2024",
+                "sampleRate": 32000,
+                "file": "psub2.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "stimmer 7",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1f4twd4/stimmer_7/",
+                "date": "Aug 30, 2024",
+                "codeOriginal": "c=[1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.35,,,,,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,2,,1.35,,,2.1,,2,2,1.8,1.8,2,1.8,,,,1.8,,1.2,,,2,,1.8,1.8,1.59,1.59,1.8,1.59,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,][(t>>11)%144],t*(4|t>>13&3)>>(~t>>11&1)&128|t*4*c*(~t>>9&3)&127"
+            },
+            {
+                "description": "hydrogen fucker 9",
+                "url": "https://dollchan.net/btb/res/284.html#5313",
+                "date": "Jan 13, 2025",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "s=t%2?r:r=(random()*128/((t/256%128%48)-1)&255)/4,",
+                    "h=t%6?f:f=(random()*128/(((t/1024+16)%32)-1)&255)/4,",
+                    "trig=x=>parseInt(\"FEDCBA98765432100123456789ABCDEF\"[x?x>>3&31:15],16)*4,",
+                    "tm=t*4*(t>>13&1?1-(t>>12&1):1+(t>>12&1))/((t>>15&3)+4),",
+                    "ch1=((t*2*((1+(t>>10&3))*(t>>13&1))/(4+(t>>15&3))&63)+[8,16,32,16][t>>10&3]&64)*(1-t%8192/8192)/2,",
+                    "ch2=(t*([8][t>>9&15]??2)/(4+(t>>15&3))&63)|t>>8&63,",
+                    "ch1+ch2+trig(tm)+s+h"
+                ]
+            },
+            {
+                "description": "inside castle (Scanned Version)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i7fejr/inside_castle_scanned_version/",
+                "date": "Jan 22, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "a=t=>(p=[-2,3,-2,6,3,5,1,-4,0,3,0,-2,2,5,2][(t>>13)%16],z=p=>t*2**(p/12)*3.2,(z(p)&128)/1.5)*(1-t%8192/12E3),",
+                    "b=t=>(p=[,-2,,-2,,,3,,,,0,,,,-4,-2,,-2,,-2,,,3,,,,2,,,2,-2][(t>>13)%32],z=p=>t*2**(p/12)*3.2*2,(z(p)&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>64),",
+                    "main=a(t)+a(t-12168)/2+a(t-24336)/4+a(t-36504)/8+a(t-48672)/16,",
+                    "s=(((z(3-48)&127)+16&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>14),main+s,",
+                    "c1=b(t)+b(t-12168)/2+b(t-24336)/4+b(t-36504)/8+b(t-48672)/16,",
+                    "d=((t%1?r1:r1=random()*(~t>>6&63)*[1,1,1,0][t>>12&3])+(cbrt(t+16384&32767)*0xff&64))*((t>>13&127)>28),min(d+main+s+c1,255)"
+                ]
+            },
+            {
+                "description": "99 bottles of beer",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1j9kn6y/99_bottles_of_beer/",
+                "date": "Mar 12, 2025",
+                "file": "psub.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "0xBD",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jb5gxa/0xbd/",
+                "date": "Mar 14, 2025",
+                "codeOriginal": "((t>>10^(t>>10)-1^7)%9*t/((t>>13&3)+(t>>15&3)+1)*2&95^((((t>>1)*(t>>1)&255)/((t&4095)+1)*192)*(t>126976)))+((t*2/((t>>15&3)+1)&63)*(t>>11&1)*(t>262144))+((t>>t/((t>>13&3)+1)&64)*(t>393216))"
+            }
+        ]
+    },
+    {
         "author": "Decent-Manager-6169",
         "children": [
             {
@@ -687,52 +788,6 @@
         "sampleRate": 32000,
         "file": "SRB2er.js",
         "fileOriginal": true
-    },
-    {
-        "author": "Zopium",
-        "children": [
-            {
-                "description": "title theme of some mario bootleg be like",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1f0toc9/title_theme_of_some_mario_bootleg_be_like/",
-                "date": "Aug 25, 2024",
-                "sampleRate": 32000,
-                "file": "psub2.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "stimmer 7",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1f4twd4/stimmer_7/",
-                "date": "Aug 30, 2024",
-                "codeOriginal": "c=[1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.35,,,,,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,2,,1.35,,,2.1,,2,2,1.8,1.8,2,1.8,,,,1.8,,1.2,,,2,,1.8,1.8,1.59,1.59,1.8,1.59,,,,1.59,,1.05,,,2.1,,1.8,1.59,,1.05,,,1.59,,1.4,1.35,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,,1.35,1.4,1.59,1.05,,1.2,,1.05,,,,,,,,][(t>>11)%144],t*(4|t>>13&3)>>(~t>>11&1)&128|t*4*c*(~t>>9&3)&127"
-            },
-            {
-                "description": "inside castle (Scanned Version)",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1i7fejr/inside_castle_scanned_version/",
-                "date": "Jan 22, 2025",
-                "sampleRate": 44100,
-                "codeOriginal": [
-                    "a=t=>(p=[-2,3,-2,6,3,5,1,-4,0,3,0,-2,2,5,2][(t>>13)%16],z=p=>t*2**(p/12)*3.2,(z(p)&128)/1.5)*(1-t%8192/12E3),",
-                    "b=t=>(p=[,-2,,-2,,,3,,,,0,,,,-4,-2,,-2,,-2,,,3,,,,2,,,2,-2][(t>>13)%32],z=p=>t*2**(p/12)*3.2*2,(z(p)&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>64),",
-                    "main=a(t)+a(t-12168)/2+a(t-24336)/4+a(t-36504)/8+a(t-48672)/16,",
-                    "s=(((z(3-48)&127)+16&128)/1.5)*(1-t%8192/12E3)*((t>>13&127)>14),main+s,",
-                    "c1=b(t)+b(t-12168)/2+b(t-24336)/4+b(t-36504)/8+b(t-48672)/16,",
-                    "d=((t%1?r1:r1=random()*(~t>>6&63)*[1,1,1,0][t>>12&3])+(cbrt(t+16384&32767)*0xff&64))*((t>>13&127)>28),min(d+main+s+c1,255)"
-                ]
-            },
-            {
-                "description": "99 bottles of beer",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1j9kn6y/99_bottles_of_beer/",
-                "date": "Mar 12, 2025",
-                "file": "psub.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "0xBD",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1jb5gxa/0xbd/",
-                "date": "Mar 14, 2025",
-                "codeOriginal": "((t>>10^(t>>10)-1^7)%9*t/((t>>13&3)+(t>>15&3)+1)*2&95^((((t>>1)*(t>>1)&255)/((t&4095)+1)*192)*(t>126976)))+((t*2/((t>>15&3)+1)&63)*(t>>11&1)*(t>262144))+((t>>t/((t>>13&3)+1)&64)*(t>393216))"
-            }
-        ]
     },
     {
         "author": "ccret293",
