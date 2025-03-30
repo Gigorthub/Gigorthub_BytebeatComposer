@@ -207,55 +207,6 @@
         ]
     },
     {
-        "author": "Iwaku",
-        "children": [
-            {
-                "description": "The FINAL Frontier!",
-                "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/13a1cj0/newbies_please_read_serious_message_the_final/",
-                "date": "May 06, 2023",
-                "stereo": true,
-                "sampleRate": 48000,
-                "codeOriginal": "t?0:v=Array(r=48e3).fill(0),e=t<r*64,s=0|t/12e3,m=min(t/1e6,1)*e*sin(t/((25|t/192e3%4)-s%16))+v[t%r],v[t%r]=m/1.4,u=x=>((t>r*32)*e*(sin((s%4?1e3:4e4)/(t%12e3))+((0|t/r%2)*!(0|t/6e3%2)*random()*t/r%1-0.5))+m*x(t/6e3))/4,[u(sin),u(cos)]"
-            },
-            {
-                "description": "Sinewave Beach: an ambient experiment",
-                "mode": "Floatbeat",
-                "url": "https://dollchan.net/btb/res/3.html#1081",
-                "date": "May 25, 2023",
-                "sampleRate": 48000,
-                "codeOriginal": "t?0:a=Array(r=96e3).fill(0),m=sin(t/'ViNQMbeytqFstfAYQJoLIBHNmkgASRmMbPQdpTSzxSJwygwyNLWJwwOypjAXOzaG'.charCodeAt(0|t/r%64)*5)/3+a[t%r],a[t%r]=m/1.7,min(t/1e6,1)*(m+sin(t/8e4)*sin(t/r/2)*random()/4)/2"
-            },
-            {
-                "description": "/*ACBJDC*/",
-                "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/16j0qzd/acbjdc/",
-                "date": "Sep 15, 2023",
-                "sampleRate": 48000,
-                "codeOriginal": "t||(a=Array(r=24e3).fill(0),w=0),s=3072e3,x=6e3,z=48e3,MIDI=n=>440*pow(2,(n-69)/12)/(z/2/PI),e=t<s*5,p=t<s*4.5,q=o=>0|t/o,w+=MIDI([0,1,2,1][q(384e3)%4]+\"ACBJDC\".charCodeAt(q(x)%6)),m=min((1+3e-6)**t,256)*e*atan(sin(w))/256+a[t%r],a[t%r]=m/((t>(s*5)-z)?1.4:3),(m/2+(t>s)*e*(p*((0.9994**(t%24e3))*asin(sin((t%24e3)**.5)))+(t>s*2)*(t<s*4.75)*((0.998**(t%x))*sin(t**7)*\"1110\"[q(x)%4])/5+(t>s*3)*p*((0.9993**(t%x))*sin(t**7)*((t>s*4)&&6<(0|t/z%8)?\"00001011\":\"00001000\")[q(x)%8])/7)+(0||\"00011111001\"[q(s/2)]*(q(z)%32===6)*random()*\"11110011011011\"[q(2e3)%24]||0)/3)/2"
-            },
-            {
-                "description": "FM.relax()",
-                "mode": "Floatbeat",
-                "url": "https://dollchan.net/btb/res/3.html#2480",
-                "date": "Oct 17, 2023",
-                "sampleRate": 32000,
-                "codeOriginal": "x=0.1,sin(sin(sin(sin(x*t*PI/2e4)+x*t*PI/16)+t*PI/5e2)+t*PI/5e4)"
-            }
-        ]
-    },
-    {
-        "author": "hrllobrothers4",
-        "description": "Electronic pulsation 2",
-        "mode": "Signed Bytebeat",
-        "url": "https://www.reddit.com/r/bytebeat/comments/13skeoj/electronic_pulsation_2_more_tools_used/",
-        "date": "May 26, 2023",
-        "sampleRate": 44100,
-        "stereo": true,
-        "file": "hrllobrothers4.js",
-        "fileOriginal": true
-    },
-    {
         "author": "Absolute197",
         "children": [
             {
@@ -520,6 +471,55 @@
                 "codeOriginal": "((t*(1+(t>>12&1)-((3-(t>>9&1))*(-t>>13&1)))*(v=2**([-1,-1,5,4,4,-1,-2,3][t>>15&7]/12))/2&127)/1.3*(t>786432?1:t<524288)+((t*v&79^v*t/2+(2*(t>>[3,9,9,12,10,10,9,13][t>>12&7]&1))^t*v*(64*(t>524288)*(t<786432))>>7)/4&63+(((t*v^64)&63)/56*(q=t>786432)))*1.3+((sin(tan(cbrt((1+(t>>13&1))*[t,t,t,t,t,t,t,-t,t,t,-t,t,t,-t,t,t][t>>12&15]&16383)*[8,8,8,8,7,10,9,8,8,8,12,8,13,8,4,15][t>>[11,10,2,4,12,4,4,13,2,10,4,1,13,11,1,10][t>>12&15]&15])*(64+sqrt(-t&(2**(12-(t>>11&1))-1)))/1e2)-128)*46-64)*q)/1.9+96"
             }
         ]
+    },
+    {
+        "author": "Iwaku",
+        "children": [
+            {
+                "description": "The FINAL Frontier!",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/13a1cj0/newbies_please_read_serious_message_the_final/",
+                "date": "May 06, 2023",
+                "stereo": true,
+                "sampleRate": 48000,
+                "codeOriginal": "t?0:v=Array(r=48e3).fill(0),e=t<r*64,s=0|t/12e3,m=min(t/1e6,1)*e*sin(t/((25|t/192e3%4)-s%16))+v[t%r],v[t%r]=m/1.4,u=x=>((t>r*32)*e*(sin((s%4?1e3:4e4)/(t%12e3))+((0|t/r%2)*!(0|t/6e3%2)*random()*t/r%1-0.5))+m*x(t/6e3))/4,[u(sin),u(cos)]"
+            },
+            {
+                "description": "Sinewave Beach: an ambient experiment",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#1081",
+                "date": "May 25, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "t?0:a=Array(r=96e3).fill(0),m=sin(t/'ViNQMbeytqFstfAYQJoLIBHNmkgASRmMbPQdpTSzxSJwygwyNLWJwwOypjAXOzaG'.charCodeAt(0|t/r%64)*5)/3+a[t%r],a[t%r]=m/1.7,min(t/1e6,1)*(m+sin(t/8e4)*sin(t/r/2)*random()/4)/2"
+            },
+            {
+                "description": "/*ACBJDC*/",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/16j0qzd/acbjdc/",
+                "date": "Sep 15, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "t||(a=Array(r=24e3).fill(0),w=0),s=3072e3,x=6e3,z=48e3,MIDI=n=>440*pow(2,(n-69)/12)/(z/2/PI),e=t<s*5,p=t<s*4.5,q=o=>0|t/o,w+=MIDI([0,1,2,1][q(384e3)%4]+\"ACBJDC\".charCodeAt(q(x)%6)),m=min((1+3e-6)**t,256)*e*atan(sin(w))/256+a[t%r],a[t%r]=m/((t>(s*5)-z)?1.4:3),(m/2+(t>s)*e*(p*((0.9994**(t%24e3))*asin(sin((t%24e3)**.5)))+(t>s*2)*(t<s*4.75)*((0.998**(t%x))*sin(t**7)*\"1110\"[q(x)%4])/5+(t>s*3)*p*((0.9993**(t%x))*sin(t**7)*((t>s*4)&&6<(0|t/z%8)?\"00001011\":\"00001000\")[q(x)%8])/7)+(0||\"00011111001\"[q(s/2)]*(q(z)%32===6)*random()*\"11110011011011\"[q(2e3)%24]||0)/3)/2"
+            },
+            {
+                "description": "FM.relax()",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#2480",
+                "date": "Oct 17, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "x=0.1,sin(sin(sin(sin(x*t*PI/2e4)+x*t*PI/16)+t*PI/5e2)+t*PI/5e4)"
+            }
+        ]
+    },
+    {
+        "author": "hrllobrothers4",
+        "description": "Electronic pulsation 2",
+        "mode": "Signed Bytebeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/13skeoj/electronic_pulsation_2_more_tools_used/",
+        "date": "May 26, 2023",
+        "sampleRate": 44100,
+        "stereo": true,
+        "file": "hrllobrothers4.js",
+        "fileOriginal": true
     },
     {
         "description": "Amethyst music",
