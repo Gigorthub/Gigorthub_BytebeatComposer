@@ -28,6 +28,12 @@
         "fileOriginal": true
     },
     {
+        "description": "First time using isNaN"
+        "url": "https://www.reddit.com/r/bytebeat/comments/14cmbut/first_time_using_isnan/",
+        "date": "Jun 18, 2022",
+        "codeOriginal": "isNaN(t%(t%28&t>>4&t>>12))?255:t>>4^t>>5"
+    },
+    {
         "description": "Cool New 8000 Hz Harmony (Sine with reverb edition and floatbeat)",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14hshup/cool_new_8000_hz_harmony_sine_with_reverb_edition/",
@@ -87,6 +93,12 @@
             "u=t?(u*(n=32+32*sin(t*PI/262144))+((sign(sin(y*PI/128))+sign(sin(y*PI/129)))/5))/(1+n):0,",
             "u+(t>262144)*sin(tan(x*PI/256))/5+(t>>14&1)*(t>262144)*sign(sin(t*sin(t*PI>>4)))/(5+(t%16384)/512)+(t>262144)*sign(sin(t*random()))/(5+(t%4096)/128)"
         ]
+    },
+    {
+        "description": "square wave remix of squsinsaw music"
+        "url": "https://www.reddit.com/r/bytebeat/comments/17443cy/square_wave_remix_of_squsinsaw_music/",
+        "date": "Oct 09, 2023",
+        "codeOriginal": "squ=2*t*[1,0,2,0,1,0,2,2,1,0,2,0,1,0,2,0,1.5,0,3,3,1.5,0,3,0,1.35,0,2.7,2.7,1.35,0,2.7][t>>10&31]&64,squ2=64*t/PI/40.743648*[8,9,9.5,12][t>>10&3]*[1,1,1.5,1.35][t>>13&3]&64,squ3=t/2*[0,0,0,0,0,0,0,0,8,9.5,12,16,0,0,0,0][t>>8&15]&64,kick=1E5/(t&4095)/5&64,snr=(t*t*t>>10&63|t>>6&63)*'0101'[t>>12&3],(squ2*(~t>>4&63)>>6)+squ*'01111111'[t>>16&7]+squ3*'00111111'[t>>16&7]+kick*'00111111'[t>>16&7]+snr*'00111111'[t>>16&7]"
     },
     {
         "description": "outside the window",
