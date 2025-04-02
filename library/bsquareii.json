@@ -30,7 +30,7 @@
     {
         "description": "First time using isNaN",
         "url": "https://www.reddit.com/r/bytebeat/comments/14cmbut/first_time_using_isnan/",
-        "date": "Jun 18, 2022",
+        "date": "Jun 18, 2023",
         "codeOriginal": "isNaN(t%(t%28&t>>4&t>>12))?255:t>>4^t>>5"
     },
     {
