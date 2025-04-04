@@ -1,14 +1,32 @@
 [
     {
-        "description": "cool melody",
-        "url": "https://www.reddit.com/r/bytebeat/comments/t6ghty/cool_melody/",
-        "date": "Mar 04, 2022",
-        "sampleRate": 44100,
-        "codeOriginal": [
-            "t/=1.5,",
-            "a=(t*(t>>12&3|[1,2,3,4][(t>>[15,14,13,12][(t>>14)%4])%4])>>2)%63+(t*(t>>12&3|[1,2,3,4][(t>>[15,14,13,12][(t>>14)%4])%4])>>2)%64,",
-            "b=t*(t>>12&3|[2,4,1,4][(t>>[15,14,13,12][(t>>13)%4])%4])>>3&63,",
-            "a+(b>>(t>>10)%4)"
+        "author": "ccret293 (getdolphinedlol)",
+        "children": [
+            {
+                "description": "cool melody",
+                "url": "https://www.reddit.com/r/bytebeat/comments/t6ghty/cool_melody/",
+                "date": "Mar 04, 2022",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "t/=1.5,",
+                    "a=(t*(t>>12&3|[1,2,3,4][(t>>[15,14,13,12][(t>>14)%4])%4])>>2)%63+(t*(t>>12&3|[1,2,3,4][(t>>[15,14,13,12][(t>>14)%4])%4])>>2)%64,",
+                    "b=t*(t>>12&3|[2,4,1,4][(t>>[15,14,13,12][(t>>13)%4])%4])>>3&63,",
+                    "a+(b>>(t>>10)%4)"
+                ]
+            },
+            {
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i5c4g5/untitled/",
+                "date": "Jan 19, 2025",
+                "sampleRate": 9000,
+                "codeOriginal": "((t/(t&16384?t&8192?4:3:2)*(t^t>>(1+(t>>10)%15)&63)&127)+(300000/(t&4095)&128)+((t>>2)*(t>>2^t>>4)*(t>>12&1)&-t>>5&127)+(t*(t^t>>3)*3*(t>>11&1*(-t>>10&1))&-t>>3&127))/1.7"
+            },
+            {
+                "description": "blahaj",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ifgs08/blahaj/",
+                "date": "Feb 01, 2025",
+                "sampleRate": 22050,
+                "codeOriginal": "c=h=>(h/2.1%31)+(h/2%32),(c(t*1.08)+c(t*1.28)+c(t*1.6)+c(t*(t&65536?2.16:.95)))*(-t>>9&31)/90+(sin(sqrt(t&32767)*2.5)*50)/1.2+random()*(-t>>3&127)*'1000'[t>>10&3]*((t>>9&31)+19)/200+41"
+            }
         ]
     },
     {
@@ -273,32 +291,33 @@
         ]
     },
     {
-        "author": "SleepingLugia (leejh20)",
-        "children": [
-            {
-                "description": "i have no idea",
-                "url": "https://www.reddit.com/r/bytebeat/comments/12qobb4/i_have_no_idea/",
-                "date": "Apr 18, 2023",
-                "codeOriginal": "t*2**(((88269>>(b=((a=t>>14)/4^t>>10)%6)*4)%16-5+(b<2)*(49280>>((132>>a%4*2)%4*2+b%2)*3)%8)/12)*8|t>>6&t>>7^t>>4"
-            },
-            {
-                "description": "random percussion thing",
-                "mode": "Floatbeat",
-                "url": "https://dollchan.net/btb/res/3.html#1335",
-                "date": "Jun 19, 2023",
-                "sampleRate": 32000,
-                "codeOriginal": "t>0?(C=t/s/6*20,D=1-(C*2&1),n=U,U='0010'[C%4|0]*D,(U-n)>0?A=a=0:A+=1/s,n=V,V='1001001011010000'[C*2%16|0]*(1-(C*4&1)),(V-n)>0?B=0:B+=1/s,c=200*(1+3/u(8e2,l)),a=(a+c/s*p)%p,c=3e3/(.1+B*8e2),b=(b+c/s)%1,c=random()*2-1,k=c*v(B*200,2)+sin(b*2*p)*v(B*9,6)*.6,d=1-.4/m(20),f+=d*(c-f),g+=d*(f-g),c=(c-g)*(v(A*80/m(11)-3.3,2)+v(A*95,2)*2),h=c+cos(a*2+(g+sin(p+p+a*4)*v(A*30,4))/3)*v(A*30/m(9),4)*(A>l),o(h)+o(k)):(p=PI,m=a=>1+A*a,o=n=>atan(2*n)/2,u=(a,d)=>A-d>0?1+(A-d)*a:1,v=(x,y)=>exp(-(x**y)),A=B=4,U=V=a=b=f=g=0,l=.013,s=32e3)"
-            }
-        ]
-    },
-    {
         "author": "Absolute197",
         "children": [
+            {
+                "description": "another organ thing i created",
+                "mode": "Floatbeat",
+                "date": "Apr 06, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "a=t/[1.8,2.4,2.7,3,3.6][(t>>13)%5],sin(a/6)+sin(a/4)+asin(sin(a/6))"
+            },
+            {
+                "description": "cool song 2",
+                "date": "Apr 16, 2023",
+                "codeOriginal": "[tan(t/[10,10.75,12,15][(t>>13)%4])|t/16,tan(t/[8,7.5,6,6.5,7.5][(t>>14)%5])|t/32]"
+            },
             {
                 "description": "weird melody",
                 "url": "https://www.reddit.com/r/bytebeat/comments/12rgava/weird_melody/",
                 "date": "Apr 19, 2023",
                 "codeOriginal": "(t*1.6)&(t*[3.6,3.2,3][(t/1.2>>13)%3])|(t>>3&t>>6)"
+            },
+            {
+                "description": "idk",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/12vo5vd/idk/",
+                "date": "Apr 22, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "a=t/[1.6,2.4,3,3.6][(t>>14)%4],(sin(a*4)+sin(1))*(sin(a/6)+sin(a/4))"
             },
             {
                 "description": "return",
@@ -562,6 +581,25 @@
                 "date": "Mar 15, 2025",
                 "sampleRate": 37100,
                 "codeOriginal": "((t*(1+(t>>12&1)-((3-(t>>9&1))*(-t>>13&1)))*(v=2**([-1,-1,5,4,4,-1,-2,3][t>>15&7]/12))/2&127)/1.3*(t>786432?1:t<524288)+((t*v&79^v*t/2+(2*(t>>[3,9,9,12,10,10,9,13][t>>12&7]&1))^t*v*(64*(t>524288)*(t<786432))>>7)/4&63+(((t*v^64)&63)/56*(q=t>786432)))*1.3+((sin(tan(cbrt((1+(t>>13&1))*[t,t,t,t,t,t,t,-t,t,t,-t,t,t,-t,t,t][t>>12&15]&16383)*[8,8,8,8,7,10,9,8,8,8,12,8,13,8,4,15][t>>[11,10,2,4,12,4,4,13,2,10,4,1,13,11,1,10][t>>12&15]&15])*(64+sqrt(-t&(2**(12-(t>>11&1))-1)))/1e2)-128)*46-64)*q)/1.9+96"
+            }
+        ]
+    },
+    {
+        "author": "SleepingLugia (leejh20)",
+        "children": [
+            {
+                "description": "i have no idea",
+                "url": "https://www.reddit.com/r/bytebeat/comments/12qobb4/i_have_no_idea/",
+                "date": "Apr 18, 2023",
+                "codeOriginal": "t*2**(((88269>>(b=((a=t>>14)/4^t>>10)%6)*4)%16-5+(b<2)*(49280>>((132>>a%4*2)%4*2+b%2)*3)%8)/12)*8|t>>6&t>>7^t>>4"
+            },
+            {
+                "description": "random percussion thing",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#1335",
+                "date": "Jun 19, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "t>0?(C=t/s/6*20,D=1-(C*2&1),n=U,U='0010'[C%4|0]*D,(U-n)>0?A=a=0:A+=1/s,n=V,V='1001001011010000'[C*2%16|0]*(1-(C*4&1)),(V-n)>0?B=0:B+=1/s,c=200*(1+3/u(8e2,l)),a=(a+c/s*p)%p,c=3e3/(.1+B*8e2),b=(b+c/s)%1,c=random()*2-1,k=c*v(B*200,2)+sin(b*2*p)*v(B*9,6)*.6,d=1-.4/m(20),f+=d*(c-f),g+=d*(f-g),c=(c-g)*(v(A*80/m(11)-3.3,2)+v(A*95,2)*2),h=c+cos(a*2+(g+sin(p+p+a*4)*v(A*30,4))/3)*v(A*30/m(9),4)*(A>l),o(h)+o(k)):(p=PI,m=a=>1+A*a,o=n=>atan(2*n)/2,u=(a,d)=>A-d>0?1+(A-d)*a:1,v=(x,y)=>exp(-(x**y)),A=B=4,U=V=a=b=f=g=0,l=.013,s=32e3)"
             }
         ]
     },
@@ -906,24 +944,6 @@
         "sampleRate": 32000,
         "file": "SRB2er.js",
         "fileOriginal": true
-    },
-    {
-        "author": "ccret293",
-        "children": [
-            {
-                "url": "https://www.reddit.com/r/bytebeat/comments/1i5c4g5/untitled/",
-                "date": "Jan 19, 2025",
-                "sampleRate": 9000,
-                "codeOriginal": "((t/(t&16384?t&8192?4:3:2)*(t^t>>(1+(t>>10)%15)&63)&127)+(300000/(t&4095)&128)+((t>>2)*(t>>2^t>>4)*(t>>12&1)&-t>>5&127)+(t*(t^t>>3)*3*(t>>11&1*(-t>>10&1))&-t>>3&127))/1.7"
-            },
-            {
-                "description": "blahaj",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1ifgs08/blahaj/",
-                "date": "Feb 01, 2025",
-                "sampleRate": 22050,
-                "codeOriginal": "c=h=>(h/2.1%31)+(h/2%32),(c(t*1.08)+c(t*1.28)+c(t*1.6)+c(t*(t&65536?2.16:.95)))*(-t>>9&31)/90+(sin(sqrt(t&32767)*2.5)*50)/1.2+random()*(-t>>3&127)*'1000'[t>>10&3]*((t>>9&31)+19)/200+41"
-            }
-        ]
     },
     {
         "author": "Two2Fall",
