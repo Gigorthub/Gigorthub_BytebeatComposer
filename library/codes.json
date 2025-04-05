@@ -3,6 +3,13 @@
         "author": "ccret293 (getdolphinedlol)",
         "children": [
             {
+                "description": "hell rock",
+                "url": "https://www.reddit.com/r/bytebeat/comments/sqv5s7/hell_rock/",
+                "date": "Feb 12, 2022",
+                "sampleRate": 32000,
+                "codeOriginal": "(t>>(t>>3)*(t&32768?1.05:1)&64)+(4e5/(t&[16383,12287,2147483647,12287,16383,12287,2147483647,5728][(t>>14)%8])&64)"
+            },
+            {
                 "description": "cool melody",
                 "url": "https://www.reddit.com/r/bytebeat/comments/t6ghty/cool_melody/",
                 "date": "Mar 04, 2022",
@@ -13,6 +20,20 @@
                     "b=t*(t>>12&3|[2,4,1,4][(t>>[15,14,13,12][(t>>13)%4])%4])>>3&63,",
                     "a+(b>>(t>>10)%4)"
                 ]
+            },
+            {
+                "description": "cool 1000hz beat",
+                "url": "https://www.reddit.com/r/Enhanced_Bytebeat/comments/ut46t9/cool_1000hz_beat/",
+                "date": "May 19, 2022",
+                "sampleRate": 1000,
+                "codeOriginal": "(t*(-t>>7&5)*(t>>8&15)*16&64)+(t>>2&127)"
+            },
+            {
+                "description": "48khz hardcore music eeee",
+                "url": "https://www.reddit.com/r/Enhanced_Bytebeat/comments/uv88g8/48khz_hardcore_music_eeee/",
+                "date": "May 22, 2022",
+                "sampleRate": 48000,
+                "codeOriginal": "(t&96)*(4e3/(t&([16383,16383,16383,8191,16383,16383,16383,12287][(t>>15)&7])))+(t&t>>10&63)"
             },
             {
                 "url": "https://www.reddit.com/r/bytebeat/comments/1i5c4g5/untitled/",
@@ -321,6 +342,14 @@
                 "fileOriginal": true
             }
         ]
+    },
+    {
+        "description": "Creepy ambiance",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/11y50kv/creepy_ambiance/",
+        "date": "Mar 22, 2023",
+        "sampleRate": 48000,
+        "codeOriginal": "SR=48000,WAVE=function(m,a,f=440,depth=10){a=a-m;out=0;for(let i=1;i<depth;i++){out+=Math.sin((t*(f*((i*m)+a)))/((128/Math.PI)*(SR/8000)*31.25))/i;}return out/(Math.pow(depth,1/14)*1.3)/2;},a=WAVE(6,3835245225345425,(31.25)*6,16)"
     },
     {
         "author": "Absolute197",
@@ -710,6 +739,14 @@
                 "date": "Oct 17, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "x=0.1,sin(sin(sin(sin(x*t*PI/2e4)+x*t*PI/16)+t*PI/5e2)+t*PI/5e4)"
+            },
+            {
+                "description": ".b a c k g r o u n d .a m b i e n c e",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/17crutd/b_a_c_k_g_r_o_u_n_d_a_m_b_i_e_n_c_e/",
+                "date": "Oct 21, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "f=p=>sin(sin(sin(sin(p*t*PI/60)+p*t*PI/90)+p*t*PI/30)+p*t*PI/1e3),(f(.07)+f(.06)+f(.02)+f(.08)+f(.1)+f(.03))/7"
             }
         ]
     },
