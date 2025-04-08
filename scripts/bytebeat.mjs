@@ -51,7 +51,7 @@ globalThis.bytebeat = new class {
 		this.isRecording = false;
 		this.playbackSpeed = 1;
 		this.settings = { drawMode: 'Points', drawScale: 5, isSeconds: false, volume: .5 };
-		this.songData = { mode: 'Bytebeat', sampleRate: 8000 };
+		this.songData = { mode: 'Floatbeat', sampleRate: 38200 };
 		this.init();
 	}
 	get editorValue() {
