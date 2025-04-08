@@ -294,6 +294,18 @@
         "author": "NewFall2020",
         "children": [
             {
+                "description": "Trill but experimental",
+                "url": "https://www.reddit.com/r/bytebeat/comments/x1zhwl/trill_but_experimental_no_modulation_sorry_stereo/",
+                "date": "Aug 31, 2022",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "t/=4,",
+                    "b=a=>(64*(t/1.58/(2+(t>>10&t>>12)%9))+128)/a%16&25,",
+                    "",
+                    "[b(256)+b(127.9)+b(64)+b(31.9)+b(16.1)+b(8)+b(16.1)+b(16)<<1,b(255.9)+b(128)+b(63.9)+b(32)+b(16)+b(7.95)+b(16)+b(16.1)<<1]"
+                ]
+            },
+            {
                 "description": "Test1",
                 "url": "https://www.reddit.com/r/Enhanced_Bytebeat/comments/x20u3x/test1_54545khz/",
                 "date": "Aug 31, 2022",
@@ -333,6 +345,13 @@
                 "fileOriginal": true
             },
             {
+                "description": "byte me a beat short remix",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1edwexh/byte_me_a_beat_short_remix/",
+                "date": "Jul 28, 2024",
+                "sampleRate": 44100,
+                "codeOriginal": "t/=1.23456789,(a=(d,b,e)=>2**(d+((c=1*'00730079'[t>>16&7])+[4,7,4,7,6,4,2,0,4,,,4,,4,4][t>>12&15]-4)/12)*t%64>>(t>>b&e))(1,9,7),n=(d=0,b=9,e=7)=>a(d++,b,e)-a(d,b,e),d=(b,e=256)=>16*sin(t/1400*2**(8+(c+b)/12))**e,(w=(t*d(-64)/4%64)+(t*d(-76)/4%64)+(t*d(-52)/4%64)+(t*d(-49)/4%64)+(t*d(-45)/4%64)+(t*d(-42)/4%64))%256*(0+t%16384/16384)/2+n()+32+(k=(32*sin((32*sqrt(1e-4*(t%16384))+32)*4)+32)*2)/2"
+            },
+            {
                 "description": "floatbeat test",
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1f3ifsh/floatbeat_test/",
@@ -340,6 +359,22 @@
                 "sampleRate": 64000,
                 "file": "newfall2.js",
                 "fileOriginal": true
+            },
+            {
+                "description": "that was unexpected",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ih2222/that_was_unexpected/",
+                "date": "Feb 03, 2025",
+                "sampleRate": 12000,
+                "codeOriginal": [
+                    "t|=",
+                    "",
+                    "a=32*sin(sqrt(12*(t%2048)))&128,",
+                    "b=t*1.72/2&128,",
+                    "c=[a,b,b,b,b,b,a,b,b,b,a,b,b,a,b,a,a,b,a,b,b,b,a,b,b,b,a,b,b,a,b,a][t>>11&31],",
+                    "d=t*random()/2%134*'0000000010000000'[t>>10&15],",
+                    "",
+                    "(c+d)*1"
+                ]
             }
         ]
     },
@@ -1044,6 +1079,18 @@
                 "file": "ConsistentNerve185-1.js",
                 "fileOriginal": true
             }
+        ]
+    },
+    {
+        "author": "1583736",
+        "description": "Crystal Cave remix",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1elrv1q/crystal_cave_remix_but_different_melody/",
+        "date": "Aug 06, 2024",
+        "sampleRate": 32000,
+        "codeOriginal": [
+            "t=t/4,a=t=>cbrt(cos((t1=(0.25*t*[1,0.67,1,0.5,0.67,0.88,0.5,1.33][(t>>16)%8])*[0.5,1,1.33,1.7,2,2.25,2,2.25,1.5,1.7,1.5,1.7,1.33,1.5,1.33,1.5][(t>>[15,16,14,17][(t>>14)%4]|t>>12&[0,3,0,1,0,4,0,5][(t>>12|t>>13)%8])%16]))*(32-(t&t>>11|t>>[6,7,6,8][(t>>13)%4])&31)+32) + 2.5*sin(9000/((t&8192*[1,2,3,5][(t>>13)%4]-1)+[100,150,300,150][(t>>15)%4]))||0,",
+            "(a(t)/1.5-a(t-3E3)/2+a(t-6E3)/3-a(t-9E3)/4-a(t-12E3)/5)/4"
         ]
     },
     {
