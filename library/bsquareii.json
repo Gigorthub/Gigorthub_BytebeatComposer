@@ -1,5 +1,31 @@
 [
     {
+        "description": "remix of \"Different Version of absolute199's organ thing using Signed ByteBeat\"",
+        "mode": "Signed Bytebeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/12eww2v/zombie_nation_kernkraft_400_but_made_using/",
+        "date": "Apr 07, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "(a=t-t/[1.5,1.9,1.5,1.9,2,5,2,5][(t>>13)%8],b=[1,1,0.90,0.75][(t>>15)%4],sin(a*b/4)+sin(a*b/6)+sin(a*b/8))*16|t>>11&15"
+    },
+    {
+        "description": "Hi",
+        "url": "https://www.reddit.com/r/bytebeat/comments/14pz1iu/reupload_1_hi/",
+        "date": "Apr 25, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "128*sin(t>>6|t*t>>10|t>>8)+128|128*sin(t/4096)+128|t*4&64"
+    },
+    {
+        "description": "\"Hi\" but without sine",
+        "date": "Apr 26, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "t>>6|t*t>>10|t>>8|t/4096|t*4&64"
+    },
+    {
+        "description": "Nice Sin code music I've made in ByteBeat.",
+        "date": "Apr 27, 2023",
+        "codeOriginal": "(64*sin(~t>>4&~t|~t>>12|~t>>8&~t|~t/8)+128)+(64*sin(~t/1024))"
+    },
+    {
         "description": "A music using a tree image with color code picker!",
         "url": "https://www.reddit.com/r/bytebeat/comments/13hwvgj/a_music_using_a_tree_image_with_color_code_picker/",
         "date": "May 14, 2023",
@@ -33,6 +59,18 @@
         "codeOriginal": "a=[4,4.25,3.55,4.25][t>>17&3]*t/'@+=$'.charCodeAt(t>>14&3),sin(a)+sin(a/3)+asin(sin(a/6))"
     },
     {
+        "description": "Random goofy ahh bytebeat",
+        "date": "Jun 12, 2023",
+        "codeOriginal": "t*(t*3>>12&t*1.5>>2)>>(t*1.5>>8&15)/(t*4&t*6&t*10|t*.75>>3|t&t*3&t*9|t*1.5>>8)|t*1.5>>3"
+    },
+    {
+        "description": "Another C compatible bytebeat again",
+        "url": "https://www.reddit.com/r/bytebeat/comments/14acmdr/another_c_compatible_bytebeat_again/",
+        "date": "Jun 15, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "((t*t>>2|t^t/2^t>>8|t>>7^t>>8)&255)*(~t>>6&255)>>8"
+    },
+    {
         "description": "Another reverb and stereo music cuz why not",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/14b7srw/another_reverb_and_stereo_music_cuz_why_not/",
@@ -58,10 +96,31 @@
         "fileOriginal": true
     },
     {
+        "description": "wth is this?",
+        "url": "https://www.reddit.com/r/bytebeat/comments/14p8imv/wth_is_this/",
+        "date": "Jul 03, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "128+96*sin(t/(t>>12&1^t>>13&5^t>>14&7)+!t>>2&7)"
+    },
+    {
         "url": "https://www.reddit.com/r/bytebeat/comments/14xk97c/comment/jrqtc9v/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button",
         "date": "Jul 13, 2023",
         "exotic": true,
         "codeOriginal": "br(t>>7&t|t>>5&31|t>>10&t<<2&63|t>>2&t>>9&t*8&127,12)"
+    },
+    {
+        "description": "br function",
+        "url": "https://www.reddit.com/r/bytebeat/comments/14z940t/update_2_of_my_composer/",
+        "date": "Jul 14, 2023",
+        "exotic": true,
+        "codeOriginal": "br(t>>10&t|t>>11&t|t*2&t>>7&31|t/2&t>>6&31|t>>5,12)"
+    },
+    {
+        "description": "Random bytebeat #1",
+        "url": "https://www.reddit.com/r/bytebeat/comments/14zm77f/random_bytebeat_1_exotic_code_cuz_of_sinf/",
+        "date": "Jul 14, 2023",
+        "exotic": true,
+        "codeOriginal": "(sinf(t*(0xABFEDACE>>(t>>10&15)&27)))*127+128^t>>6|t>>4"
     },
     {
         "description": "Triangle man",
