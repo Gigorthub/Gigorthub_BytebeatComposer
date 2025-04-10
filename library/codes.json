@@ -36,6 +36,13 @@
                 "codeOriginal": "(t&96)*(4e3/(t&([16383,16383,16383,8191,16383,16383,16383,12287][(t>>15)&7])))+(t&t>>10&63)"
             },
             {
+                "description": "i just ✨ SHNIPPLED ✨",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i3r2z9/i_just_shnippled/",
+                "date": "Jan 17, 2025",
+                "sampleRate": 32000,
+                "codeOriginal": "T=t*'2345'[t>>12&3]*[1,1.5,1.8,.8][t>>16&3]/10,(T%127)+(T%128)&128"
+            },
+            {
                 "url": "https://www.reddit.com/r/bytebeat/comments/1i5c4g5/untitled/",
                 "date": "Jan 19, 2025",
                 "sampleRate": 9000,
@@ -1120,6 +1127,16 @@
         "sampleRate": 32000,
         "file": "SRB2er.js",
         "fileOriginal": true
+    },
+    {
+        "author": [
+            "ccret293",
+            "BaenHoHoHo"
+        ],
+        "description": "I SHARTED AT TACO BELL",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1i4l6yz/i_sharted_at_taco_bell/",
+        "date": "Jan 19, 2025",
+        "codeOriginal": "a=(t*(3^t/'23452354'[t>>13&7])&63),b=(t*(t^t>>4)*(t>>11&2)&-t>>6&63),c=(40000/(t&4095)&64),d=((t*4*(1+(t>>11&1))*2**([0,3,5,7,8,10,8,7][t>>12&7]/12)&255)/3),e=t*4*'1234'[t>>10&3]*[1,1.5,1.2,.9][t>>14&3]&64,[c,b+c,a+b+c,a+b+c+d,a+b+c+d+e,b+c+d+e,d+e,d+e][t>>16&7]/1.5"
     },
     {
         "author": "Two2Fall",
