@@ -815,6 +815,25 @@
         ]
     },
     {
+        "author": "Weird Arg",
+        "children": [
+            {
+                "description": "rain i made with absolute's filter",
+                "mode": "Floatbeat",
+                "date": "Aug 12, 2023",
+                "sampleRate": 480000,
+                "codeOriginal": "this.r??=0,this.v??=0,r++, a=`♂️♂️♂️♀️♂️♀️♂️♀️♂️♀️♀️☺️♂️☺️♀️♂️☺️♂️☺️☺️♂️☺️♂️♀️:-):-(:-*;-):OB-):-[O:-):-{8-):-\^o^:-P:-$:'(^_^:-D:3(^_-)(^o^):-|:-/(-:<3↕️↔️↕️↔️↕️↔️↕️↔️↕️↔️↖️↩️↔️↕️♀️♂️♂️♂️♂️⚧♂️⚧♂️♀️♀️♂️♂️⚧♀️♂️♂️➰➿➰➿➰`,v=(v*31+(a.charCodeAt(r/2*(r/2&r/2>>8)%a.length)&255))/32,v/60-1+asin(cos(r/2/4095|r/2/4096))/4"
+            },
+            {
+                "description": "trianglewalker",
+                "date": "Aug 15, 2023",
+                "sampleRate": 36900,
+                "stereo": true,
+                "codeOriginal": "a=acos(sin(t/4/4*(t/4&2**15?1.25:1)))/1.56*(-t>>'56'[(t>>15)%2]&127),[a%256/2+(sin(t/4095)*50+128%256/2),a%256/2+(cos(t/4095)*50+128%256/2)]"
+            }
+        ]
+    },
+    {
         "author": "Zopium",
         "children": [
             {

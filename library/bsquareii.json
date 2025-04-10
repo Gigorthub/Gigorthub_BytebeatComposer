@@ -1,5 +1,13 @@
 [
     {
+        "description": "Different Version of absolute199's organ thing using Signed ByteBeat",
+        "mode": "Signed Bytebeat",
+        "url": "https://web.archive.org/web/20230528015552/https://dollchan.net/btb/res/3.html#784",
+        "date": "Apr 07, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "(a=t-t/[1.5,1.9,2.5,3.05,3.4][(t>>13)%5],sin(a/4)+sin(a/6)+asin(sin(a/8)))*8"
+    },
+    {
         "description": "remix of \"Different Version of absolute199's organ thing using Signed ByteBeat\"",
         "mode": "Signed Bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/12eww2v/zombie_nation_kernkraft_400_but_made_using/",
