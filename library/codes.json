@@ -1,5 +1,39 @@
 [
     {
+        "author": "KB",
+        "description": "Eat Sleep Rave Retweet",
+        "url": "https://demozoo.org/music/291148/",
+        "date": "Mar 13, 2021",
+        "codeOriginal": [
+            "min(255,max(0,64+(t*pow(2,(t>>10&0x03)+((t>>14&0x01)+(t>>12&0x03))/12)&0xff)/2+cos(t/(8*(t&0xfff)+1000))*100+(1-(t%0x400)/0x400)*(1.5*sin(t/100000)*sin(t/977.8)*((((t%0x400)*(t%0x400)*1300)%(256-(floor(t/0x2000)&0x03)))-128)+60*sin(t*sin(t/10000)))))",
+            ""
+        ]
+    },
+    {
+        "author": "Dresdenboy",
+        "description": "More than a beat",
+        "url": "https://demozoo.org/music/291150/",
+        "date": "Mar 13, 2021",
+        "sampleRate": 44100,
+        "codeOriginal": "min(255,(t>>20&1)*(t>>12&3)*((t>>1|t>>6|t>>2)&127)/2+(y=t*((x=t>>19)%3)*1.0595**("06060628"[t>>13&7]*2+3*(t>>16&1)),(y&y*0.98&128)+(y&y*1.02&256))/4+((t*(-t>>2&-t>>6&1536)+(-t>>4&-t>>2&1536)>>(14-((x+(t*3>>3))%(10+(t>>16&2)))))&255)*(-t&8191)/8e4)"
+    },
+    {
+        "author": "ern0",
+        "description": "Tango",
+        "url": "https://demozoo.org/music/291147/",
+        "date": "Mar 13, 2021",
+        "sampleRate": 44100,
+        "codeOriginal": "m=t/4864+114,b=m/2&127,F=i=>t*2**(i/12)*110/689&63,C=i=>\",.,+,9$\B,.,+)K([B$89[XB+,.,+lr$%$#$ILb,.,+)HKb$%$#$HKb+L(yrr\".charCodeAt(i)-18,S=j=>{for(;o<=b;o+=C(j++)>>4)s=C(j)&15},S(o=0),(s&&8*F(s)&64)+(m&3&&m+2&15||b%64>57?0:F(n=((m^b)&32?2:7)-b%2*5)+F(n+7))"
+    },
+    {
+        "author": "Gasman",
+        "description": "bossa de jeenio",
+        "url": "https://demozoo.org/music/291149/",
+        "date": "Mar 13, 2021",
+        "sampleRate": 44100,
+        "codeOriginal": "r=t/7938,(t*pow(2,([a=619,a,601,584,b=1180,b,55,38][(r/8&7)+((r&15)==7)]>>(r*18%12&12)&15)/12)&128)*max(((2981555643>>(r*2&30)&3)-r%1)/4,0)*.9+(t*pow(2,((546914935>>(r/2&28)&15)-5*(14576>>(r&15)&1))/12)&511)*((3204176859>>(r*2&30)&3)-r%1)*.07"
+    },
+    {
         "author": "ccret293 (getdolphinedlol)",
         "children": [
             {
@@ -384,6 +418,64 @@
                 ]
             }
         ]
+    },
+    {
+        "author": "byteobserver",
+        "description": "zigzag",
+        "url": "https://demozoo.org/music/318949/",
+        "date": "Feb 11, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "(()=>{!t?x=c=0:i=0;t=255;r=(a,b)=>a>>(b&31)|a<<32-(b&31);do{d=x++>>4;c=r(c,(c>>26)+22);d=d|=c=r(c&=d,24);j=c|=d|(d&t)<<8;for(k=32;k--;)j&=d=r(d,c)}while(~j&1&&i++<99)return[c&t^c>>16&t,c>>8&t^c>>24&t^c>>16&t]})()"
+    },
+    {
+        "author": "liqube",
+        "description": "Square Trippin'",
+        "url": "https://demozoo.org/music/318947/",
+        "date": "Feb 11, 2023",
+        "codeOriginal": "(t*((t/2|t|t*2&t/4)>>8|(t*7))%128)|(t/8)&(t/16)"
+    },
+    {
+        "author": "luchak",
+        "description": "Peak 9120, October 22",
+        "url": "https://demozoo.org/music/318954/",
+        "date": "Feb 11, 2023",
+        "sampleRate": 44100,
+        "codeOriginal": "v=(t)=>(T=abs(t/3e6%1),U=t>>15,((t/50&15)-6)*(U%3&2)*T+sin(t/125)*16*T**.5+(((t/50^t/50.1+(t&7)/16)&126))/2*T**3+sin(U%4*t/62)*4),w=(f,q,d)=>d?(w(f,q-2201,d-1)+w(f,q-ceil(14250+q/6e1),d-1)+w(f,q-7459,d-1)+w(f,q-11927,d-1))/2:f(q)-f(q-1)/2,v(t)+w(v,t,3)+23"
+    },
+    {
+        "author": "Vilcans",
+        "description": "Progression",
+        "url": "https://demozoo.org/music/318956/",
+        "date": "Feb 11, 2023",
+        "codeOriginal": "[3*sin(1400/(9+t%8192/99))+sin(t/99)*t%max(.01,cos(((t+4e3)&8191)/2e3))+sin(t)*t%2/(1+t%2048/77),12,11,10,t>>16==7?t>>7:9+(t>>17)].reduce((a,s,i)=>a+sin([2,2.7,2,3][t>>15&3]*2**(i-7)*t*[1,4,2,3,4,6,7.13,6][t>>s&7])*1e3/(1e3+t%(1<<s))*(t>>16>i-2)*6/i)*8+128"
+    },
+    {
+        "author": "teadrinker",
+        "children": [
+            {
+                "description": "Nostalgia Sisters",
+                "url": "https://demozoo.org/music/318953/",
+                "date": "Feb 11, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "t/=16e4,a=(x,y)=>[y==3?4:5,0,y==3?5:7,0,y==3?7:8,0,y&1?(y&2?8:10):7,0,y&1?(y&2?10:12):5,0,y==3?12:10,0,8,0,7,0][x%16],b=x=>a(x,x%64>>4),f=(d,s,b,m)=>t*440*2**((d(t*s|0)+b)/12)%1>.5+.4*sin(t*m),(f(b,16,10,t/2)*(1-t*32%1)+f(x=>[5,3,1,0][x%4],1,-14,4))*126+1"
+            },
+            {
+                "description": "Technological Bass",
+                "url": "https://demozoo.org/music/318957/",
+                "date": "Feb 11, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "s=t/4e4,s+=(1-exp(-s))*38,t=s*6.4,x=108*s*(s<50?t*0.97:1+((t|0)%3)/2*!!(t/4&16))*((t&63)>47?1.19:1)%2-1,f=1-pow(t%1,-sin(t/8)*1.8+2),x=-(.44*(f-2)*(f+.7)*x*(x*x-1))/((f-.25)*x*x-f/2-.25),b=t/4%1,(x+(sin(b**.53*214)-x)*min(max(1-2*b,0),1)+1)*127"
+            }
+        ]
+    },
+    {
+        "author": "Pestis",
+        "description": "Etude de la synthèse additive",
+        "mode": "Floatbeat",
+        "url": "https://demozoo.org/music/318955/",
+        "date": "Feb 11, 2023",
+        "sampleRate": 44100,
+        "codeOriginal": "(s=>{for(t||(d=[]),[y,x]=d[t-21e3]||[0,0],u=t/134e4,j=0;u<4.5&++j<7;)for(i=1;i<7;)k=j%3+1,r=u*2**j*k,v=r%1,z=sin(96*PI*(2846666506>>4*(r&1+2*u&7)&15)*[6,6,8,9][32*u&u&3]*i**k*u)/3**(v*i*k**.5+.003/v)/3,x+=sin(n=i++*u/3)*z,y+=sin(n*i)*z})(),d[t]=[x/3,y/3]"
     },
     {
         "author": "Chasyxx",
