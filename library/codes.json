@@ -465,17 +465,43 @@
                 "date": "Feb 11, 2023",
                 "sampleRate": 44100,
                 "codeOriginal": "s=t/4e4,s+=(1-exp(-s))*38,t=s*6.4,x=108*s*(s<50?t*0.97:1+((t|0)%3)/2*!!(t/4&16))*((t&63)>47?1.19:1)%2-1,f=1-pow(t%1,-sin(t/8)*1.8+2),x=-(.44*(f-2)*(f+.7)*x*(x*x-1))/((f-.25)*x*x-f/2-.25),b=t/4%1,(x+(sin(b**.53*214)-x)*min(max(1-2*b,0),1)+1)*127"
+            },
+            {
+                "description": "Hyper PWM",
+                "mode": "Floatbeat",
+                "url": "https://demozoo.org/music/337716/",
+                "date": "Feb 09, 2024",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "t=t/44e3%64,x=t%32,y=x%0.5,k=sin(y**.4*260)*1.6,k+(y*1.8+.1)*((t>16)*((9e9/y%1+sin(x*1608))*(x*2&1)*((1-y)**34*16+.5-y*2))+(((x*63.99*(1+((x*(2+((x+1)/2&6)))&(x<12?(t>4)*x&3:7))/2))%1>x*(t>48?319.6:t>29?255.3:.5)%1)*2-1)*(1-(x*(8<<(x&(3+(x>>1&4)))))%1)-k)",
+                    ""
+                ]
             }
         ]
     },
     {
         "author": "Pestis",
-        "description": "Etude de la synthèse additive",
-        "mode": "Floatbeat",
-        "url": "https://demozoo.org/music/318955/",
-        "date": "Feb 11, 2023",
-        "sampleRate": 44100,
-        "codeOriginal": "(s=>{for(t||(d=[]),[y,x]=d[t-21e3]||[0,0],u=t/134e4,j=0;u<4.5&++j<7;)for(i=1;i<7;)k=j%3+1,r=u*2**j*k,v=r%1,z=sin(96*PI*(2846666506>>4*(r&1+2*u&7)&15)*[6,6,8,9][32*u&u&3]*i**k*u)/3**(v*i*k**.5+.003/v)/3,x+=sin(n=i++*u/3)*z,y+=sin(n*i)*z})(),d[t]=[x/3,y/3]"
+        "children": [
+            {
+                "description": "Etude de la synthèse additive",
+                "mode": "Floatbeat",
+                "url": "https://demozoo.org/music/318955/",
+                "date": "Feb 11, 2023",
+                "sampleRate": 44100,
+                "stereo": true,
+                "codeOriginal": "(s=>{for(t||(d=[]),[y,x]=d[t-21e3]||[0,0],u=t/134e4,j=0;u<4.5&++j<7;)for(i=1;i<7;)k=j%3+1,r=u*2**j*k,v=r%1,z=sin(96*PI*(2846666506>>4*(r&1+2*u&7)&15)*[6,6,8,9][32*u&u&3]*i**k*u)/3**(v*i*k**.5+.003/v)/3,x+=sin(n=i++*u/3)*z,y+=sin(n*i)*z})(),d[t]=[x/3,y/3]"
+                
+            },
+            {
+                "description": "Aether Algorhythm",
+                "mode": "Floatbeat",
+                "url": "https://demozoo.org/music/337717/",
+                "date": "Feb 09, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "(e=>{for(t||(d=[S=sin]),[y,x]=d[t-12e3]||[0,0],k=10;k--;O=d[t]=[x,y]=[.8*y,x+S(S((m=e<8.02&&1-p)**4*S(p*2**((1.7*(\"48646865\"[r&e&7]-\"2203\"[8*e&3])|0)/12+9))*cosh(S(e*i)*i/8))*e)/i**.1/2+(e>4)*t*x%1e-4*m**50*k**4])i=2**(w=k>>1),r=8*e*w,p=r%1})(t/6e5),O"
+            }
+        ]
     },
     {
         "author": "Chasyxx",
@@ -1119,6 +1145,25 @@
             "+tanh((1+1e1*(a%64==2))*cos(35* log((5*t%s))))*c*b",
             ")+c"
         ]
+    },
+    {
+        "author": "Theron",
+        "description": "Getting Started",
+        "mode": "Floatbeat",
+        "url": "https://demozoo.org/music/337715/",
+        "date": "Feb 09, 2024",
+        "sampleRate": 48000,
+        "stereo": true,
+        "codeOriginal": "v=[0,J=0],(_=>{for(;J<32;J++)s=(t+J%2*J)/1e4+8,b=(s-(J/2&7)/2)%4,i=s-b,I=J/8&2,j=(i%8%3>0)*8+((i/8&6)+(i%8/2-.6&3)&i/16),r=I?2e3:1,[4,6,3,2].map(n=>(r/=n-j%2,j>>=1)),x=b*r%1,i*2%(I||1<<log2(~i>>3&15))?0:v[J&1]+=sin(x/r*exp(6-b+I*i/64%4))/exp(b+4*x+1)})(),v"
+    },
+    {
+        "author": "0b5vr",
+        "description": "128 Voices Generator",
+        "url": "https://demozoo.org/music/337718/",
+        "date": "Feb 09, 2024",
+        "sampleRate": 48000,
+        "stereo": true,
+        "codeOriginal": "H=i=128,s=t/5e3,o=[H,H],F=i=>((57454323>>4*i&31)-(s>>3&4))/12,(e=>{while(i--)o[i%2]+=sin(40*log(s%4)+9*s)/3+s%4*(exp(-s%1*2)*((t*2**[F(7)-2,5+i/90,F(~~s-4*(i<48))+i%4/H][i%3]+s%1*i/5&H)-64)+(t*2**(F(i%7)-(i/2&1))+1e4*sin(i+s/H))%H-64)/H})(),o"
     },
     {
         "author": "Consistent_Nerve_185",
