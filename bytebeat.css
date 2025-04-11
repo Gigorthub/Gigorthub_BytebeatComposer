@@ -300,22 +300,6 @@ button[name="close"] {
 	margin-left: 11px;
 }
 
-.entry.star-white::before, .entry.star-yellow::before {
-	content: "\2605";
-	position: absolute;
-	top: 0;
-	left: -14px;
-	font-size: var(--font-size);
-}
-
-.entry.star-white::before {
-	color: white;
-}
-
-.entry.star-yellow::before {
-	color: aqua;
-}
-
 .entry-top {
 	padding: 6px 4px 8px 16px;
 }
