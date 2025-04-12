@@ -451,6 +451,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/14beaq4/comment/jofau2i/",
                 "date": "Jun 16, 2023",
                 "sampleRate": 48000,
+                "stereo": true,
                 "file": "decentmanager5.js",
                 "fileOriginal": true
             },
@@ -1467,5 +1468,14 @@
             "+sin((d=(t*2**(([16,12,12,14][t>>17&3]-.7)/12+1)))*PI/128+sin(d*PI/256*j))/5*('0001'[t>>15&3])*(1-t/32768%1)**.4",
             "+sin((e=(t*2**(([-3,5,0,-5][t>>17&3]-.7)/12)))*PI/128+sin(e*PI/252*j))/3*(1-t/2**17%1)**.1)*(t>>16>1)),w(t)+w(t-(de=24576))/2+w(t-de*2)/4+w(t-de*3)/8+w(t-de*4)/16)/1.5,[x(1.005),x(.995)]"
         ]
+    },
+    {
+        "author": "Sharp-Passenger-4439",
+        "description": "Bfdi 3 song remix",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1jx5qva/bfdi_3_song_remix/",
+        "date": "Apr 11, 2025",
+        "sampleRate": 38000,
+        "file": "sharp.js",
+        "fileOriginal": true
     }
 ]
