@@ -798,6 +798,7 @@ globalThis.bytebeat = new class {
 		case 11025:
 		case 16000:
 		case 22050:
+		case 24000:
 		case 32000:
 		case 44100:
 		case 48000: this.controlSampleRateSelect.value = sampleRate; break;
