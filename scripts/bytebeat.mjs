@@ -247,7 +247,7 @@ globalThis.bytebeat = new class {
 	}
 	generateLibraryEntry({
 		author, children, codeMinified, codeOriginal, date, description, file, fileFormatted, fileMinified,
-		fileOriginal, mode, remixed, sampleRate, starred, stereo, url, exotic
+		fileOriginal, mode, remixed, sampleRate, stereo, url, exotic
 	}) {
 		let entry = '';
 		if(description) {
