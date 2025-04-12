@@ -339,6 +339,7 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/x1zhwl/trill_but_experimental_no_modulation_sorry_stereo/",
                 "date": "Aug 31, 2022",
                 "sampleRate": 32000,
+                "stereo": true,
                 "codeOriginal": [
                     "t/=4,",
                     "b=a=>(64*(t/1.58/(2+(t>>10&t>>12)%9))+128)/a%16&25,",
@@ -1079,6 +1080,24 @@
                 ]
             },
             {
+                "description": "now, everyone has remixed decent manager's thing",
+                "url": "https://www.reddit.com/r/bytebeat/comments/163m6ji/now_everyone_has_remixed_decent_managers_thing/",
+                "date": "Aug 28, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "v=t*2.09*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7][t*1.2>>12&127]/12),b=abs(sin(v*PI/128))*32+(exp(sin(v*PI/128))*16),",
+                    "a=(t*2.09*2**([8,8,8,8,10,10,10,10,12,12,12,12,12,12,10,10,8,8,8,8,7,7,7,7,12,12,12,12,12,12,10,10,8,8][t*1.2>>14&31]/12)/8&127)+(64-cos(t*1.2/8192)*32)&128,",
+                    "(b%256*(1-t*1.2%4096/4096))+a/3+(2e5/(t*1.2&16383)&64)+((t*(1&t*1.2>>14)*sin(t>>4)*.5&64)*(1-t*1.2%16384/16384))+(t*(1&~t*1.2>>11)*random()&16)"
+                ]
+            },
+            {
+                "description": "im being held hostage by aturned777 himself",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1668ru7/im_being_held_hostage_by_aturned777_himself/",
+                "date": "Aug 31, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "(t/(4+(t>>15)%16)*(1+(3&t>>13))&95)+(2e5/(t&16383)&63)+(t*random()%256/((2048+(t&8191))*.003))+(t*2/(4+(t>>15)%16)&96)/2"
+            },
+            {
                 "description": "hydrogen fucker 8",
                 "url": "https://dollchan.net/btb/res/284.html#2933",
                 "date": "Jan 26, 2024",
@@ -1152,6 +1171,16 @@
                 "codeOriginal": "((t>>10^(t>>10)-1^7)%9*t/((t>>13&3)+(t>>15&3)+1)*2&95^((((t>>1)*(t>>1)&255)/((t&4095)+1)*192)*(t>126976)))+((t*2/((t>>15&3)+1)&63)*(t>>11&1)*(t>262144))+((t>>t/((t>>13&3)+1)&64)*(t>393216))"
             }
         ]
+    },
+    {
+        "author": "Butterroach",
+        "description": "stereo wind + \"raindrop\" sounds",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/16kx7ln/stereo_wind_raindrop_sounds/",
+        "date": "Sep 17, 2023",
+        "sampleRate": 48000,
+        "stereo": true,
+        "codeOriginal": "t?(x=(sin(r=t/2**x)+x*100)/101,g=z=>z?sin(t/Y)/((e=1+t/4096%(Y+10))==1?Y=r%20+1|0:e)/2:sin(t/y)/((e=1+t/4096%(y+10))==1?y=r%20+1|0:e)/2,d=g(0),D=g(1),d+=a[t%l],D+=b[t%L],a[t%l]=d/2,b[t%L]=D/2,[x*(3+sin(u=t/176400*PI))+d,x*(3-sin(u))+D]):(x=Date.now(),y=(log2(x*x)+log(x)*sin(x)-59|0)+1,Y=y+1.25,A=x=>Array(x).fill(0),a=A(l=12e3),b=A(L=l*2))"
     },
     {
         "author": "awogler9124812041",
