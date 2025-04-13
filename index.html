@@ -58,9 +58,9 @@
 					<option value="Waveform">Waveform</option>
 				</select>
 				<select id="control-mode" class="control-select controls-grow" title="Sound mode">
-					<option value="Bytebeat" selected>Bytebeat</option>
-					<option value="Signed Bytebeat">Signed Bytebeat</option>
-					<option value="Floatbeat">Floatbeat</option>
+					<option value="Bytebeat" selected>Bytebeat (0 to 255)</option>
+					<option value="Signed Bytebeat">Signed Bytebeat (-128 to 127)</option>
+					<option value="Floatbeat">Floatbeat (-1 to 1)</option>
 					<option value="Bitbeat" title="Only uses LSB. (deprecated exotic mode)">Bitbeat</option>
 					<option value="2048" title="Uses 11 bits instead of 8. (deprecated exotic mode)">2048</option>
 					<option value="logmode" title="Deprecated exotic mode.">Logmode</option>
@@ -130,7 +130,7 @@
 					You can choose between bytebeat, signed bytebeat and floatbeat formats.<br>
 					<br>
 					<b>Bytebeat:</b> expects output is an unsigned 8bit value (0 to 255).<br>
-					<b>Signed bytebeat:</b> assumes output is a signed 8bit value (-127 to 128).<br>
+					<b>Signed bytebeat:</b> assumes output is a signed 8bit value (-128 to 127).<br>
 					<b>Floatbeat:</b> assumes output is -1.0 to 1.0.<br>
 					<br>
 					This website is the fork of <a href="http://entropedia.co.uk/generative_music/" target="_blank">8-bit Generative Composer</a> by <a href="http://twitter.com/paul_hayes/" target="_blank">@paul_hayes</a>.<br>
@@ -143,7 +143,7 @@
 						<li>regG: <b>(T,regEx)</b> => takes a string of <i>T</i>'s bits, and tests against <i>regEx</i> for a match. Outputs a boolean.</li>
 					</ul>
 					<b>Note:</b> Using any of these functions makes your code exotic, entailing that it will not be added to the dollChan library.<br>
-					They are just a novelty, and use them at your own risk. I would remove them (and the exotic modes) if it weren't for compatibility.
+					They are just a novelty, and use them at your own risk.
 				</article>
 			</details>
 			<details class="library-content">
