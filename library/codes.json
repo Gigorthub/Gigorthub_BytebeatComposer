@@ -629,6 +629,12 @@
                 "codeOriginal": "a=t/[1.8,2.4,2.7,3,3.6][(t>>13)%5],sin(a/6)+sin(a/4)+asin(sin(a/6))"
             },
             {
+                "description": "H4RDC0RE (:<",
+                "date": "Apr 12, 2023",
+                "sampleRate": 22050,
+                "codeOriginal": "t=-t,a=(e,g)=>t*e&t>>g,s=a(4.8,7)|a(4,6)|a(6,5)|a(8,8),b=(x)=>(s&64)&&s,((a(3,6)|a(6.4,8))*b(a(4,7))*-a(4,8))"
+            },
+            {
                 "description": "cool song 2",
                 "date": "Apr 16, 2023",
                 "stereo": true,
@@ -647,6 +653,17 @@
                 "date": "Apr 22, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "a=t/[1.6,2.4,3,3.6][(t>>14)%4],(sin(a*4)+sin(1))*(sin(a/6)+sin(a/4))"
+            },
+            {
+                "url": "https://www.reddit.com/r/bytebeat/comments/1i6nheh/some_kind_of_code_i_found_in_a_chat/",
+                "date": "Apr 26, 2023",
+                "sampleRate": 480000,
+                "stereo": true,
+                "codeOriginal": [
+                    "r=t/[36,24,18,15][(t>>17)%4]*[1.2,1.5,1.6,1.8][(t>>19)%4],",
+                    "",
+                    "[t*(t/56+(t/8&712))|t>>10,5e5/(t>>5&16383)+r&192&-t>>8>>r]"
+                ]
             },
             {
                 "description": "sync.fil",
