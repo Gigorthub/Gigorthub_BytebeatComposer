@@ -229,5 +229,48 @@
         "sampleRate": 48000,
         "stereo": true,
         "codeOriginal": "r=t*1.125,l=16384,u=8192,c=4096,x=j=>min(max((s=(a,b)=>(t*2**(parseInt(a,36)/12)/b*.277%64+16&64)-24,w=r=>r>0&&(e=a=>s('5  8  7 4'[15&r>>13],a)/2,e(.5)+e(.5*j))*(1-r/8192%1/2),w(r)+w(r-(d=24576))/2+w(r-2*d)/3+w(r-3*d)/4+(b=a=>s('hhhkkkjjgggggggg'[15&r>>13],a),b(8)+b(4/j))*(r/l%2)**.25*(1-r%u/1E4)+(50*random()-25)*(1-r/u%1)**4+150*sin(6*cbrt(r%l))*(1-r/l%1)**2*!(r&l)+((t*sin(t>>2)&32)-16)*(1-r/l/2%1)**3*!(~r&2*l)),-128),127)*(r/32768%1)**.25*(1-r/8192%1*.5)**.25,[x(1.01),x(.99)]"
+    },
+    {
+        "description": "remix^3",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1i3r2z9/comment/m7tk7l9/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "date": "Jan 18, 2025",
+        "sampleRate": 32000,
+        "stereo": true,
+        "file": "anuxd6.js",
+        "fileOriginal": true
+    },
+    {
+        "description": "remix of \"Chiptune With The Zackx Song Engine\"",
+        "mode": "Signed Bytebeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1ic1tgu/comment/m9pxxg5/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "date": "Jan 05, 2025",
+        "sampleRate": 57000,
+        "stereo": true,
+        "codeOriginal": "x=j=>(b=a=>(t*2**('6666666622224449'[t>>14&15]/12-2)*a)%256/2.1*(t/16384%2)*(1-t%8192/9e3),(a=t=>(t*=t>0,((t*j*2**(parseInt(\"6968696DD6966984289 289 49B 49GD\"[t>>13&31],36)/12)%128+40+(t>>8&15))&128)%256*(1-t/8192%1)),min(max((a(t)+a(t-6144)/2+a(t-12288)/3+a(t-18432)/4)*2/3+(b(1)+b(j)+b(2*j))*7/9+(80*tanh(3*sin((t&16383)**.51)))*(1&-t>>14)+230*random()*(1-t/8192%1)**4+(t*sin(t>>2)&128)*(1-t/32768%1)**5*(1&t>>15)/1.3-144,-128),127))),[x(1.006),x(.994)]"
+    },
+    {
+        "description": "notitle No.2",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1ifmnc4/notitle_no2/",
+        "date": "Feb 02, 2025",
+        "sampleRate": 48000,
+        "codeOriginal": "x=t=>(1.05*t/(4-2*(t>>18&1))*2**(parseInt('DDGIIKGGD 8BGGDD'[15&((t>>13)^t>>12&7)+(t>>14&1)],36)/12)%128+(t>>7)&128)*([a=-t>>9,a,b=-t>>8,c=-(t+8192)>>9,c,b,a,a,b,,b,b,d=-t>>10,d,d,d][15&t>>13]&31)/13,min((x(t)/4+x(t+30*sin(t/2e5))/4+x(t-12288)/8+x(t-24888)/8+(random()*3/2*(-t>>(t>>13&1?7:6)&63)+60*cbrt(cbrt(sin(40*log(t/4096%16%15%8%3))))+60+(9e9*sin(t*.8/PI|0)&64)*5/3*(1-t/4**7%1)**3*(t>>14&1))*(t>>19&&1))*.6,255)"
+    },
+    {
+        "description": "\"useless1 but in Slide Meodica Bliss\" with drums remix",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1jus74f/useless1_but_in_slide_meodica_bliss_with_drums/",
+        "date": "Apr 08, 2025",
+        "sampleRate": 32000,
+        "file": "anuxd5.js",
+        "fileOriginal": true
+    },
+    {
+        "description": "made a \"flanger\" effect",
+        "mode": "Signed Bytebeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1jxrjqb/made_a_flanger_effect_in_bytebeat/",
+        "date": "Apr 12, 2025",
+        "sampleRate": 32000,
+        "codeOriginal": "!t?A=Array(z=80).fill(a=0):0,a+=1-1/[1.5,1.9,2.5,3.05,3.4][(t>>13)%5],b=(sin(a/4)+sin(a/6)+asin(sin(a/8)))*32+A[(t+60*abs(sin(t/5e3)))%z|0],A[t%z|0]=b/1.6,b/3"
     }
 ]
