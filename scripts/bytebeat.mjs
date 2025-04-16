@@ -297,6 +297,12 @@ globalThis.bytebeat = new class {
 			entry += ` <span class="code-info">${ infoStr }</span>`;
 		}
 		const songData = codeOriginal || codeMinified || file ? JSON.stringify({ sampleRate, mode }) : '';
+		if(codeMinified) {
+ 			if(codeOriginal) {
+ 				entry += ` <button class="code-button code-toggle"` +
+ 					' title="Minified version shown. Click to view the original version.">+</button>';
+ 			}
+ 		}
 		if(file) {
 			if(fileFormatted) {
 				entry += `<button class="code-button code-load code-load-formatted" data-songdata='${
