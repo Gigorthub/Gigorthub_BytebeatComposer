@@ -15,7 +15,7 @@
 	<main id="content">
 		<section id="container-fixed">
 			<div id="editor-container">
-				<textarea  id="editor-default" spellcheck="false">t?0:l=[],l_=0,lp=(a,b)=>(l[l_]||=0,l[l_]+=(a-l[l_++])*b),hp=(a,b)=>a-lp(a,b),st=Z=>(a=PI*t/(Z?63.8:64)*2**((((t>>13&5|2)^t>>15&3+(t>>11&6)/3)+(t%([0,0,2,3,0,-9,2,-11][t>>13&7]+4))*7)/12),b=(x=Z?cos:sin)(x(x(x(a+x(a))+(y=Z?sin:cos)(a/2))+y(2*a)+x(t*PI/8192)+y(t*PI/12e3))+a/2+y(a*3/4)+x(5/4*a)+4*x(t*PI/15e3)),hp(lp(lp(b,.02),.3),.01)*2.6+sin(log(t%4096+.1)*19)*.9*max(1-t/4096%4,0)+(random()-.5)*1.1*exp(-t/512%8)*!!(t>>13&1^(t>>14&3)%3)+((t&3?r:r=random())-.5)*.8*sin(exp(1-t/2048%8))*(t>>14&1)),[st(0),st(1)].map(k=>k*1.2)</textarea>
+				<textarea  id="editor-default" spellcheck="false">t?t-=t/4&2048*"11113457"[t>>11&7]:l=[],l_=0,lp=(a,b)=>(l[l_]||=0,l[l_]+=(a-l[l_++])*b),hp=(a,b)=>a-lp(a,b),st=Z=>(a=PI*t/(Z?63.8:64)*2**((((t>>13&5|2)^t>>15&3+(t>>11&6)/3)+(t%([0,0,2,3,0,-9,2,-11][t>>13&7]+4))*19)/12),b=(x=Z?cos:sin)(x(x(x(a+x(a))+(y=Z?sin:cos)(a/2))+y(2*a)+x(t*PI/8192)*(1+Z)+y(t*PI/12e3)*(1+Z))+a/2+y(a*3/4)+x(5/4*a)+4*x(t*PI/15e3)*(1+Z)),hp(lp(lp(b,.03),.2),.03)*3.6+sin(log(v=t/4096%4)*20)*1.2*(n=max(1-v,0))*(t>>14&1)+random()*1.6/(1+random()*10)*n*(t>>14&1)),[st(0),st(1)]</textarea>
 			</div>
 			<div class="controls">
 				<div class="controls-group controls-grow">
@@ -71,8 +71,11 @@
 				<div class="controls-group controls-grow">
 					<input type="text" id="control-samplerate" title="Set sample rate (in Hz) then press Enter">
 					<select id="control-samplerate-select" class="control-select" title="Sample rate">
+						<option value="4000">4kHz</option>
+						<option value="6000">6kHz</option>
 						<option value="8000">8kHz</option>
 						<option value="11025">11025Hz</option>
+						<option value="12000">12kHz</option>
 						<option value="16000">16kHz</option>
 						<option value="22050">22050Hz</option>
 						<option value="24000">24kHz</option>

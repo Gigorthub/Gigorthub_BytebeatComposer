@@ -51,7 +51,7 @@ globalThis.bytebeat = new class {
 		this.isRecording = false;
 		this.playbackSpeed = 1;
 		this.settings = { drawMode: 'Waveform', drawScale: 0, isSeconds: false, volume: 1 };
-		this.songData = { mode: 'Floatbeat', sampleRate: 38200 };
+		this.songData = { mode: 'Floatbeat', sampleRate: 24000 };
 		this.init();
 	}
 	get editorValue() {
@@ -794,8 +794,11 @@ globalThis.bytebeat = new class {
 			sampleRate = -sampleRate;
 		}
 		switch(sampleRate) {
+		case 4000:
+		case 6000:
 		case 8000:
 		case 11025:
+		case 12000:
 		case 16000:
 		case 22050:
 		case 24000:
