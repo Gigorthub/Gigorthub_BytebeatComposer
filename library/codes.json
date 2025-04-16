@@ -658,6 +658,57 @@
         "codeOriginal": "SR=48000,WAVE=function(m,a,f=440,depth=10){a=a-m;out=0;for(let i=1;i<depth;i++){out+=Math.sin((t*(f*((i*m)+a)))/((128/Math.PI)*(SR/8000)*31.25))/i;}return out/(Math.pow(depth,1/14)*1.3)/2;},a=WAVE(6,3835245225345425,(31.25)*6,16)"
     },
     {
+        "author": "Greaserpirate",
+        "children": [
+            {
+                "description": "Dive In",
+                "url": "https://www.reddit.com/r/bytebeat/comments/124bns0/dive_in/",
+                "date": "Mar 28, 2023",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate5.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Remix of \"I have no idea\" by SleepingLugia",
+                "url": "https://www.reddit.com/r/bytebeat/comments/12r52gi/remix_of_i_have_no_idea_by_sleepinglugia/",
+                "date": "Apr 18, 2023",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate3.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Remix of \"Remix this or something\" by Glebguything (heavy-duty remix)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1369zwl/remix_of_remix_this_or_something_by_glebguything/",
+                "date": "May 03, 2023",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate4.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "screamy remix of Ok_Rise_1854's remix of Neurofunk",
+                "url": "https://www.reddit.com/r/bytebeat/comments/17c18ml/screamy_remix_of_ok_rise_1854s_remix_of_neurofunk/",
+                "date": "Oct 20, 2023",
+                "sampleRate": 64000,
+                "stereo": true,
+                "file": "greaserpirate2.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Bathed In Lasers (WIP)",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jwfz8l/bathed_in_lasers_bytebeat_master_level/",
+                "date": "Apr 11, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate.js",
+                "fileOriginal": true
+            }
+        ]
+    },
+    {
         "author": "Absolute197",
         "children": [
             {
@@ -780,6 +831,28 @@
                 ]
             },
             {
+                "description": "Æ0x|0xF3C01?[{t}&{t^g[0]}~^|—%9+(t | (iD - 1) % 990x9)",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/15gpzts/%C3%A60x0xf3c01ttg09t_id_1_990x9/",
+                "date": "Aug 03, 2023",
+                "sampleRate": 65536,
+                "codeOriginal": [
+                    "a=t*2**([0,5,9,12][3&t>>14]/12)*2**([2,9,7,12][3&t>>17]/12),",
+                    "",
+                    "melody=(((cbrt(asinh(sin(a/128)))*32+64)*sin(a/64)+128)-24*cos(tan(a/64)))/2-sin(cos(a/64)*3-cos(1-(a/32))*3)*(-t>>9&31)-69,",
+                    "bells=((((sin(t/8)+sin(t/5))*(-t>>9&31)))),",
+                    "snarekick=(sin(t/1.01|t/1.3|t/1.6)*(-t>>'67'[1&t>>15]>>(3&t)&31))+(32*asin(sin(pow(sqrt(t&[32767,16383][1&t>>15])/3,1.5)))),",
+                    "hihat=(sin(t/1.01|t/1.3|t/'34'[1&t/(t&t>>10)])*(-t>>8>>(3&t>>13)&31)),",
+                    "kicks=(sin(4e4/(t&16383))*8+sin(1e5/(t&[4095,8191,8191,8191][3&t>>14]))*4+sin(2*sqrt(t&32767))*9)*PI*2,",
+                    "",
+                    "(melody * (1024<t) +",
+                    "bells * (262144<t) +",
+                    "hihat * (524288<t) +",
+                    "snarekick * ((262144+524288)<t) +",
+                    "kicks * ((524288*2)<t)) / PI"
+                ]
+            },
+            {
                 "description": "i added lowpass filter thingy to chipbeat and made a cool beat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/15ifzjn/i_added_lowpass_filter_thingy_to_chipbeat_and/",
                 "date": "Aug 04, 2023",
@@ -881,6 +954,18 @@
                 "date": "Aug 23, 2023",
                 "sampleRate": 48000,
                 "codeOriginal": "r=t/23.5,(tan(sin(r))/3+(tan(sin(r*[1.5,1.8,1.6,1.5][3&t>>15]))/3))/(3+(t&(32767/'11242418'[7&t>>14]))/128)"
+            },
+            {
+                "description": "why am i still remixing this..",
+                "url": "https://www.reddit.com/r/bytebeat/comments/163arld/why_am_i_still_remixing_this/",
+                "date": "Aug 28, 2023",
+                "sampleRate": 35000,
+                "codeOriginal": [
+                    "c=(t/2*2.09*2**([8,0,-7,5,0,-7,8,0,-7,5,0,-7,8,0,5,-7,10,0,-7,5,0,-11,10,1,-7,7,3,-2,10,3,-2,7,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,8,-4,-11,5,-4,-11,8,-4,-7,5,-4,-11,10,-4,5,-7,7,-2,-9,3,-2,-9,7,-2,-9,3,-9,-2,8,7,5,10,12,0,-7,8,0,-7,12,0,-7,8,0,-7,12,0,8,-7,12,0,-7,8,0,-7,12,0,10,1,3,7,-2,3,5,7,][t*1.2>>12&127]/12)),",
+                    "",
+                    "((((t>262144*1.2&&t<=Infinity)*(((((c%44)+(c%59)+(c/2%88))^(c%48))/2+(((c/4%66)/1.5+(c*2%[88,176][t>>13&1])/2.4)+(c%50&c%34)))/2+12)+(t>0&&t<=262144*1.2)*(c/4%44))*1.5+(t>262144*1.2&&t<=Infinity)*(((random()*43333/(475+(t*1.2&(16383/'12418241'[7&t*1.2>>13]))))+",
+                    "((4e5/(t*1.2&16383)&64)+(8*sqrt(5e4/(t*1.2%4096)&64))/1.1)+((4e5/(t*1.2&(6143*'1241'[3&t*1.2>>14])))/1.6&127)))/2))/1.5"
+                ]
             },
             {
                 "description": "percussion with instruments",
@@ -1612,14 +1697,10 @@
         "fileOriginal": true
     },
     {
-        "author": "Greaserpirate",
-        "description": "Bathed In Lasers (WIP)",
-        "mode": "Floatbeat",
-        "url": "https://www.reddit.com/r/bytebeat/comments/1jwfz8l/bathed_in_lasers_bytebeat_master_level/",
-        "date": "Apr 11, 2025",
+        "description": "Tohu Ikewa",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1jzlo4t/tohu_ikewa/",
+        "date": "Apr 15, 2025",
         "sampleRate": 48000,
-        "stereo": true,
-        "file": "greaserpirate.js",
-        "fileOriginal": true
+        "codeOriginal": "M=0<t,r=M?r:[0,0],s=2530,Z=t/s,r[0]+=((((t*pow(2,(293043>>(Z/4&7)&7)/5))^(31+(Z/4&1)))/4&63)-r[0])/(1+(Z*16&63)),r[1]+=((t*pow(2,(17387831289357>>(Z/4&63)&15)/5)/2&63)-r[1])/(1+(Z*16&63)),r[0]+r[1]"
     }
 ]
