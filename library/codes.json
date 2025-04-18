@@ -89,7 +89,7 @@
                 "codeOriginal": "((4E5/(t&16383)&128)+(t*[2,2,2,2,3,0,3,0][7&t>>11]*[1,1,1.2,1.35][3&t>>15]>>1&128)+((sin(t*[1,1,1,1,2,2,2,2,1,1,2,2,3,3,4,4][15&t>>13]*.79>>5)*100)))>>2"
             },
             {
-                "description": "me when the",
+                "description": "squ and hat",
                 "url": "https://dollchan.net/btb/res/227.html#241",
                 "date": "Nov 13, 2022",
                 "sampleRate": 32000,
@@ -758,13 +758,6 @@
                 "codeOriginal": "sq=c=>(c*4&128)/3,pwp=c=>((c&64)+(c/2&64)+(c/3&64))/3,sn=c=>random()*128&64&-t>>c,pwp(t*[0,1,1,0,2,0,1,3,0,1,1,0,2,0,1,3,0,1,1,0,2,0,1,3,0,2,0,1,0,1,0,1,0][(t>>11)%32])+sq(t*[0,1,0,0,2,0,1,3,3,1,0,0,1,0,1,0,0,1,1,0,3,0,2,3,0,2,0,0,0,0,0,0,0][(t>>11)%32])+sn([3,4,4,4,1,4,4,4,3,4,4,31,3,4,4][(t>>11)%16])"
             },
             {
-                "description": "Kanjemers",
-                "url": "https://dollchan.net/btb/res/727.html#4381",
-                "date": "Jul 11, 2023",
-                "sampleRate": 22050,
-                "codeOriginal": "x=t*[1,2,3,2][(t>>12)%4]/[1,1,2,3][(t>>15)%4],((sin(x/16)+sin(x/8)/2+sin(x/4)/3+sin(x/2)/4+sin(x)/4)/2+sin(4e3/(t/2%4096)))*50+128+sin(x/12)*16"
-            },
-            {
                 "description": "Get ractangled lol",
                 "url": "https://dollchan.net/btb/res/727.html#4503",
                 "date": "Sep 09, 2024",
@@ -797,7 +790,7 @@
                 "url": "https://dollchan.net/btb/res/727.html#5078",
                 "date": "Nov 29, 2024",
                 "sampleRate": 48000,
-                "codeOriginal": "x=t*[1,2,3,2][(t>>12)%4]/[1,1,2,3][(t>>15)%4],((sin(x/16)+sin(x/8)/2+sin(x/4)/3+sin(x/2)/4+sin(x)/4)/2+sin(4e3/(t/2%4096)))*50+128+sin(x/12)*16"
+                "codeOriginal": "(((sin(t*PI/128|0)/2+sin(t*PI/127)/2)*sin(t*PI/4096/4)+cos(t*PI/128+tan(t*PI/128/4/((1+(3&t>>15)*0.5))))/3)*sin(t*PI/128/32/2**(3&t>>15)))-sin(10000/(t/8%4096+50))/2"
             },
             {
                 "description": "fm square fun",
@@ -817,8 +810,7 @@
                 "description": "silly lil song",
                 "url": "https://dollchan.net/btb/res/727.html#5147",
                 "date": "Dec 11, 2024",
-                "sampleRate": 22050,
-                "codeOriginal": "x=t*[1,2,3,2][(t>>12)%4]/[1,1,2,3][(t>>15)%4],((sin(x/16)+sin(x/8)/2+sin(x/4)/3+sin(x/2)/4+sin(x)/4)/2+sin(4e3/(t/2%4096)))*50+128+sin(x/12)*16"
+                "codeOriginal": "t/=2,x=t*30*2**('1234123412348765'.charCodeAt(t>>12&15)/12-7),((sin(x/2*PI/128+sin(x*PI/128)*7*sin(t*PI/4096/2))*62+62)+((4e7/(t*3%4096+[1,2,1,3][3&t>>13]*1000)&128)%256)%256*(-t*(2+(1&t>>12))&2047)/2E3)%256/1.5+(random()*65&-t>>5)"
             },
             {
                 "description": "lean of a 100",
@@ -829,7 +821,7 @@
                 "codeOriginal": "t/=-4,sin(cbrt(atan(tan(sin(atan(tan((t+128)*PI/128/2))/atan(t*(1+(1&t>>0))%4096*(1+(1&t>>13))*PI/128/64))))/(cos(t*PI/129)%sin(t*PI/128))*cos(t*PI/128)/sin(t*PI/128)/2)/2)/sin(t*PI/128/64)"
             },
             {
-                "description": "Space music",
+                "description": "Delush",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/727.html#5281",
                 "date": "Jan 09, 2025",
@@ -1743,6 +1735,17 @@
         ]
     },
     {
+        "author": [
+            "emelchenko",
+            "Gaham"
+        ],
+        "description": "caveium",
+        "url": "https://dollchan.net/btb/res/727.html#4685",
+        "date": "Jul 11, 2024",
+        "sampleRate": 32000,
+        "codeOriginal": "c=t=>((cbrt(sin(t*PI/128*(1.5**(3&[t,-t][t>>15&1]>>13))/(1+1.5/2*(3&t>>16))))*sin(t*PI/128/64)+(random()*64&-t>>7)%255/128)/2+cbrt(sin(t*PI/128/128/4))/4)*127+128&255,(()=>{o=0;n=3;n2=4e3;for(i=0;i<n*n2;i+=n2)o+=c(t-i);return o/n})()+(sin(4e3/(t&16383))*32)"
+    },
+    {
         "author": "SRB2er",
         "description": "want a byte of my food?",
         "url": "https://battleofthebits.com/arena/Entry/want+a+byte+of+my+food_/70383/",
@@ -1750,17 +1753,6 @@
         "sampleRate": 32000,
         "file": "SRB2er.js",
         "fileOriginal": true
-    },
-    {
-        "author": [
-            "emelchenko",
-            "Gaham"
-        ],
-        "description": "caveium",
-        "url": "https://dollchan.net/btb/res/727.html#4685",
-        "date": "Jul 11, 2023",
-        "sampleRate": 32000,
-        "codeOriginal": "c=t=>((cbrt(sin(t*PI/128*(1.5**(3&[t,-t][t>>15&1]>>13))/(1+1.5/2*(3&t>>16))))*sin(t*PI/128/64)+(random()*64&-t>>7)%255/128)/2+cbrt(sin(t*PI/128/128/4))/4)*127+128&255,(()=>{o=0;n=3;n2=4e3;for(i=0;i<n*n2;i+=n2)o+=c(t-i);return o/n})()+(sin(4e3/(t&16383))*32)"
     },
     {
         "author": [
