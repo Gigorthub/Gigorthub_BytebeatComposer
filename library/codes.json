@@ -11,11 +11,22 @@
     },
     {
         "author": "Dresdenboy",
-        "description": "More than a beat",
-        "url": "https://demozoo.org/music/291150/",
-        "date": "Mar 13, 2021",
-        "sampleRate": 44100,
-        "codeOriginal": "min(255,(t>>20&1)*(t>>12&3)*((t>>1|t>>6|t>>2)&127)/2+(y=t*((x=t>>19)%3)*1.0595**(\"06060628\"[t>>13&7]*2+3*(t>>16&1)),(y&y*0.98&128)+(y&y*1.02&256))/4+((t*(-t>>2&-t>>6&1536)+(-t>>4&-t>>2&1536)>>(14-((x+(t*3>>3))%(10+(t>>16&2)))))&255)*(-t&8191)/8e4)"
+        "children": [
+            {
+                "description": "More than a beat",
+                "url": "https://demozoo.org/music/291150/",
+                "date": "Mar 13, 2021",
+                "sampleRate": 44100,
+                "codeOriginal": "min(255,(t>>20&1)*(t>>12&3)*((t>>1|t>>6|t>>2)&127)/2+(y=t*((x=t>>19)%3)*1.0595**(\"06060628\"[t>>13&7]*2+3*(t>>16&1)),(y&y*0.98&128)+(y&y*1.02&256))/4+((t*(-t>>2&-t>>6&1536)+(-t>>4&-t>>2&1536)>>(14-((x+(t*3>>3))%(10+(t>>16&2)))))&255)*(-t&8191)/8e4)"
+            },
+            {
+                "description": "Smooth Digital",
+                "url": "https://demozoo.org/music/305280/",
+                "date": "Feb 12, 2022",
+                "sampleRate": 22050,
+                "codeOriginal": "k=1536,l=(t<1)?0.0:l*.90+max(0,min(255,t*((-t>>10)&(t>>2)&k)+((-t>>3)&(-t>>2)&k)>>(13-(2*((t>>18)+(t>>(t>>1)))%(10+((t>>15)&3))))+20))/(1800+(t>>12))*(-t&8191),max(0,min(255,l/30+(sqrt(t*(t>>18&1)&8191)<<6&64)))"
+            }
+        ]
     },
     {
         "author": "ern0",
@@ -68,6 +79,43 @@
                 "date": "May 22, 2022",
                 "sampleRate": 48000,
                 "codeOriginal": "(t&96)*(4e3/(t&([16383,16383,16383,8191,16383,16383,16383,12287][(t>>15)&7])))+(t&t>>10&63)"
+            },
+            {
+                "description": "me when the",
+                "mode": "Signed Bytebeat",
+                "url": "https://dollchan.net/btb/res/227.html#236",
+                "date": "Nov 12, 2022",
+                "sampleRate": 48000,
+                "codeOriginal": "((4E5/(t&16383)&128)+(t*[2,2,2,2,3,0,3,0][7&t>>11]*[1,1,1.2,1.35][3&t>>15]>>1&128)+((sin(t*[1,1,1,1,2,2,2,2,1,1,2,2,3,3,4,4][15&t>>13]*.79>>5)*100)))>>2"
+            },
+            {
+                "description": "me when the",
+                "url": "https://dollchan.net/btb/res/227.html#241",
+                "date": "Nov 13, 2022",
+                "sampleRate": 32000,
+                "codeOriginal": "(4E3/(t&8191)&127)+(t*[2,1.5,3,2.5][3&t>>12]*[1,1,1.2,1.35][3&t>>15]&128)"
+            },
+            {
+                "description": "the platonic solids",
+                "url": "https://dollchan.net/btb/res/227.html#244",
+                "date": "Nov 14, 2022",
+                "sampleRate": 32000,
+                "codeOriginal": "t>>=2,((4E5/(t&4095)&127)+(random()*64&-t>>4)+(t*[0,sin(t>>1)][1&t>>12]&-t>>5&127)+((t*[1,1,1.2,1.35][3&t>>13]&127)+(t*.01)&128)+(t*[1,3,2,4,2,0,4,0][7&t>>10]&127)+(t*[4,0,0,3.55][3&t>>13]&64))/3"
+            },
+            {
+                "description": "space critters",
+                "mode": "Signed Bytebeat",
+                "url": "https://dollchan.net/btb/res/227.html#246",
+                "date": "Nov 14, 2022",
+                "sampleRate": 32000,
+                "codeOriginal": "(4E3/(t&[16383,5265,16383,9383,14383,13683,16383,4095][7&t>>14])&63)+(sin(t/[10,6,10,8,12,8,10,6][7&t>>12])*10)+(sin(t/[20,16,12,10,20,15,12,13.5][7&t>>16])*50)"
+            },
+            {
+                "description": "absolute banger",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/227.html#269",
+                "date": "Dec 06, 2022",
+                "codeOriginal": "sin(t/10*(t&8192?-t>>8&t>>11&19:t>>9&t>>10&15)*(t&1024?t>>11&3:PI))"
             },
             {
                 "description": "i just ✨ SHNIPPLED ✨",
@@ -649,7 +697,7 @@
         ]
     },
     {
-        "author": "GlebGuyThing",
+        "author": "Gaham",
         "children": [
             {
                 "description": "Egypt dungeon",
@@ -697,11 +745,59 @@
                 "codeOriginal": "x=t*[1,2,3,2][(t>>12)%4]/[1,1,2,3][(t>>15)%4],((sin(x/16)+sin(x/8)/2+sin(x/4)/3+sin(x/2)/4+sin(x)/4)/2+sin(4e3/(t/2%4096)))*50+128+sin(x/12)*16"
             },
             {
+                "description": "Kinda cool melody thing",
+                "url": "https://dollchan.net/btb/res/727.html#2743",
+                "date": "Dec 08, 2023",
+                "codeOriginal": "((t*[1,2,3,4,][(t>>[10,10,9,8][(t>>14)%4])%4]&-t>>2)^(4e4/(t%4096)))^t>>6&(t*4*t)%256/2"
+            },
+            {
                 "description": "One of those cheep synthesizers you find in a garage",
                 "url": "https://dollchan.net/btb/res/727.html#2790",
                 "date": "Dec 15, 2023",
                 "sampleRate": 10000,
                 "codeOriginal": "sq=c=>(c*4&128)/3,pwp=c=>((c&64)+(c/2&64)+(c/3&64))/3,sn=c=>random()*128&64&-t>>c,pwp(t*[0,1,1,0,2,0,1,3,0,1,1,0,2,0,1,3,0,1,1,0,2,0,1,3,0,2,0,1,0,1,0,1,0][(t>>11)%32])+sq(t*[0,1,0,0,2,0,1,3,3,1,0,0,1,0,1,0,0,1,1,0,3,0,2,3,0,2,0,0,0,0,0,0,0][(t>>11)%32])+sn([3,4,4,4,1,4,4,4,3,4,4,31,3,4,4][(t>>11)%16])"
+            },
+            {
+                "description": "Kanjemers",
+                "url": "https://dollchan.net/btb/res/727.html#4381",
+                "date": "Jul 11, 2023",
+                "sampleRate": 22050,
+                "codeOriginal": "x=t*[1,2,3,2][(t>>12)%4]/[1,1,2,3][(t>>15)%4],((sin(x/16)+sin(x/8)/2+sin(x/4)/3+sin(x/2)/4+sin(x)/4)/2+sin(4e3/(t/2%4096)))*50+128+sin(x/12)*16"
+            },
+            {
+                "description": "Get ractangled lol",
+                "url": "https://dollchan.net/btb/res/727.html#4503",
+                "date": "Sep 09, 2024",
+                "codeOriginal": "(t<<3)*[8/9,1,9/8,6/5,4/3,3/2,0][[0xd2d2c8,0xce4088,0xca32c8,0x8e4009][t>>14&3]>>(0x3dbe4688>>((t>>10&15)>9?18:t>>10&15)*3&7)*3&7]|t%(t/16%2048)&t/(4<<((t/256%256>=128)+(t/512%256>=128)))*-1|(t/32)*(t/4%256>=128)|(t*4)*(t/16%256>=128)*(t/128%256<=128)|(t*2|4*t+4)*(t/16%256>=128)*(t/128%256>=128)|t*(t>>5|t>>8)&80&t>>10^(t&t>>100|t>>60)"
+            },
+            {
+                "description": "Space music",
+                "url": "https://dollchan.net/btb/res/727.html#4549",
+                "date": "Sep 25, 2024",
+                "sampleRate": 32000,
+                "codeOriginal": "t/=4,rev=x=>(t?0:a=Array(12288).fill(0),b=x+a.shift(),a.push(b/1.8),b),rev(((t*(((5^9&t>>12)^(12^13&t>>10))|(5&t>>13)&(6&t>>11)/(42&t>>10)+(4e7/(t/4%4096+40)))*(1+(3&t>>13))/(1+(7&t>>7))|t>>3)%256/2.5))"
+            },
+            {
+                "description": "sinewave dancing",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/727.html#4747",
+                "date": "Oct 26, 2024",
+                "sampleRate": 32000,
+                "codeOriginal": "sin(t*PI/128)/tan(t*PI/128/128)+sin(t*PI/4096/16)/sin(t*PI/128/128)/sin(t*PI/128/64)"
+            },
+            {
+                "description": "did something with it",
+                "url": "https://dollchan.net/btb/res/727.html#5004",
+                "date": "Nov 21, 2024",
+                "codeOriginal": "t%=131051,x=128*(-t>>12&30|-t>>13&25)/2E3,beepertraker=(c,p,bpm,l,v)=>((c*x/1.7067*p[(t>>bpm)%l])%150&128)%256/v,beepertraker(t,[6,5,4,3,4,5,4,4],12,8,2)+beepertraker(t,[5,7,9, ,5,3,2, ],12,8,2)+beepertraker(t,[1,2,3,2,1,3,6,3],12,8,2)"
+            },
+            {
+                "description": "sinc",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/727.html#5078",
+                "date": "Nov 29, 2024",
+                "sampleRate": 48000,
+                "codeOriginal": "x=t*[1,2,3,2][(t>>12)%4]/[1,1,2,3][(t>>15)%4],((sin(x/16)+sin(x/8)/2+sin(x/4)/3+sin(x/2)/4+sin(x)/4)/2+sin(4e3/(t/2%4096)))*50+128+sin(x/12)*16"
             },
             {
                 "description": "fm square fun",
@@ -710,6 +806,35 @@
                 "date": "Dec 03, 2024",
                 "sampleRate": 32000,
                 "codeOriginal": "fms=f=>sin(f*PI/128+cos(f*PI/127+cbrt(sin(t*PI/128)))),(fms(t/2|t)+sin(t*PI/4096)+sin(t*PI/6963.2))*fms(t/128|t)"
+            },
+            {
+                "description": "neuro first punch remix",
+                "url": "https://dollchan.net/btb/res/727.html#5117",
+                "date": "Dec 06, 2024",
+                "codeOriginal": "((t*((t&4096?t%65536<59392?7:t>>6:16)+(1&t>>14))>>(3&-t>>(t&2048?2:10))|t>>(t&16384?t&4096?4:3:2))%256/3)+(4e5/(t%4095+400)*4&64)+(random()*64&-t>>5+(1&t>>12))"
+            },
+            {
+                "description": "silly lil song",
+                "url": "https://dollchan.net/btb/res/727.html#5147",
+                "date": "Dec 11, 2024",
+                "sampleRate": 22050,
+                "codeOriginal": "x=t*[1,2,3,2][(t>>12)%4]/[1,1,2,3][(t>>15)%4],((sin(x/16)+sin(x/8)/2+sin(x/4)/3+sin(x/2)/4+sin(x)/4)/2+sin(4e3/(t/2%4096)))*50+128+sin(x/12)*16"
+            },
+            {
+                "description": "lean of a 100",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/727.html#5244",
+                "date": "Jan 02, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": "t/=-4,sin(cbrt(atan(tan(sin(atan(tan((t+128)*PI/128/2))/atan(t*(1+(1&t>>0))%4096*(1+(1&t>>13))*PI/128/64))))/(cos(t*PI/129)%sin(t*PI/128))*cos(t*PI/128)/sin(t*PI/128)/2)/2)/sin(t*PI/128/64)"
+            },
+            {
+                "description": "Space music",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/727.html#5281",
+                "date": "Jan 09, 2025",
+                "sampleRate": 32000,
+                "codeOriginal": "sin(t*sin(t*PI/128)/4096/8)/sin((t/(1+(3&t>>12))%4096)*PI/4069/4)/4*sin(t*[1,PI][-t>>17&1]/128/[1,2][-t>>17&1])+sin(4e4/(t/4%4096+500))*2*(1&-t>>13)"
             },
             {
                 "description": "FM gitaur",
@@ -799,7 +924,7 @@
         ]
     },
     {
-        "author": "Absolute197",
+        "author": "absolute197",
         "children": [
             {
                 "description": "another organ thing i created",
@@ -1149,6 +1274,22 @@
                 "codeOriginal": "t%=2621440+1048576+32768,x=C=>(p=t*PI/128*2**([0,5-(t>>16&2),8-((Q=t>>14)&1),12-(Q&2)][t%(1+min(t>>17,3))]/12),t?(a+=sin(sin(p)+sin(sin(p*2)*(_=min(t>>11,128))/96+asin(sin(p*4))*_/(106-(C*33)))+sin(p*4)*_/(113-(C*41))),a/=2.5,b+=(a/(4-C)-b/(9-C*2))/(5+C)):a=b=0,b*(1+(.05*C))*min(t>>12,128)/128*(t<(2621440+1048576))+(max(min(sin(sqrt(cbrt(u=t%32768)*7*(300+(C*100))))/1.9/(u/(5e4+(C*5e3))),1),-1)/2*(t>524288)+(t*2**([5,3,5,7+(t>>18&1)][t>>16&3]/12)/256%1-.5)/3.6*(t>524288)+(((sin(int(t/(4+C)))*t&128)/(20-(C*2))/(u/64+15)*(t>>15&1)*3)+random()*(-t>>7&31)**2*(-t>>12&1)/1.6e3)*(t>1048576))*2*(t<(2621440+524288))+sin(sin(sin(sin((V=t*2**([3,5,3,7,3,5,10,7,3,5,[8,10][($=t>>17)&1],7,3,7,5,[3,12][$&1]][t>>13&15]/12)/64*PI)+sin(V/2)*(-t>>8&31)/32)/3)+V*4+sin(V)*(-t>>8&31)/20)+V)/3.3*(t>1572864)*(t<2621440))*(1+C/35)/1.8,[x(0),(x(1)+x(2))/1.8]"
             },
             {
+                "description": "Sawtooth waves",
+                "url": "https://www.reddit.com/r/bytebeat/comments/181ltzo/sawtooth_waves/",
+                "date": "Nov 22, 2023",
+                "sampleRate": 440000,
+                "codeOriginal": [
+                    "p=x=>t*2**(x/12)/18,",
+                    "S=t>>16,",
+                    "T=2**21,",
+                    "(p([0,5,8,7,3,8,10,12][S/2&7])%64+",
+                    "(p([[12,10,8,7],[15,12,8,5]][S/8&1][S&3]+0)/4%64)*(t>T)+",
+                    "(p([0,5,8,5,0,5,10,5,0,5,7,5,0,3,5,10][S&15])/4%64)*(t>(T*2))+",
+                    "(p([0,-2,-4,-5][S/8&3])%96)*(t>T*3)+",
+                    "(p([8,10,12,15,8,5,3,5][S/2&7])*(1+(-t>>15&1))&63)*1.3*(t>T*4))/2"
+                ]
+            },
+            {
                 "description": "made in a hotel at 11pm at march 25th, 2024",
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1ipawls/well_you_guys_wanted_a_list_of_old_bytebeats_from/",
@@ -1275,6 +1416,19 @@
             "",
             "c=(mm-1?(t2/((nn&-t2>>12)+1)):t2)*pp*(nn&-t2>>(t2&4096?9:16)),f=(xx,p=0)=>(x=xx*(1.25+p),sin(x*PI/128)+sin(x*3.153826/128)+sin(x*5/128)),r((f(c*10)/8+sin(sqrt(t2%4096)*4)*2)/3)/2"
         ]
+    },
+    {
+        "author": [
+            "Absolute197",
+            "BSquareII",
+            "lhphr",
+            "orion_aboy"
+        ],
+        "description": "Sepulchre but it's a minification collab",
+        "url": "https://www.reddit.com/r/bytebeat/comments/15j9aef/sephulcre_minified_by_me_and_bsquareii/",
+        "date": "Aug 05, 2023",
+        "sampleRate": 48000,
+        "codeOriginal": "C=29.2,c=27.56,D=26.02,e=23.17,F=21.87,G=19.49,A=17.36,a=16.39,B=F/2,b=A*2,d=a*2,f=a/2,g=A/2,H=D/2,h=G/2,I=c/2,i=this,k=sin,S=9e3,z=t/S,Z=z&1023,J='D-F-A-G-c-F-B-GFb-F-A-G-d-F-f-g',l=Z>>7,p=i[J[Z%32]],p2=i[J[Z%32-3&31]]+.01,j='DDFeDDbADDFGDDb-DHBGHDbAHABhHIA-DFAGcFBGbFAGdFfGDeF-Dcb-DHF-ceA',q=i[j[Z+4>>3&63]],Q=i[j[Z>>3&63]],R=i[j[Z-4>>3&63]],v=min((t/S*4&15),8)/8,y=q==Q,x=!q,q||=Q*2,q=y?q-k(z*6)/2e4:Q+(q-Q)*v,Y=Q==R,X=!Q,Q||=R*2,Q=Y?Q:R+(Q-R)*v,V=-Z*8-1&31,W=1+k(Z)*C,w=2^Z/8&3,(p/W+tan(t/2/p)&min(Z/3,27))+(p2/W+tan(t/2/p2)&min(Z/6,11))+(l&&72>>((l>3&&l<8?2+(Z>>1&2):2)*t/PI/(i[J[Z>>4&6]]*2**w+(t&1)/4)<<w))+(l>2&&(tan(t/(4+(8*z+32&45+(Z/8&3)))^z*128)&V)+(k(t/(192+sqrt(45/(z*2%8))/64))+1)*V+random()*(-z*32&15-9*k(C*Z)))+(l>3&&(k(t*2/q)-1&24*(!x||1-v))+(k(t*2/Q)-1&12*(!X||1-v)))"
     },
     {
         "author": "Weird Arg",
@@ -1599,8 +1753,19 @@
     },
     {
         "author": [
-            "ccret293",
-            "BaenHoHoHo"
+            "emelchenko",
+            "Gaham"
+        ],
+        "description": "caveium",
+        "url": "https://dollchan.net/btb/res/727.html#4685",
+        "date": "Jul 11, 2023",
+        "sampleRate": 32000,
+        "codeOriginal": "c=t=>((cbrt(sin(t*PI/128*(1.5**(3&[t,-t][t>>15&1]>>13))/(1+1.5/2*(3&t>>16))))*sin(t*PI/128/64)+(random()*64&-t>>7)%255/128)/2+cbrt(sin(t*PI/128/128/4))/4)*127+128&255,(()=>{o=0;n=3;n2=4e3;for(i=0;i<n*n2;i+=n2)o+=c(t-i);return o/n})()+(sin(4e3/(t&16383))*32)"
+    },
+    {
+        "author": [
+            "BaenHoHoHo",
+            "ccret293"
         ],
         "description": "I SHARTED AT TACO BELL",
         "url": "https://www.reddit.com/r/bytebeat/comments/1i4l6yz/i_sharted_at_taco_bell/",
