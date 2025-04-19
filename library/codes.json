@@ -45,8 +45,15 @@
         "codeOriginal": "r=t/7938,(t*pow(2,([a=619,a,601,584,b=1180,b,55,38][(r/8&7)+((r&15)==7)]>>(r*18%12&12)&15)/12)&128)*max(((2981555643>>(r*2&30)&3)-r%1)/4,0)*.9+(t*pow(2,((546914935>>(r/2&28)&15)-5*(14576>>(r&15)&1))/12)&511)*((3204176859>>(r*2&30)&3)-r%1)*.07"
     },
     {
-        "author": "ccret293 (getdolphinedlol)",
+        "author": "ccret293 (getDolphinedLol)",
         "children": [
+            {
+                "description": "nice 72100Hz music",
+                "url": "https://www.reddit.com/r/bytebeat/comments/sgdkpm/nice_72100hz_music/",
+                "date": "Jan 30, 2022",
+                "sampleRate": 72100,
+                "codeOriginal": "((t*[1,0,1.5,0,1,0,1.5,2][(t>>13)%8]>>2)%127)+((t*[1,0,1.5,0,1,0,1.5,2][(t>>13)%8]>>2)%128)"
+            },
             {
                 "description": "hell rock",
                 "url": "https://www.reddit.com/r/bytebeat/comments/sqv5s7/hell_rock/",
@@ -67,11 +74,34 @@
                 ]
             },
             {
+                "description": "$19 dollar fortnite card",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/urrene/19_dollar_fortnite_card/",
+                "date": "May 17, 2022",
+                "sampleRate": 22050,
+                "codeOriginal": "t*=1.6,gc=t*[1,2,3,4,2,0,4,0,0.5,0.5,0,0,0.5,0.5,0,0][t>>12&15]/[4,5,6,6][t>>16&3]*4,30*asin(sin(gc/7))+40*asin(sin(gc/14))"
+            },
+            {
                 "description": "cool 1000hz beat",
                 "url": "https://www.reddit.com/r/Enhanced_Bytebeat/comments/ut46t9/cool_1000hz_beat/",
                 "date": "May 19, 2022",
                 "sampleRate": 1000,
                 "codeOriginal": "(t*(-t>>7&5)*(t>>8&15)*16&64)+(t>>2&127)"
+            },
+            {
+                "description": "quandale dingle anthem",
+                "url": "https://www.reddit.com/r/bytebeat/comments/ut8wwz/quandale_dingle_anthem/",
+                "date": "May 19, 2022",
+                "sampleRate": 32000,
+                "codeOriginal": "(((t/[4,3,2.5,2.2][t>>15&3]/1.8)&64)+(t*[1,1,2,2,6,6,5.3,5.3,4,4,3.6,3,3.6,3.6,4,4][t>>12&15]/1.8&64)+(64*random()*(-t>>11&1))+(t*sin(t>>4)*(t>>14&1)&-t>>8&63)+(4e4/(t&16383)&64))/1.5"
+            },
+            {
+                "description": "henry bartholomew dinglenut anthem",
+                "mode": "Signed Bytebeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/utt7t5/henry_bartholomew_dinglenut_anthem/",
+                "date": "May 20, 2022",
+                "sampleRate": 32000,
+                "codeOriginal": "(50*cbrt(asin(sin(t/[4,3,2.5,2.2][t>>15&3]/20/1.8)))+30*atan(tan(t*[1,1,2,2,6,6,5.3,5.3,4,4,3.6,3,3.6,3.6,4,4][t>>12&15]/40/1.8))+30*sin(3e2/(t&4095))+50*sin(4e3/(t&16383)))/2"
             },
             {
                 "description": "48khz hardcore music eeee",
@@ -603,7 +633,7 @@
                 "description": "5",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/520.html#5835",
-                "date": "Apr 13, 2025",
+                "date": "Apr 9, 2025",
                 "sampleRate": 32000,
                 "stereo": true,
                 "file": "decentmanager6.js",
@@ -1411,7 +1441,7 @@
     },
     {
         "author": [
-            "Absolute197",
+            "absolute197",
             "BSquareII",
             "lhphr",
             "orion_aboy"
@@ -1898,12 +1928,42 @@
     },
     {
         "author": "Sharp-Passenger-4439",
-        "description": "Bfdi 3 song remix",
-        "url": "https://www.reddit.com/r/bytebeat/comments/1jx5qva/bfdi_3_song_remix/",
-        "date": "Apr 11, 2025",
-        "sampleRate": 38000,
-        "file": "sharp.js",
-        "fileOriginal": true
+        "children": [
+            {
+                "description": "atari thingy remix (my first bytebeat)",
+                "mode": "Signed Bytebeat",
+                "date": "Apr 11, 2025",
+                "sampleRate": 33600,
+                "stereo": true,
+                "codeOriginal": "i=262144,v=16384,h=4096,c=8192,x=j=>min(max((b=t=>((t/j*2**([0,7,12,0,7,12,0,7,0,7,12,0,7,12,0,7,0,7,12,0,7,12,0,7,3,10,15,3,10,15,3,10,-4,3,8,-4,3,8,-4,3,-4,3,8,-4,3,8,-4,3,-5,2,7,-5,2,7,-5,2,-1,7,11,-1,7,11,-1,7][t>>12&63]/12/j)*2/j+8)&255)*(-t&4095)>>15,(b(t)+b(t-(f=1228))+b(t-f*2)+b(t-f*3)+b(t-f*4)+b(t-f*5)+b(t-f*6)+b(t-f*7)+b(t))/.8-((t/2/j*2**([0,0,0,3,-4,-4,-1,-1/j][t>>15&7]/12)&128)*(t%v/v)*(1-t%h/c))+(t>=524288?70:0)*tanh(sin(8*cbrt(t%v))*(1-t%v/v)*4)+(t>=i?t<=524288?(90*random()-45)*(t%i/i):0:0)+(t>=i*2?50*sin((t>>2)**3)*(t>>14&1)*(1-t%v/v):0)+(t>=i*4?(t/j*4*2**([0,0,3,2,-5,-5,-2,!(1&t>>14)?-7:-9][t>>15&7]/12)&192)/2*(1-t%(v*2)/(v*4)):0))/2-32,-127),127),[x(1.005),x(.995)]"
+            },
+            {
+                "description": "fm machine",
+                "mode": "Floatbeat",
+                "date": "Apr 11, 2025",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "a=(t>>12&t>>14)%11%9%7*t*'MELODY!!'.charCodeAt(t>>14&7)/99, // This is the formula that the FM machine is going to use",
+                    "b=sin(t/65536*PI)*16, // This is the strength of FM",
+                    "sin(sin(sin(cos(a/128*PI)*abs(b))))*1.31 // This is the FM part. multiple sin()'s and cos()'s will create an accurate FM synth sound"
+                ]
+            },
+            {
+                "description": "Bfdi 3 song remix",
+                "date": "Apr 11, 2025",
+                "sampleRate": 38000,
+                "file": "sharp.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "DARK JUNGLE",
+                "date": "Apr 12, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "sharp2.js",
+                "fileOriginal": true
+            }
+        ]
     },
     {
         "author": "TrashImpossible3699",
