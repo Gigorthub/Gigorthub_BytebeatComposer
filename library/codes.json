@@ -953,6 +953,15 @@
         ]
     },
     {
+        "author": "bulletbill",
+        "description": "Highway to Hell Riff",
+        "url": "https://dollchan.net/btb/res/3.html#659",
+        "date": "Mar 19, 2023",
+        "sampleRate": 44100,
+        "file": "bulletbill.js",
+        "fileOriginal": true
+    },
+    {
         "author": "Chasyxx",
         "description": "Creepy ambiance",
         "mode": "Floatbeat",
@@ -1495,6 +1504,13 @@
         ]
     },
     {
+        "author": "Iggy",
+        "url": "https://dollchan.net/btb/res/3.html#842",
+        "date": "Apr 16, 2023",
+        "sampleRate": 11025,
+        "codeOriginal": "z=t*'12483692'[7&t>>10],z*[1,1.2,1.6,1.5,2,2.4,3.2,3][7&t>>14]|150"
+    },
+    {
         "author": "SleepingLugia (leejh20)",
         "children": [
             {
@@ -1502,6 +1518,14 @@
                 "url": "https://www.reddit.com/r/bytebeat/comments/12qobb4/i_have_no_idea/",
                 "date": "Apr 18, 2023",
                 "codeOriginal": "t*2**(((88269>>(b=((a=t>>14)/4^t>>10)%6)*4)%16-5+(b<2)*(49280>>((132>>a%4*2)%4*2+b%2)*3)%8)/12)*8|t>>6&t>>7^t>>4"
+            },
+            {
+                "description": "bytebeat drum machine",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/3.html#1025",
+                "date": "May 05, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "t>0?(T=t/s*4.2,b=c,c=(54613>>T%16)%2*(1-(T*2&1)),c-b>0?A=0:A+=1/s,o=p,p=(T-.02|0)%4>>1,p-o>0?B=0:B+=1/s,k=m(2e3/(1+A*6e2),31),a=(a+k/s)%1,d=8e-3,h=q+q/(1-z),z=.5-.3*(1-1/(1+B*35)),i=random()*2-1,e+=z*(i-e+h*(e-f)),f+=z*(e-f),g+=z*(f-g),j=(f-g)*(B<d?2*v(B,d):B<d*2?.9*v(B-d,d):B<d*3?v(B-d*2,d):v(B-d*3,.11)),atan(j*2+min(m(1.5*sin(a*r)*exp(-m(A*A*9,0)),-1),1)/2)):(a=b=c=e=f=g=o=p=A=0,B=1,q=z=0.5,v=(a,b)=>a/b<1?(n=1-a/b)*n:0,m=max,r=PI*2,s=32e3)"
             },
             {
                 "description": "random percussion thing",
@@ -1943,6 +1967,23 @@
         ]
     },
     {
+        "author": "a_creator365",
+        "children": [
+            {
+                "description": "the type of music you hear on a game",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=32#c592802",
+                "date": "Jan 15, 2025",
+                "codeOriginal": "(t*(5|t>>13&3)>>(~t>>11&1))|t>>5|t>>9|t>>13|t>>4|t>>6"
+            },
+            {
+                "description": "oefglekgolg",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=32#c593689",
+                "date": "Mar 31, 2025",
+                "codeOriginal": "((15*(t/((t>>9&t>>10))))&128)+((4E5/(t&4095))&127)"
+            }
+        ]
+    },
+    {
         "author": [
             "BaenHoHoHo",
             "ccret293"
@@ -2082,23 +2123,6 @@
             "+sin((c=(t*2**(([12,9,7,11][t>>17&3]-.7)/12+1)))*PI/128+sin(c*PI/256*j))/5*(1-t/2**17%1)**.1",
             "+sin((d=(t*2**(([16,12,12,14][t>>17&3]-.7)/12+1)))*PI/128+sin(d*PI/256*j))/5*('0001'[t>>15&3])*(1-t/32768%1)**.4",
             "+sin((e=(t*2**(([-3,5,0,-5][t>>17&3]-.7)/12)))*PI/128+sin(e*PI/252*j))/3*(1-t/2**17%1)**.1)*(t>>16>1)),w(t)+w(t-(de=24576))/2+w(t-de*2)/4+w(t-de*3)/8+w(t-de*4)/16)/1.5,[x(1.005),x(.995)]"
-        ]
-    },
-    {
-        "author": "a_creator365",
-        "children": [
-            {
-                "description": "the type of music you hear on a game",
-                "url": "https://www.pouet.net/topic.php?which=8357&page=32#c592802",
-                "date": "Jan 15, 2025",
-                "codeOriginal": "(t*(5|t>>13&3)>>(~t>>11&1))|t>>5|t>>9|t>>13|t>>4|t>>6"
-            },
-            {
-                "description": "oefglekgolg",
-                "url": "https://www.pouet.net/topic.php?which=8357&page=32#c593689",
-                "date": "Mar 31, 2025",
-                "codeOriginal": "((15*(t/((t>>9&t>>10))))&128)+((4E5/(t&4095))&127)"
-            }
         ]
     },
     {
