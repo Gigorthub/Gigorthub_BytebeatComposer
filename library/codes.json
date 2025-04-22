@@ -1933,6 +1933,16 @@
         "fileOriginal": true
     },
     {
+        "author": "unpwndEmel",
+        "description": "0xdeaf",
+        "url": "https://www.pouet.net/topic.php?which=8357&page=32#c592312",
+        "date": "Nov 26, 2024",
+        "codeOriginal": [
+            "// 8000Hz Bytebeat",
+            "(((t*(0xdeaf>>(t>>10&15)&(t&32768?7:9))&t>>4)*5/4-32)/2&127)+(t&4096?(t*t/100|t*t/101)*99&~t>>(t&8192?5:4)&127:0)"
+        ]
+    },
+    {
         "author": [
             "BaenHoHoHo",
             "ccret293"
@@ -2075,6 +2085,23 @@
         ]
     },
     {
+        "author": "a_creator365",
+        "children": [
+            {
+                "description": "the type of music you hear on a game",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=32#c592802",
+                "date": "Jan 15, 2025",
+                "codeOriginal": "(t*(5|t>>13&3)>>(~t>>11&1))|t>>5|t>>9|t>>13|t>>4|t>>6"
+            },
+            {
+                "description": "oefglekgolg",
+                "url": "https://www.pouet.net/topic.php?which=8357&page=32#c593689",
+                "date": "Mar 31, 2025",
+                "codeOriginal": "((15*(t/((t>>9&t>>10))))&128)+((4E5/(t&4095))&127)"
+            }
+        ]
+    },
+    {
         "author": "Sharp-Passenger-4439",
         "children": [
             {
@@ -2120,5 +2147,15 @@
         "date": "Apr 15, 2025",
         "sampleRate": 48000,
         "codeOriginal": "M=0<t,r=M?r:[0,0],s=2530,Z=t/s,r[0]+=((((t*pow(2,(293043>>(Z/4&7)&7)/5))^(31+(Z/4&1)))/4&63)-r[0])/(1+(Z*16&63)),r[1]+=((t*pow(2,(17387831289357>>(Z/4&63)&15)/5)/2&63)-r[1])/(1+(Z*16&63)),r[0]+r[1]"
+    },
+    {
+        "author": "Cattoadishere",
+        "description": "Ethereal Byteshop v1.0",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1k2mihy/ethereal_byteshop_v10/",
+        "date": "Apr 19, 2025",
+        "sampleRate": 48000,
+        "file": "cattoadishere.js",
+        "fileOriginal": true
     }
 ]
