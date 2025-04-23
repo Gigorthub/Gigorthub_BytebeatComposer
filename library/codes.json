@@ -232,7 +232,6 @@
                 "url": "https://demozoo.org/music/311729/",
                 "date": "Aug 06, 2022",
                 "sampleRate": 44100,
-                "stereo": true,
                 "codeOriginal": "(e=>{for(d=e?d:[],q=.5*d[e%2e4]||0,i=0;i<4;i++)z=e/4e3+(i?12-3*i:0),x=z%9,q+=x*9**-x*sin(sin(e*2**(((i=>\"222*    222*  22222*  ;;  ME;;23\".charCodeAt(i>>1)-32>>3*(1&i)&7)(z/12%16|16*i)+[0,5,9,14][i])/12-6))*sin(e/3e5)**1.9*5);d[e%2e4]=q})(t),300*q+127"
             },
             {
