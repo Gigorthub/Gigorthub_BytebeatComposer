@@ -51,7 +51,7 @@ globalThis.bytebeat = new class {
 		this.isRecording = false;
 		this.playbackSpeed = 1;
 		this.settings = { drawMode: 'Waveform', drawScale: 0, isSeconds: false, volume: 1 };
-		this.songData = { mode: 'Floatbeat', sampleRate: 24000 };
+		this.songData = { mode: 'Floatbeat', sampleRate: 48000 };
 		this.init();
 	}
 	get editorValue() {
@@ -270,7 +270,7 @@ globalThis.bytebeat = new class {
 			}
 			entry += `<span>${ description ? ` (by ${ authorsList })` : `by ${ authorsList }` }</span>`;
 		}
-		if(url && !description && !author) {
+		if(url && !description) {
 			entry += `(<a href="${ url }" target="_blank">source</a>)`;
 		}
 		if(remixed) {
