@@ -268,9 +268,9 @@ globalThis.bytebeat = new class {
 					authorsList += ', ';
 				}
 			}
-			entry += `<span>${ description ? ` (by ${ authorsList })` : `by ${ authorsList }` }</span>`;
+			entry += `<span>${ description ? ` by ${ authorsList }` : `by ${ authorsList }` }</span>`;
 		}
-		if(url && !description) {
+		if(url && !description && !author) {
 			entry += `(<a href="${ url }" target="_blank">source</a>)`;
 		}
 		if(remixed) {
