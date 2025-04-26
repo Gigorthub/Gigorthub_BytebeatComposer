@@ -678,6 +678,15 @@
         ]
     },
     {
+        "author": "true_qfgg (Fixer_APX)",
+        "mode": "Signed Bytebeat",
+        "description": "yet another remix of ripthisentry.txt",
+        "url": "https://www.reddit.com/r/bytebeat/comments/w6jkl9/yet_another_remix_of_ripthisentrytxt/",
+        "date": "Jul 24, 2022",
+        "sampleRate": 100000,
+        "codeOriginal": "t/=32,n=3&0x4FB64A6AFECDEFDC>>(-t>>8&30),a=t=>sin(t*PI/128)*64,g=(x,y)=>0===y?x:g(a(x),y-1),b=t=>(g(t*255/256,4)+g(t*255/255,2)+g(t*257/256,3))/2,j=b(g(t*2*n,2)*(t/49152)+t*2*n),k=(x,y,z)=>x/(t%y)&z,l=j+k(2e4,4096,40)-k(1e4,2048,50),l=l>127?127:l<-128?-128:l"
+    },
+    {
         "author": "Exoticorn",
         "description": "Lost",
         "url": "https://demozoo.org/music/311732/",
@@ -836,6 +845,100 @@
                 "sampleRate": 32000,
                 "stereo": true,
                 "file": "decentmanager6.js",
+                "fileOriginal": true
+            }
+        ]
+    },
+    {
+        "author": "Greaserpirate",
+        "children": [
+            {
+                "description": "Kick, snare, and bass melody",
+                "url": "https://www.reddit.com/r/bytebeat/comments/zoyqet/kick_snare_and_bass_melody/",
+                "date": "Dec 18, 2022",
+                "children": [
+                    {
+                        "description": "Straightforward",
+                        "codeOriginal": "(2**12&t?4e5:42e3)/(t&4095)|24e3/(t*(2**14&t?(2**15&t?3.15:3):1)&t>>3&204)"
+                    },
+                    {
+                        "description": "Double-time spooky (variant of the 42-melody)",
+                        "codeOriginal": "(2**11&t?5e5:5e4)/(t&1023)|24e3/(t*(0.6+(42&t>>12)/2**6)&t>>3&(2**12&t?20:204))"
+                    },
+                    {
+                        "description": "Spooky 42-melody with weirder evolving drums",
+                        "codeOriginal": "(1.5*2**12&t?1e4:1e5)/(t&(2047-((t>>6)%2047)))|24e3/(t*(0.6+(42&t>>12)/2**6)&t>>3&(2**12&t?20:204))"
+                    }
+                ]
+            },
+            {
+                "description": "Neurofunk, heavyAF breakbeat edition",
+                "url": "https://www.reddit.com/r/bytebeat/comments/zr9def/neurofunk_heavyaf_breakbeat_edition_stereo/",
+                "date": "Dec 21, 2022",
+                "sampleRate": 44100,
+                "stereo": true,
+                "codeOriginal": [
+                    "s=sin(t>>5), h=1&t, t*=.18, ",
+                    "",
+                    "b=(2e5/(t&(2**10/[",
+                    "",
+                    "1,,h,,s,,h,1,",
+                    "1,,s,,1,1,1,h,",
+                    "1,,h,,s,,h,,",
+                    "1,2,s,1,s,1,t&42,(t*1.06)&55",
+                    "",
+                    "][((t)>>10)%32])-1)),",
+                    "",
+                    "n=t*((t&4096?t%65536<59392?7:t&7:16)+(1&t>>14))>>(3&-t>>(t&2048?2:10))|t>>(t&16384?t&4096?10:3:2),",
+                    "",
+                    "[b%149^n,b%150^n]",
+                    ""
+                ]
+            },
+            {
+                "description": "Dive In",
+                "url": "https://www.reddit.com/r/bytebeat/comments/124bns0/dive_in/",
+                "date": "Mar 28, 2023",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate5.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Remix of \"I have no idea\" by SleepingLugia",
+                "url": "https://www.reddit.com/r/bytebeat/comments/12r52gi/remix_of_i_have_no_idea_by_sleepinglugia/",
+                "date": "Apr 18, 2023",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate3.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Remix of \"Remix this or something\" by Glebguything (heavy-duty remix)",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1369zwl/remix_of_remix_this_or_something_by_glebguything/",
+                "date": "May 03, 2023",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate4.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "screamy remix of Ok_Rise_1854's remix of Neurofunk",
+                "url": "https://www.reddit.com/r/bytebeat/comments/17c18ml/screamy_remix_of_ok_rise_1854s_remix_of_neurofunk/",
+                "date": "Oct 20, 2023",
+                "sampleRate": 64000,
+                "stereo": true,
+                "file": "greaserpirate2.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Bathed In Lasers (WIP)",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jwfz8l/bathed_in_lasers_bytebeat_master_level/",
+                "date": "Apr 11, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "file": "greaserpirate.js",
                 "fileOriginal": true
             }
         ]
@@ -1191,57 +1294,6 @@
                 "date": "Dec 18, 2023",
                 "sampleRate": 16000,
                 "file": "chasyxx.js",
-                "fileOriginal": true
-            }
-        ]
-    },
-    {
-        "author": "Greaserpirate",
-        "children": [
-            {
-                "description": "Dive In",
-                "url": "https://www.reddit.com/r/bytebeat/comments/124bns0/dive_in/",
-                "date": "Mar 28, 2023",
-                "sampleRate": 48000,
-                "stereo": true,
-                "file": "greaserpirate5.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "Remix of \"I have no idea\" by SleepingLugia",
-                "url": "https://www.reddit.com/r/bytebeat/comments/12r52gi/remix_of_i_have_no_idea_by_sleepinglugia/",
-                "date": "Apr 18, 2023",
-                "sampleRate": 48000,
-                "stereo": true,
-                "file": "greaserpirate3.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "Remix of \"Remix this or something\" by Glebguything (heavy-duty remix)",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1369zwl/remix_of_remix_this_or_something_by_glebguything/",
-                "date": "May 03, 2023",
-                "sampleRate": 48000,
-                "stereo": true,
-                "file": "greaserpirate4.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "screamy remix of Ok_Rise_1854's remix of Neurofunk",
-                "url": "https://www.reddit.com/r/bytebeat/comments/17c18ml/screamy_remix_of_ok_rise_1854s_remix_of_neurofunk/",
-                "date": "Oct 20, 2023",
-                "sampleRate": 64000,
-                "stereo": true,
-                "file": "greaserpirate2.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "Bathed In Lasers (WIP)",
-                "mode": "Floatbeat",
-                "url": "https://www.reddit.com/r/bytebeat/comments/1jwfz8l/bathed_in_lasers_bytebeat_master_level/",
-                "date": "Apr 11, 2025",
-                "sampleRate": 48000,
-                "stereo": true,
-                "file": "greaserpirate.js",
                 "fileOriginal": true
             }
         ]
