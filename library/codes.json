@@ -1,5 +1,25 @@
 [
     {
+        "author": "TomCat",
+        "children": [
+            {
+                "description": "bloody gliss",
+                "url": "https://battleofthebits.com/arena/Entry/bloody+gliss/43133/",
+                "date": "Jan 31, 2021",
+                "sampleRate": 22050,
+                "file": "tomcat.js",
+                "fileOriginal": true
+            },
+            {
+                "description": "Feel the Bit!",
+                "url": "https://demozoo.org/music/305283/",
+                "date": "Feb 12, 2022",
+                "sampleRate": 44100,
+                "codeOriginal": "t*=.4,T=t>>8,W=f=>abs((f&255)*t/16%256-128),C=i=>W('2X^K@m~^\"@K6\"@K6'.charCodeAt(i+x%4+(T/4&8))+26)*S(16),S=s=>(-s*t&65535)/2**17,k=t&8191,(k>>T&32)+(4e4/k&32)+(81>>(T/4&7)&1&&4e4*sin(t*t)&31)+W(W(b=19+[-4,4,6,1,-4,9,6,1][x=T>>8&7])/64+4*b)*S(1)+C(0)+C(4)"
+            }
+        ]
+    },
+    {
         "author": "KB",
         "description": "Eat Sleep Rave Retweet",
         "url": "https://demozoo.org/music/291148/",
@@ -215,26 +235,6 @@
         "date": "Feb 12, 2022",
         "sampleRate": 44100,
         "codeOriginal": "i=t/8**5-2,T=x=>abs(x%2-1),R=(A,B)=>[C=A+B,S=i=>\"0x\"+\"66DAD0035655ACD\"[(A+6*(i>58-C))*(i|B)%15],d=+S(i+1),V=T(i*4),r=d=>T(t/50/C*1.06**d)*30*C,(r(d)*V+r(d+.1)*(1-V))*(i/9>6-3*A+B)*min(max(i%1,d==S(i),.7-T(i*8)),8-i%1*8+(d==S(i+2)))][5],R(1,0)+R(2,0)+R(2,1)"
-    },
-    {
-        "author": "TomCat",
-        "children": [
-            {
-                "description": "bloody gliss",
-                "url": "https://battleofthebits.com/arena/Entry/bloody+gliss/43133/",
-                "date": "Jan 31, 2021",
-                "sampleRate": 22050,
-                "file": "tomcat.js",
-                "fileOriginal": true
-            },
-            {
-                "description": "Feel the Bit!",
-                "url": "https://demozoo.org/music/305283/",
-                "date": "Feb 12, 2022",
-                "sampleRate": 44100,
-                "codeOriginal": "t*=.4,T=t>>8,W=f=>abs((f&255)*t/16%256-128),C=i=>W('2X^K@m~^\"@K6\"@K6'.charCodeAt(i+x%4+(T/4&8))+26)*S(16),S=s=>(-s*t&65535)/2**17,k=t&8191,(k>>T&32)+(4e4/k&32)+(81>>(T/4&7)&1&&4e4*sin(t*t)&31)+W(W(b=19+[-4,4,6,1,-4,9,6,1][x=T>>8&7])/64+4*b)*S(1)+C(0)+C(4)"
-            }
-        ]
     },
     {
         "author": "Pestis",
@@ -2461,6 +2461,30 @@
                 "file": "two2fall2.js",
                 "fileOriginal": true
             }
+        ]
+    },
+    {
+        "author": "kOLbOSa_exe",
+        "description": "lynx",
+        "url": "https://dollchan.net/btb/res/27.html#5356",
+        "date": "Jan 24, 2025",
+        "codeOriginal": [
+            "x=(k,i)=>i>0?x(abs(k-1*i),i-1):k,",
+            "",
+            "",
+            "",
+            "dd=t=>(x(tan(sin(t/256*PI)),3)*4^0)/4,",
+            "",
+            "oo=t=>",
+            "",
+            "dd(t/((t>>15&3)+[1,1.1,1.2,1.25][(t>>18&3)])*1.25)*2*(1-(t&(2**15-1))/2**15)-1,",
+            "",
+            "(()=>{",
+            "",
+            "for(i=o=1;i<8;i++)o+=oo(t-(i-1)*20000)/i/7",
+            "return max(min(o*320-196,255),0)",
+            "",
+            "})()"
         ]
     },
     {
