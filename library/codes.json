@@ -2468,6 +2468,7 @@
         "description": "lynx",
         "url": "https://dollchan.net/btb/res/27.html#5356",
         "date": "Jan 24, 2025",
+        "sampleRate": 48000,
         "codeOriginal": [
             "x=(k,i)=>i>0?x(abs(k-1*i),i-1):k,",
             "",
