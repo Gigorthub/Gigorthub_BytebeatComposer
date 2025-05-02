@@ -1,5 +1,44 @@
 [
     {
+        "author": [
+            "oasiz",
+            "viznut"
+        ],
+        "description": "Dante's Inferno",
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Oct 10, 2011",
+        "codeOriginal": "((t*(t>>12)&(201*t/100)&(199*t/100))&(t*(t>>14)&(t*301/100)&(t*399/100)))+((t*(t>>16)&(t*202/100)&(t*198/100))-(t*(t>>17)&(t*302/100)&(t*298/100)))"
+    },
+    {
+        "author": "yehar",
+        "children": [
+            {
+                "description": "No 2",
+                "url": "https://yehar.com/blog/?p=2554",
+                "date": "Feb 24, 2012",
+                "codeOriginal": "u=t>>10,8*t*t*(t>>u%3+15)/(3+(u&(u>>5&3|4)))|t>>4"
+            },
+            {
+                "description": "No 3",
+                "url": "https://yehar.com/blog/?p=2554",
+                "date": "Feb 25, 2012",
+                "codeOriginal": "t>>4+!(-t>>13&7)+2*!(t>>17)|t*t*(t>>(t>>12^t>>11)%3+10)/(7+(t>>10&t>>14&3))*!(t&512)<<3+(t>>14&1)"
+            },
+            {
+                "description": "bare-bones version",
+                "url": "https://yehar.com/blog/?p=2554",
+                "date": "Feb 25, 2012",
+                "codeOriginal": "t>>4|t*t*(t>>6&8^8)*(t>>11^t/3>>12)/(7+(t>>10&t>>14&3))"
+            },
+            {
+                "description": "No 4",
+                "url": "https://yehar.com/blog/?p=2554",
+                "date": "Feb 26, 2012",
+                "codeOriginal": "v=t/2^(t&64?63:0),v=v>>v,v/(1+(v>>7))&t/32|(t>>11)%8%3*t*t&15"
+            }
+        ]
+    },
+    {
         "author": "TomCat",
         "children": [
             {
