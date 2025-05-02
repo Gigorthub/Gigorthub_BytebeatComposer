@@ -1,9 +1,22 @@
 [
     {
         "author": "pyryp",
-        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "url": "https://youtu.be/qlrs2Vorw2Y?si=nX634LhxFID2zv3c&t=69",
         "date": "Sep 30, 2011",
         "codeOriginal": "t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9)"
+    },
+    {
+        "author": "red-",
+        "url": "https://youtu.be/qlrs2Vorw2Y?si=JxnUqqBj9L57br4A&t=105",
+        "date": "Sep 30, 2011",
+        "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)"
+    },
+    {
+        "author": "stephth",
+        "description": "remix of miiro's 1-line symphony",
+        "url": "https://news.ycombinator.com/item?id=3064986",
+        "date": "Oct 03, 2011",
+        "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)"
     },
     {
         "author": "jounim",
@@ -12,20 +25,29 @@
         "codeOriginal": "((t&((t>>5)))+(t|((t>>7))))&(t>>6)|(t>>5)&(t*(t>>7))"
     },
     {
+        "author": "bst",
+        "children": [
+            {
+                "url": "https://youtu.be/tCRPUv8V22o?si=Kj3hbHZwDHU760MV&t=44",
+                "date": "Oct 10, 2011",
+                "codeOriginal": "(int)(t/1e7*t*t+t)%127|t>>4|t>>5|t%127+(t>>16)|t"
+            },
+            {
+                "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+                "date": "Oct 11, 2011",
+                "codeOriginal": "t>>16|((t>>4)%16)|((t>>4)%192)|(t*t%64)|(t*t%96)|(t>>16)*(t|t>>5)"
+            }
+        ]
+    },
+    {
         "author": [
             "oasiz",
             "viznut"
         ],
         "description": "Dante's Inferno",
-        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "url": "https://youtu.be/tCRPUv8V22o?si=gVqaqvisKpDoSjod&t=243",
         "date": "Oct 10, 2011",
         "codeOriginal": "((t*(t>>12)&(201*t/100)&(199*t/100))&(t*(t>>14)&(t*301/100)&(t*399/100)))+((t*(t>>16)&(t*202/100)&(t*198/100))-(t*(t>>17)&(t*302/100)&(t*298/100)))"
-    },
-    {
-        "author": "bst",
-        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
-        "date": "Oct 11, 2011",
-        "codeOriginal": "t>>16|((t>>4)%16)|((t>>4)%192)|(t*t%64)|(t*t%96)|(t>>16)*(t|t>>5)"
     },
     {
         "author": "yehar",
@@ -1231,6 +1253,20 @@
                 "codeOriginal": "sin(t*PI/128)/tan(t*PI/128/128)+sin(t*PI/4096/16)/sin(t*PI/128/128)/sin(t*PI/128/64)"
             },
             {
+                "description": "Nice melody you got here",
+                "url": "https://dollchan.net/btb/res/3.html#4947",
+                "date": "Nov 15, 2024",
+                "sampleRate": 11025,
+                "codeOriginal": "(z=t*'12483692'[7&t>>10],z*[1,1.2,1.6,1.5,2,2.4,3.2,3][7&t>>14]&128)*[0,1,1,1,1,1,1,1,][t>>9&7]+(4e4/(t%4096)&128)"
+            },
+            {
+                "description": "think i made a SL Pulse variant",
+                "url": "https://dollchan.net/btb/res/3.html#4957",
+                "date": "Nov 15, 2024",
+                "sampleRate": 44100,
+                "codeOriginal": "pitch=18/19,time=t*pitch,(time*[1,1,1.5,1.25][time>>([16,5,16,7][3&time>>12])&3]&128)%256*(time/16&2047)/2E3+(4e5/(time/4%4096+50)&128)"
+            },
+            {
                 "description": "did something with it",
                 "url": "https://dollchan.net/btb/res/727.html#5004",
                 "date": "Nov 21, 2024",
@@ -2058,6 +2094,13 @@
                 "date": "Oct 21, 2023",
                 "sampleRate": 48000,
                 "codeOriginal": "f=p=>sin(sin(sin(sin(p*t*PI/60)+p*t*PI/90)+p*t*PI/30)+p*t*PI/1e3),(f(.07)+f(.06)+f(.02)+f(.08)+f(.1)+f(.03))/7"
+            },
+            {
+                "description": "Infernal Rhythm",
+                "url": "https://dollchan.net/btb/res/3.html#2627",
+                "date": "Nov 12, 2023",
+                "sampleRate": 48000,
+                "codeOriginal": "x=[12,15,16,19][t>>18&3]*.1,(t*1.4&t>>4|t*[1.8,1.7][t>>18&1]&t>>8|t*x&t>>7|t*1.8&t>>5|(t>>22&1)*(t*x&t>>6)|(t>>23&1)*(t*x*2&t>>3))-2*(t>>20&3)*(1+(t>>22&3))"
             }
         ]
     },
