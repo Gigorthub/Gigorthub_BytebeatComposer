@@ -673,6 +673,7 @@
                 "url": "https://dollchan.net/btb/res/117.html#4458",
                 "date": "Sep 14, 2024",
                 "sampleRate": 48000,
+                "stereo": true,
                 "codeOriginal": "t?[(A=t=>t>0&&cbrt(sin(t*PI/32/2**((t/(n=12e3)&15^6)/12)))*(1-t%n/n)**.3/2)(t)+A(t-n)/2+A(t-(o=24e3))/3,A(t)+A(t-36e3)/2+A(t-48e3)/3].map(A=>((a+=b+=A/4-a/(e=18**(1+cos(t*PI/96e3)/1.25))-b/e*2)/e*((k=t/32>o)&&(p=t%o/o)*2**.9||1)+(k&&tanh(2*sin(3e5/(t%o+2500))+random()/p/255)*.01**p/3*2+(random()-.5)*.99**(t%n)*(t/n&1)+cbrt(sin(t*PI*2**((t/o&7^5)/12)/483))/2*p**.7))*!!(1+t/o&31)):a=b=0"
             },
             {
