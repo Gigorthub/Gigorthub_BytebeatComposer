@@ -1,15 +1,26 @@
 [
+    
+    {
+        "author": "red-",
+        "children": [
+            {
+                "url": "https://www.pouet.net/topic.php?which=8357&page=2#c388356",
+                "date": "Sep 28, 2011",
+                "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)"
+            },
+            {
+                "description": "more javascript hackery"
+                "url": "https://www.pouet.net/topic.php?which=8357&page=3#c388462",
+                "date": "Sep 30, 2011",
+                "codeOriginal": "(((j=Math.round(t/1500)%16))%8==1|(j==3)|(j==6)) * sin(200-200*Math.sqrt((t%6000)/6000))*50 + Math.random()*40*(j%8==5) + (((t|(t>>9|t>>7))*t&(t>>11|t>>9) )&63)*(j%3==0)"
+            }
+        ]
+    },
     {
         "author": "pyryp",
         "url": "https://youtu.be/qlrs2Vorw2Y?si=nX634LhxFID2zv3c&t=69",
         "date": "Sep 30, 2011",
         "codeOriginal": "t?0:v=0,v=(v>>1)+(v>>4)+t*((t>>16|t>>6)&69&t>>9)"
-    },
-    {
-        "author": "red-",
-        "url": "https://youtu.be/qlrs2Vorw2Y?si=JxnUqqBj9L57br4A&t=105",
-        "date": "Sep 30, 2011",
-        "codeOriginal": "(t|(t>>9|t>>7))*t&(t>>11|t>>9)"
     },
     {
         "author": "stephth",
@@ -48,6 +59,12 @@
         "url": "https://youtu.be/tCRPUv8V22o?si=gVqaqvisKpDoSjod&t=243",
         "date": "Oct 10, 2011",
         "codeOriginal": "((t*(t>>12)&(201*t/100)&(199*t/100))&(t*(t>>14)&(t*301/100)&(t*399/100)))+((t*(t>>16)&(t*202/100)&(t*198/100))-(t*(t>>17)&(t*302/100)&(t*298/100)))"
+    },
+    {
+        "author": "ultrageranium",
+        "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
+        "date": "Oct 12, 2011",
+        "codeOriginal": "(t*t/256)&(t>>((t/1024)%16))^t%64*(0xC0D3DE4D69>>(t>>9&30)&t%32)*t>>18"
     },
     {
         "author": "yehar",
@@ -658,38 +675,6 @@
                 "date": "Jun 20, 2024",
                 "sampleRate": 48000,
                 "codeOriginal": "t?(T=t/a*13/6,N=d++,w.wav(N*p('0000011155555666'[2*T&15])/12,(m=T%4)/'33366244'[m*2&7]*4)+((l=b=>w.sine((K=(T+b)%.35)*K/16)*.1**K/4)(0)+l(1.01)/2+l(1.25)/3+l(1.5)/3)*.1**(T/3)):(a=b=c=d=e=f=g=h=i=j=k=48e3,w={wav:(x,y)=>(e+=sin(x*PI/32+(b+=c+=sinh(sin(x*PI/16))*.1**(y%1)-b/16-c/15)/1.3*.69**(cos(y*PI*2)+1))*.2**(cos(y*PI*2)+1)*.006**(y%1)*16-e/16)/32,sine:x=>sin(32e4*x)},p=n=>135*2**(parseInt(n,36)/12-7))"
-            },
-            {
-                "description": "untitledsong_2 with extra melodies",
-                "mode": "Floatbeat",
-                "url": "https://dollchan.net/btb/res/117.html#4295",
-                "date": "Aug 27, 2024",
-                "sampleRate": 48000,
-                "codeOriginal": "p=p=>t*2**(parseInt(p,36)/12),r=(b,d)=>b.repeat(d),(t*=2/3)?(Q=2*tanh(sin(p((r('CGLL',2)+r('BEJJ',2)+r('9DII',4))[t>>13&31])*PI/127%6))*!!(-t>>12&3)*.9997**(t%16384)+A[F=(t+127)%A.length|0],A[F/2]=Q/3,(k+=Q-k/8+A[F*3/4|0])/20+A[F*(1+(t>>12&3^2))/4|0]):A=Array(8192).fill(k=0)"
-            },
-            {
-                "description": "worst remix of echo_w_filter1",
-                "mode": "Floatbeat",
-                "url": "https://dollchan.net/btb/res/117.html#4458",
-                "date": "Sep 14, 2024",
-                "sampleRate": 48000,
-                "stereo": true,
-                "codeOriginal": "t?[(A=t=>t>0&&cbrt(sin(t*PI/32/2**((t/(n=12e3)&15^6)/12)))*(1-t%n/n)**.3/2)(t)+A(t-n)/2+A(t-(o=24e3))/3,A(t)+A(t-36e3)/2+A(t-48e3)/3].map(A=>((a+=b+=A/4-a/(e=18**(1+cos(t*PI/96e3)/1.25))-b/e*2)/e*((k=t/32>o)&&(p=t%o/o)*2**.9||1)+(k&&tanh(2*sin(3e5/(t%o+2500))+random()/p/255)*.01**p/3*2+(random()-.5)*.99**(t%n)*(t/n&1)+cbrt(sin(t*PI*2**((t/o&7^5)/12)/483))/2*p**.7))*!!(1+t/o&31)):a=b=0"
-            },
-            {
-                "description": "scary..",
-                "mode": "Floatbeat",
-                "url": "https://dollchan.net/btb/res/117.html#4473",
-                "date": "Sep 16, 2024",
-                "sampleRate": 48000,
-                "codeOriginal": "_E=X=>sin(t/X*sin(t/5)),t?(y=(A+=B+=_E(3E3)+_E(2E3)+random()*(_=1+cos(t/32768-2))/2-.25*_-A/64-B/32)/192+C[L=t%N],C[L]=y*2/3):(A=B=0,C=Array(N=12288).fill(0))"
-            },
-            {
-                "description": "dumb",
-                "url": "https://dollchan.net/btb/res/117.html#4488",
-                "date": "Sep 18, 2024",
-                "sampleRate": 48000,
-                "codeOriginal": "t?(B=((t*2**((5&t>>13^t>>14&7|t>>13&7)/12+!(t>>10&(_=t&16384?15:7)))&128)-64)*(1-(1+(-t>>14&1))*t%16384/16384)**.5+A[U=t%n|0],A[U-1]=B/3+A[U/1.005|0]/2,max(0,min(255,(L+=F+=B-L/($=8**(1+cos(t*PI/131072))*2)-F/$*2)/$+128))/2+64):A=Array(n=24576).fill(L=F=0)"
             },
             {
                 "description": "suicide..",
@@ -2566,7 +2551,7 @@
         ]
     },
     {
-        "author": "emelchenko",
+        "author": "unpwndEmel",
         "description": "0xdeaf",
         "url": "https://www.pouet.net/topic.php?which=8357&page=32#c592312",
         "date": "Nov 26, 2024",
