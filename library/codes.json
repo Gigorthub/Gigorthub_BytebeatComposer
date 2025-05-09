@@ -2619,11 +2619,36 @@
     },
     {
         "author": "ChrisRM380",
-        "description": "solaris sounds be like",
-        "url": "https://dollchan.net/btb/res/368.html#4990",
-        "date": "Nov 18, 2024",
-        "sampleRate": 48000,
-        "codeOriginal": "t*2**([0,7,2,9,4,11,6,1,8,3,10,5][(t*(t/16&8191?r:r=random()*8|0)>>13)%12]/12)*2&128"
+        "children": [
+            {
+                "description": "solaris sounds be like",
+                "url": "https://dollchan.net/btb/res/368.html#4990",
+                "date": "Nov 18, 2024",
+                "sampleRate": 48000,
+                "codeOriginal": "t*2**([0,7,2,9,4,11,6,1,8,3,10,5][(t*(t/16&8191?r:r=random()*8|0)>>13)%12]/12)*2&128"
+            },
+            {
+                "description": "don't know how to name this",
+                "url": "https://dollchan.net/btb/res/368.html#5417",
+                "date": "Feb 01, 2025",
+                "sampleRate": 20480,
+                "codeOriginal": "speed=(t&32767?v:v=random()*16+1) / 2,t*(2**((-t*speed>>11&7)/12*3.5+(t*speed>>14&7)/24))*speed/6%256/2+t*(2**((-t*speed>>11&7)/12*3.5+(t*speed>>14&7)/24))/6*speed*.75%128*6"
+            },
+            {
+                "description": "Volt.A gdi trojan bytebeat 2",
+                "url": "https://dollchan.net/btb/res/368.html#5540",
+                "date": "Feb 28, 2025",
+                "sampleRate": 9102,
+                "codeOriginal": "(((t / 2 * ((t & 4096 ? t % 65536 < 59392 ? 7 : t >> 6 : 16) + (1 & t >> 14)) >> (3 & (t >> (t & 2048 ? 2 : 10)) * 3)) ^ (t * 7 / 2 * ((t & 4096 ? t % 65536 < 59392 ? 7 : t >> 6 : 16) + (1 & t >> 14)) >> (3 & (t >> (t & 2048 ? 2 : 10))*3))) | t >> 2 - (t >> 12 & 1))"
+            },
+            {
+                "description": "found monoxide's first bytebeat...",
+                "url": "https://dollchan.net/btb/res/368.html#5863",
+                "date": "Apr 16, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": "nSampleCount = 48000 * 30, nFreq = sin( t / 10) * 100. + 500., t * nFreq / nSampleCount * 256 & 128"
+            }
+        ]
     },
     {
         "author": "emelchenko",
