@@ -1441,6 +1441,13 @@
                 "sampleRate": 32000,
                 "exotic": true,
                 "codeOriginal": "cbrt(sinf(x=t*2/(4+(t>>15)%16)*(1+(3&t>>13))>>(2&t>>11))*(sin(cosf(x*3)*4)))/2%256*(-t/2/(1+(1&t>>13))&2047)/2E3+sin(cbrt(t/4%4096)*40)/4+(t*t*t*0.01)%256/512*(-t/8&2047)/2E3*(1&t>>14)-0.4"
+            },
+            {
+                "description": "long weekday chair",
+                "url": "https://dollchan.net/btb/res/727.html#6211",
+                "date": "May 03, 2025",
+                "sampleRate": 34000,
+                "codeOriginal": "r=t,t/=4,r>1702637?128:r>1572611?sin(cbrt(t/16%4096*453400))%256*(2046&-t/16)/3e3*128+128:min((-(10*(t>>6|t|t>>(t>>16))+(7&t>>11)/4&t>>4|t>>3)%(t>>t/[4,6,5,4.5][(t>>14)%4])|t>>4)%256/4*(2046&t/2)/500+64+t*2**[2,3,4,3.27,3.42,3,4,3][t>>11&7]%256/2*(2046&-t)/2e3,255)%256/2+(r>1048560?0:(r>520427?4e4/(t%4096+30)&127+sin(t/2**[0.35,0.75,1.35,1.67][(t>>14)%4])*25-25:0))+(t*t*t*0.1&-t>>5&63)*(1&t>>11)"
             }
         ]
     },
@@ -2609,6 +2616,14 @@
                 "fileOriginal": true
             }
         ]
+    },
+    {
+        "author": "ChrisRM380",
+        "description": "solaris sounds be like",
+        "url": "https://dollchan.net/btb/res/368.html#4990",
+        "date": "Nov 18, 2024",
+        "sampleRate": 48000,
+        "codeOriginal": "t*2**([0,7,2,9,4,11,6,1,8,3,10,5][(t*(t/16&8191?r:r=random()*8|0)>>13)%12]/12)*2&128"
     },
     {
         "author": "emelchenko",
