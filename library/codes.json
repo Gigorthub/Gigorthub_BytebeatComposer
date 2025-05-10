@@ -2348,18 +2348,18 @@
                 "codeOriginal": "(32+sin(cbrt(t&16383)*8)*32+((t*sin(t>>\"3425\"[t>>13&3])&64)*(1-t/(1+(t>>16&1))/\"12221122\"[t>>13&7]%4096/4096)))"
             },
             {
-                "description": "decision",
-                "url": "https://dollchan.net/btb/res/284.html#2603",
-                "date": "Nov 07, 2023",
-                "sampleRate": 44100,
-                "codeOriginal": "(t*(t&t>>(t>>10&15))>>10&127)+(3e4/(t*\"1112\"[t>>14&3]&16383)**.1&128)"
-            },
-            {
                 "description": "got this",
                 "url": "https://dollchan.net/btb/res/284.html#2545",
                 "date": "Oct 25, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "r=t/4,v=t=>(t*2**(\"0357035714791478\"[(t>>13)%16]/12)&64)*(1-t%8192/8192),m=v(t)+v(t-r)+v(t-r*2)+v(t-r*3),f=32+sin(sqrt(t&16383)*2)*32,r=t*random()&15&~t>>8,m/2+f+r"
+            },
+            {
+                "description": "decision",
+                "url": "https://dollchan.net/btb/res/284.html#2603",
+                "date": "Nov 07, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "(t*(t&t>>(t>>10&15))>>10&127)+(3e4/(t*\"1112\"[t>>14&3]&16383)**.1&128)"
             },
             {
                 "description": "hydrogen fucker 8",

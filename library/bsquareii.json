@@ -289,6 +289,13 @@
         "codeOriginal": "(t>>5&t>>9|t>>6&t>>10|t>>9&t>>11|t/4%9&t>>6|t/6&t>>12|t/10&t>>14)&1"
     },
     {
+        "description": "sort of a cool neurofunk remix",
+        "url": "https://dollchan.net/btb/res/2628.html#5034",
+        "date": "Oct 17, 2023",
+        "sampleRate": 48000,
+        "codeOriginal": "t/=6*32/36,a=asin(sin(PI/64*(t*((t&4096?t%65536<59392?7:t&7:16)+(1&t>>14))>>(3&-t>>(t&2048?2:10)))))/PI*32+16,a=a*(~t>>(t&16384?t&4096?10:3:2)&255)>>8,a+((-t/128%32+8)**2.999&32)+(t*random()|t>>2|t>>4|t>>5)%256/8+(sin(b=t*PI/16*2**((t>>14&1)/12))+sin(b*1.5))*8+16+sin(t*PI/16384)*64+64"
+    },
+    {
         "description": "Stereo using Array() remixed",
         "url": "https://www.reddit.com/r/bytebeat/comments/17dj8fs/stereo_using_array_remixed/",
         "date": "Oct 21, 2023",
@@ -321,6 +328,14 @@
         "date": "Feb 28, 2024",
         "sampleRate": 32000,
         "codeOriginal": "(128*sin((a=t/5.1*[12,12,9,12,12,9,12,12,9,12,12,9,12,9,12,9][t>>12&15]*(b=[1,.89,.8,.75][t>>17&3]))/16+sin(a/8.01))+128)*(1-t/4096%1)/4+t/2.7*b%256/4+t/2.67*b%256/4+(4*t*(2+!(t>>12&5))/2.65*b&64)*(1-t/32768%1)*(t>>15&1)"
+    },
+    {
+        "description": "V2 remix of unknown entity",
+        "mode": "Floatbeat",
+        "url": "https://dollchan.net/btb/res/204.html#3131",
+        "date": "Mar 18, 2024",
+        "sampleRate": 48000,
+        "codeOriginal": "x=524288,r=t/1.2,n=x=>t*2**(parseInt(x,36)/12)/179,R=.999**(r&8191),k=sin(1e5/(r%8192+1e3))*R,h=(random()*2-1)*R,s=(t%16?a:a=random()*2-1)*R,(((n(['I8','D3','H1',['I3','H1'][1&r>>15]][3&r>>16][v=1&r>>13])*(r+(r>>19?x:0)>>19&1?1+(r*4/3>>10&3):1)&1)-.5)*(1-r%8192/14e3)+(r>x)*(n(l='iiddhhih'[r>>15&7])/8%1+(r%16384)*PI/x&1)*v-.5)/2+(r>x/2)*eval('khkkshkh'[r>>13&7])+(r>x*3/2)*(3/2*n(l)/8%1-.5)/2*v"
     },
     {
         "description": "wth is this remix i just made (T!me Tr!al)",
