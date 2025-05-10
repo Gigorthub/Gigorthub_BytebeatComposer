@@ -693,6 +693,15 @@
                 "codeOriginal": "t?[(A=t=>t>0&&cbrt(sin(t*PI/32/2**((t/(n=12e3)&15^6)/12)))*(1-t%n/n)**.3/2)(t)+A(t-n)/2+A(t-(o=24e3))/3,A(t)+A(t-36e3)/2+A(t-48e3)/3].map(A=>((a+=b+=A/4-a/(e=18**(1+cos(t*PI/96e3)/1.25))-b/e*2)/e*((k=t/32>o)&&(p=t%o/o)*2**.9||1)+(k&&tanh(2*sin(3e5/(t%o+2500))+random()/p/255)*.01**p/3*2+(random()-.5)*.99**(t%n)*(t/n&1)+cbrt(sin(t*PI*2**((t/o&7^5)/12)/483))/2*p**.7))*!!(1+t/o&31)):a=b=0"
             },
             {
+                "description": "alright",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/2628.html#4465",
+                "date": "Sep 15, 2024",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "(t*=N=2/3)?[(_a=(14+(t>>12&20^9)*2)/320,A=a=>a>0&&(max(-1,min(1,abs(3**sin(a*PI/509*[3/2/(1+(t>>16&1)),1][t>>14&1]/_a+8*cos(a/512)*(a%(n=16384)/n)**3)-.3)**7))-.5)*(1-a%n/n)**2)(t)+A(t-8192)/2+A(t-16384)/3,A(t)+A(t-12288)/2+A(t-24576)/3].map(s=>((a+=b+=s-a/($=4**(1+cos(c++*PI/98304)))-b/$)/$+cbrt(sin(t*PI/2034/_a*(-t>>12&3)))*(1-t%4096/4096)**.4)*(t%n/n)**.5/2+tanh(sin(3e5/(t%16384+2e3))+(d+=random()*(1-t%n/n)**31-d/6)/6)*(1-t%n/n)**4+(random()-.5)*(1-t%8192/8192)**12*(t%n/n)/2):a=b=c=d=0"
+            },
+            {
                 "description": "scary..",
                 "mode": "Floatbeat",
                 "url": "https://dollchan.net/btb/res/117.html#4473",
@@ -2288,6 +2297,23 @@
                 ]
             },
             {
+                "description": "epik",
+                "url": "https://dollchan.net/btb/res/284.html#1888",
+                "date": "Aug 11, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": [
+                    "//.31*t*8*2**([0,3,5,7,0,3,-4,-2][7&t>>15]/12)",
+                    "//t*2*2**([0,3,5,7,8,7,10,7][t>>14&7]/12)",
+                    "",
+                    "x=.31*t*8*2**([0,3,5,7,0,3,-4,-2][7&t>>15]/12),",
+                    "m=(32*sin(x*PI/256)+32)+(32*sin(x*PI/127)+32),",
+                    "r=t*(1&~t>>13)*random()&15&~t>>9,",
+                    "s=32+sin(sqrt(t&16383)*4)*32,",
+                    "q=16+sin(3e4/(t&[x1=16383,x2=4095,x3=8191,x2,x3,x3,x1,x1][t>>13&7]))*16,",
+                    "q+s+r+m"
+                ]
+            },
+            {
                 "description": "now, everyone has remixed decent manager's thing",
                 "url": "https://www.reddit.com/r/bytebeat/comments/163m6ji/now_everyone_has_remixed_decent_managers_thing/",
                 "date": "Aug 28, 2023",
@@ -2304,6 +2330,36 @@
                 "date": "Aug 31, 2023",
                 "sampleRate": 32000,
                 "codeOriginal": "(t/(4+(t>>15)%16)*(1+(3&t>>13))&95)+(2e5/(t&16383)&63)+(t*random()%256/((2048+(t&8191))*.003))+(t*2/(4+(t>>15)%16)&96)/2"
+            },
+            {
+                "description": "Tanmode",
+                "mode": "tanmode",
+                "url": "https://dollchan.net/btb/res/284.html#2231",
+                "date": "Sep 05, 2023",
+                "sampleRate": 7350,
+                "exotic": true,
+                "codeOriginal": "(t>>t*4/(4+(t>>13&3)))+(4e5/(t&4095))+(t*(1&t>>12)*random()&~t>>4)"
+            },
+            {
+                "description": "my version of drum something",
+                "url": "https://dollchan.net/btb/res/284.html#2340",
+                "date": "Sep 22, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "(32+sin(cbrt(t&16383)*8)*32+((t*sin(t>>\"3425\"[t>>13&3])&64)*(1-t/(1+(t>>16&1))/\"12221122\"[t>>13&7]%4096/4096)))"
+            },
+            {
+                "description": "decision",
+                "url": "https://dollchan.net/btb/res/284.html#2603",
+                "date": "Nov 07, 2023",
+                "sampleRate": 44100,
+                "codeOriginal": "(t*(t&t>>(t>>10&15))>>10&127)+(3e4/(t*\"1112\"[t>>14&3]&16383)**.1&128)"
+            },
+            {
+                "description": "got this",
+                "url": "https://dollchan.net/btb/res/284.html#2545",
+                "date": "Oct 25, 2023",
+                "sampleRate": 32000,
+                "codeOriginal": "r=t/4,v=t=>(t*2**(\"0357035714791478\"[(t>>13)%16]/12)&64)*(1-t%8192/8192),m=v(t)+v(t-r)+v(t-r*2)+v(t-r*3),f=32+sin(sqrt(t&16383)*2)*32,r=t*random()&15&~t>>8,m/2+f+r"
             },
             {
                 "description": "hydrogen fucker 8",

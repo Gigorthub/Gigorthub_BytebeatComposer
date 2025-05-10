@@ -316,6 +316,13 @@
         "codeOriginal": "t>>8+t%45|t>>t%(t%2?t&65536?t&32768?24:25:15:t&32768?18:19)|100000/(t>131072?t&4095:t&32767)"
     },
     {
+        "description": "derfjfidrfdsjif",
+        "url": "https://dollchan.net/btb/res/2628.html#3030",
+        "date": "Feb 28, 2024",
+        "sampleRate": 32000,
+        "codeOriginal": "(128*sin((a=t/5.1*[12,12,9,12,12,9,12,12,9,12,12,9,12,9,12,9][t>>12&15]*(b=[1,.89,.8,.75][t>>17&3]))/16+sin(a/8.01))+128)*(1-t/4096%1)/4+t/2.7*b%256/4+t/2.67*b%256/4+(4*t*(2+!(t>>12&5))/2.65*b&64)*(1-t/32768%1)*(t>>15&1)"
+    },
+    {
         "description": "wth is this remix i just made (T!me Tr!al)",
         "mode": "Floatbeat",
         "url": "https://dollchan.net/btb/res/2628.html#3205",
@@ -350,9 +357,17 @@
         "description": "notitle No.1",
         "mode": "Floatbeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1gitpu2/notitle_no1/",
-        "date": "Nov 03, 2024",
+        "date": "Oct 20, 2024",
         "sampleRate": 32000,
         "codeOriginal": "t?(C=cos,S=sin,[(N=(T,S,C)=>(l=t>>14,a=PI*T/64*2**((((l/2&5|2)^l/8&3+(2*l&6)/3)+t%([0,0,2,3,0,-9,2,-11][l/2&7]+4)*7)/12),S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/4**7)+C(t*PI/24e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/3e4))+cbrt(S(3*cbrt(k=t%4**7)))*2*.997**k+(random()-.5)*8*.999**(t%4096)*(1381127833>>(t>>12)&1)+S(t/2)*4*.998**(t%8192)*(t>>13&1)))(t,S,C),N(t*128/127,C,S)].map(k=>(b+=c+=(k-b-15*c)/256*8*abs(sin(t/4e5))))):b=c=0"
+    },
+    {
+        "description": "remix of my old bells thing",
+        "mode": "Floatbeat",
+        "url": "https://dollchan.net/btb/res/2628.html#4986",
+        "date": "Nov 17, 2024",
+        "sampleRate": 48000,
+        "codeOriginal": "a=t=>t>0&&sin(t/48+sin(t/38+sin(t/44+sin(t/58)))),b=t=>a(9*t*2**(([0,3,7,8,10,8,7,3][t>>13&7]+[0,0,2,-3][t>>16&3])/12)||0)/2*(1-t/8192%1),b(t)+b(t-(x=12288))/2+b(t-x*2)/3+b(t-x*3)/4"
     },
     {
         "url": "https://www.reddit.com/r/DollchanBytebeat/comments/1h9wbr8/another_new_subreddit_for_bytebeat/",
