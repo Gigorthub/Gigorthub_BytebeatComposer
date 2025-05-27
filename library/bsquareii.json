@@ -16,6 +16,13 @@
         "codeOriginal": "(a=t-t/[1.5,1.9,1.5,1.9,2,5,2,5][(t>>13)%8],b=[1,1,0.90,0.75][(t>>15)%4],sin(a*b/4)+sin(a*b/6)+sin(a*b/8))*16|t>>11&15"
     },
     {
+        "description": "just a normal bytebeat music",
+        "url": "https://www.reddit.com/r/bytebeat/comments/12eww2v/zombie_nation_kernkraft_400_but_made_using/",
+        "date": "Apr 07, 2023",
+        "codeOriginal": "d=t*(t>>10&30&t&t>>8),a=t%127&t*2,d+a",
+        "codeMinified": "t*(t>>10&30&t&t>>8)+(t%127&t*2)"
+    },
+    {
         "description": "Hi",
         "url": "https://www.reddit.com/r/bytebeat/comments/14pz1iu/reupload_1_hi/",
         "date": "Apr 25, 2023",
