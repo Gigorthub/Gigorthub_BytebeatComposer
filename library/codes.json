@@ -29,6 +29,12 @@
         "codeOriginal": "t*9&(t*1>>4)|t*5&(t>>7)|t*3&(t*4>>12)"
     },
     {
+        "author": "216",
+        "url": "https://www.pouet.net/topic.php?which=8357&page=6#c388715",
+        "date": "Oct 03, 2011",
+        "codeOriginal": "t*(t^t+(t>>15|1)^(t-1280^t)>>10)"
+    },
+    {
         "author": "jounim",
         "url": "http://viznut.fi/demos/unix/bytebeat_formulas.txt",
         "date": "Oct 04, 2011",
@@ -188,6 +194,33 @@
                 "date": "Aug 06, 2022",
                 "sampleRate": 44100,
                 "codeOriginal": "S=n=>sin(i=t*2**((n+5)/12)/20.3)+sin(i/2),T=t/5e3,a=[2674,2384,1856,3186][(T&16?17179870639:4)>>(~T&31)*2&3],(t/[8,4,4.5][25920>>T%8*2&3]&127)*(1-T%1)/2+128+3*(2+((2709919840>>T%16*2)&3)-T%1)*(S(a&15)+S(a>>4&15)+S(a>>8))+(1-T%4/4)**3*((t%1e4/(9+(T%4)))&32)"
+            }
+        ]
+    },
+    {
+        "author": "ToxidWorm",
+        "description": "Protactinium.exe",
+        "url": "https://m.youtube.com/watch?v=llrig7wzujI",
+        "date": "Aug 5, 2021",
+        "children": [
+            {
+                "description": "1",
+                "codeOriginal": "t*(t>>7|t)"
+            },
+            {
+                "description": "2",
+                "sampleRate": 11025,
+                "codeOriginal": "t*(t>>8|t>>10)"
+            },
+            {
+                "description": "3",
+                "sampleRate": 11025,
+                "codeOriginal": "t*(t>>6)"
+            },
+            {
+                "description": "4",
+                "sampleRate": 11025,
+                "codeOriginal": "t*t^t&-t>>5"
             }
         ]
     },
