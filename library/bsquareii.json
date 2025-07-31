@@ -507,6 +507,14 @@
         "fileOriginal": true
     },
     {
+        "description": "bytebeat made in 10 minutes",
+        "mode": "Floatbeat",
+        "url": "https://www.reddit.com/r/9237923792873917/comments/1kieowo/bytebeat_made_in_10_minutes_apr_08_2025/",
+        "date": "Apr 08, 2025",
+        "sampleRate": 32000,
+        "codeOriginal": "t?0:a=[0,Array(8192).fill(0)],v=[1,2,3,2,6,3,2.4,1.5][t>>12+(t>>13&3^t>>14&3)&7],a[0]+=(atan(tan(t*v/58+sin(t*v/72)*2))/3*(1-t/8192%1)-a[0])/(1+(t>>8&63)+(t>>8&31)),a[1][t%8192]+=a[0],a[1][t%8192]/=2,a[1][t%8192]"
+    },
+    {
         "description": "made a \"flanger\" effect",
         "url": "https://www.reddit.com/r/bytebeat/comments/1jxrjqb/made_a_flanger_effect_in_bytebeat/",
         "date": "Apr 12, 2025",
@@ -543,5 +551,13 @@
         "date": "Apr 27, 2025",
         "sampleRate": 32000,
         "codeOriginal": "t?0:r=[0,0,Array(x=12288).fill(T=0),x=>max(min(x,255),0)],a777=t*4*(1+(t>>13)%4)/(4+(t>>15)%16)*2**(t>>17&3)&255,r[0]+=r[1]+=(a777-r[0]-r[1])/(1+(t>>6&127)),r[2][++T%x]+=r[1],u=r[2][T%x]/=2,r[3](u+128+random()*(-t>>7&63)**3/4096*(t>>13&1)+sin(log(t%8192+130)*30)*64+(t&3?n:n=random())*(-t>>9&31)**4/8192*(t>>14&1))"
+    },
+    {
+        "description": "tangent thingy",
+        "url": "https://www.reddit.com/r/9237923792873917/comments/1kk60ja/tangent_thingy/",
+        "date": "May 11, 2025",
+        "sampleRate": 38000,
+        "mode": "Floatbeat",
+        "codeOriginal": "(min(.8**tan(t/512*PI*1.5**[1-(t>>17&1),3,2,3+!(1+(t>>15)&3)][t>>13&3])/(.2+5*abs(cos(t/2e5))),1)-.5)*(1-t/4**7%1)"
     }
 ]
