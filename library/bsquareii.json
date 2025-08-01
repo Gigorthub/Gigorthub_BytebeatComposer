@@ -246,6 +246,13 @@
         "codeOriginal": "p=x=>t*2**(x/12),m=2**([t>>13&5,7-(t>>13&5),7,4+3*(t>>17&2)][t>>16&3]/12),((m*t/2&32)+(m*t/8&31)+32*tan(PI/4*sin(m*t*PI/125)**(m*t/(8-2*(t>>17&1))&t>>12&62)))/192+cbrt(sin(12*cbrt(t%16384)))/4+p('0x'+'04737744047377AA'[t>>15&15])%256/1024+((t*sin(t>>3)&255)*(~t>>6&255)>>8)/512*(t>>14&1)+((t*random()&255)*(~t>>4&255)>>8)/1024-.7"
     },
     {
+        "description": "my own TIRO remix of \"The time is running out!\"",
+        "url": "https://www.reddit.com/r/bytebeat/comments/163aind/my_own_tiro_remix_of_the_time_is_running_out_by/",
+        "date": "Aug 27, 2023",
+        "sampleRate": 44100,
+        "codeOriginal": "t/=4,S=x=>sin(x*PI/128),((128+81*asin(S(2*t*(t&16384?7:5)*(3-(3&t>>9)+(3&t>>8))>>(3&-t>>16)))*(~t>>12&1))%256/1.5+((t*(t&16384?7:5)*(3-(3&t>>9)+(3&t>>8))>>(3&-t>>2))*(t>>12&1))%256/1.5+'1011001010101110'[t>>10&15]*int(sin(16*cbrt(t%1024)))*128+128+(1.5*(a=t*'57'[t>>14&1])&t>>5&255)/4+(a&t>>5&255)/4+((t*2*[5,7.5,5,7.5,7,10.5,7,10.5][t>>12&7]&255)*(t>>4&255)>>8)/4+exp(S(t*2*'0505050507070707'[t>>11&15]))*64-64)/2.55"
+    },
+    {
         "description": "other aturned777 remix i made a few weeks ago",
         "mode": "Floatbeat",
         "date": "Sep 16, 2023",
