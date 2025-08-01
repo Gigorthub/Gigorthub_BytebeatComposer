@@ -2670,6 +2670,15 @@
                 "exotic": true,
                 "file": "ConsistentNerve185-1.js",
                 "fileOriginal": true
+            },
+            {
+                "description": "+[,.]",
+                "mode": "Floatbeat",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1lo1z6s/_/",
+                "date": "Jun 30, 2025",
+                "sampleRate": 48000,
+                "exotic": true,
+                "codeOriginal": "/*+[,.]*/sp=48000,t?0:z1=[],callCount=0,lpf=(a,c)=>(call=callCount++,z1[call]??=0,z1[call]+=(a-z1[call])*c),hpf=(a,c)=>a-lpf(a,c),hbf=(a,c,v)=>a+hpf(a,c)*v,p=z=>t*2**(z/12),r=(a,s)=>p(parseInt(a[(t/s)%a.length],36)),s=(x,z)=>t/(2**x)&z,f=hbf(lpf(sinf(p((t+300000)>>8*(t+300000)>>9)&(t+300000)>>8&255),Math.min(t/sp/10,1)),1-((t/sp)%1),1),t?0:R=Array(x=12288).fill(0),a=f/5+R[t%x],R[t%x]=a/1.6,a"
             }
         ]
     },
