@@ -2624,6 +2624,14 @@
         "codeOriginal": "H=i=128,s=t/5e3,o=[H,H],F=i=>((57454323>>4*i&31)-(s>>3&4))/12,(e=>{while(i--)o[i%2]+=sin(40*log(s%4)+9*s)/3+s%4*(exp(-s%1*2)*((t*2**[F(7)-2,5+i/90,F(~~s-4*(i<48))+i%4/H][i%3]+s%1*i/5&H)-64)+(t*2**(F(i%7)-(i/2&1))+1e4*sin(i+s/H))%H-64)/H})(),o"
     },
     {
+        "author": "GDPlayer_1035",
+        "description": "this is mf bytebeat (pcm test)",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1b2yisq/this_is_mf_bytebeat_pcm_test/",
+        "date": "Feb 29, 2024",
+        "file":"gdplayer.js",
+        "fileOriginal": true
+    },
+    {
         "author": "Consistent_Nerve_185",
         "children": [
             {
@@ -2847,13 +2855,49 @@
         ]
     },
     {
-        "author": "emelchenko",
-        "description": "0xdeaf",
-        "url": "https://www.pouet.net/topic.php?which=8357&page=32#c592312",
-        "date": "Nov 26, 2024",
-        "codeOriginal": [
-            "// 8000Hz Bytebeat",
-            "(((t*(0xdeaf>>(t>>10&15)&(t&32768?7:9))&t>>4)*5/4-32)/2&127)+(t&4096?(t*t/100|t*t/101)*99&~t>>(t&8192?5:4)&127:0)"
+        "author": "TrashImpossible3699",
+        "children":[
+            {
+                "description": "wurm :0",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1hsja96/wurm_0/",
+                "date": "Jan 03, 2025",
+                "sampleRate": 44100,
+                "codeOriginal": [
+                    "S=7487,",
+                    "T=0.72,",
+                    "e=x=>pow(2,x/12),",
+                    "V=(c,F)=>c*PI/F,",
+                    "j=1e5,",
+                    "L=k=>parseInt(k,36),",
+                    "n=D=>sin(D*PI*j*j*j)*j,",
+                    "bT=[-9,-17,-12,-14],",
+                    "dT=[[0,0,1,0],[1,0,1,0]],",
+                    "cT=[\"7ACFM\",\"037AE\",\"37ACF\",\"58AFJ\"],",
+                    "b=sin(sin(V(t*T,16)*e(bT[int(t/32/S)%4]))*1/exp(int(t*4*512/S)%4096/2048)+sin(V(t*T,128)*e(bT[int(t/32/S)%4]))*4/exp(int(t*4*512/S)%4096/2048))*0.3,",
+                    "s=(sin(sin(n(t>>2))*3+sin(n(t>>3))*3)*0.3/exp(int(t*4*512/S)%4096/512))*(dT[0][int(t/2/S)%4]),",
+                    "h=(sin(n(t))*0.25/exp(int(t*4*512/S)%2048/512))*(dT[1][int(t/S)%4]),",
+                    "cD=cT[int(t/32/S)%4],",
+                    "f=(i,C)=>sin(cos(V(t*T,128)*e(L(i[C])))+sin(V(t*T,64)*e(L(i[C])))*2)*0.035,",
+                    "c=f(cD,0)+f(cD,1)+f(cD,2)+f(cD,3)+f(cD,4),",
+                    "m=(h+s+b+(c*2/exp(int(t*512/S)%8192/8192)))*96,",
+                    "m+128"
+                ]
+            },
+            {
+                "description": "Tohu Ikewa",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1jzlo4t/tohu_ikewa/",
+                "date": "Apr 15, 2025",
+                "sampleRate": 48000,
+                "codeOriginal": "M=0<t,r=M?r:[0,0],s=2530,Z=t/s,r[0]+=((((t*pow(2,(293043>>(Z/4&7)&7)/5))^(31+(Z/4&1)))/4&63)-r[0])/(1+(Z*16&63)),r[1]+=((t*pow(2,(17387831289357>>(Z/4&63)&15)/5)/2&63)-r[1])/(1+(Z*16&63)),r[0]+r[1]"
+            },
+            {
+                "description": "Untitled1",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1ky7qyh/untitled1/",
+                "date": "May 29, 2025",
+                "sampleRate": 44100,
+                "mode": "Floatbeat",
+                "codeOriginal": "T=pow(2,-4/12),sA=(x,y,z)=>x>>y,sB=(x,y)=>x[y%x.length],vibr=(x,y,z)=>x+sin(t/y)*z,ffm=(x)=>(pi=x*3.14159,((pow(2,sin(pi/64))+abs(sin(pi/32)+sin(pow(2,cos(pi/256))+tan(sin(pi/64)))))*32)/128-.5),s1=[0,0,0,-4,-4,-4,3,3],s2=(t*1.2&262144?t*1.2&131072?[0,2,7]:[0,3,7]:t*1.2&131072?[0,5,7]:[0,5,3]),v=[4000,4000,4000,4000,4000,4000,4000,600],kr=[1,3,2,1],kv=[16,32,64,16],ker=[.1,.2,.15,.1],ffm(vibr(t*pow(2,sB(s1,sA(t*1.2,15))/12),4000,50)*T)+ffm(vibr(t*2*pow(2,sB(s2,sA(t*1.2,13))/12),sB(v,sA(t*1.2,16)),50)*T)+sin(4/((t*sB(kr,sA(t*1.2,15))/32768*1.2%1)+.05))*sB(kv,sA(t*1.2,15))/exp(t*sB(kr,sA(t*1.2,15))/32768*1.2%1/sB(ker,sA(t*1.2,15)))"
+            }
         ]
     },
     {
@@ -3148,14 +3192,6 @@
         ]
     },
     {
-        "author": "TrashImpossible3699",
-        "description": "Tohu Ikewa",
-        "url": "https://www.reddit.com/r/bytebeat/comments/1jzlo4t/tohu_ikewa/",
-        "date": "Apr 15, 2025",
-        "sampleRate": 48000,
-        "codeOriginal": "M=0<t,r=M?r:[0,0],s=2530,Z=t/s,r[0]+=((((t*pow(2,(293043>>(Z/4&7)&7)/5))^(31+(Z/4&1)))/4&63)-r[0])/(1+(Z*16&63)),r[1]+=((t*pow(2,(17387831289357>>(Z/4&63)&15)/5)/2&63)-r[1])/(1+(Z*16&63)),r[0]+r[1]"
-    },
-    {
         "author": "Cattoadishere",
         "description": "Ethereal Byteshop v1.0",
         "mode": "Floatbeat",
@@ -3164,6 +3200,22 @@
         "sampleRate": 48000,
         "file": "cattoadishere.js",
         "fileOriginal": true
+    },
+    {
+        "author": "a-desmos-grapher",
+        "description": "Cover of Kitsune^2 - Avast Your A$$",
+        "url": "https://www.reddit.com/r/bytebeat/comments/1ksrhkv/cover_of_kitsune2_avast_your_a/",
+        "date": "May 22, 2025",
+        "sampleRate": 48000,
+        "codeOriginal": [
+            "n=-(10**16),",
+            "",
+            "hz=48000,",
+            "",
+            "t2=(floor((t/256*2**((-12.77+[0,8,3,10][floor(t/hz/2*150/120)%4])/12)*[1,1,2][floor(t/hz*6*150/120)%3]*28160/hz)%1*2)+floor((t/256*2**((-12.77+[0,8,3,10][floor(t/hz/2*150/120)%4])/12)*[1,1,2][floor(t/hz*6*150/120)%3]*28160/hz)%1*(2-((t%(hz/(150/60)))/hz*3*150/120%1*0.3))))*48,",
+            "",
+            "t2%256+floor((t/64*2**(([11,11,11,11,n,6,11,11,13,13,13,14,14,14,14,14,n,7,14,14,16,16,16,18,18,18,n,19,19,n,18,18,n,21,21,n,16,16,n,18,18,16,16,16,18,16,16,14,11,11,11,11,n,11,11,11,6,6,6,7,7,7,7,7,n,7,9,9,7,7,7,6,6,6,n,6,6,n,7,7,n,9,9,n,13,13,n,9,9,13,13,13,14,13,13,9][floor(t/hz*6*150/120)%96]+0.23)/12)*28160/hz)%2*0.6)*64+floor(min(t/hz*2*150/120,1))*floor((t/64*2**(([11,11,11,11,n,6,11,11,13,13,13,14,14,14,14,14,n,7,14,14,16,16,16,18,18,18,n,19,19,n,18,18,n,21,21,n,16,16,n,18,18,16,16,16,18,16,16,14,11,11,11,11,n,11,11,11,6,6,6,7,7,7,7,7,n,7,9,9,7,7,7,6,6,6,n,6,6,n,7,7,n,9,9,n,13,13,n,9,9,13,13,13,14,13,13,9][(floor(t/hz*6*150/120)+93)%96]+0.23)/12)*28160/hz)%2*0.6)*32"
+        ]
     },
     {
         "author": "MarioFan171",
