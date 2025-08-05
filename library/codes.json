@@ -816,6 +816,23 @@
                 "codeOriginal": "t?(r=(n=96)**abs(sin((h=a+=PI*2**(('0x'+'023578BC'[(y=4*b++/3)>>14&7])/12-.16))/128+sin(h/128.5+cos(h/255))+atan2(cos(h/64),sin(h/128)*6)+abs(sin(h/129))))/n*(y/16384%1)**.12*(1-y/16384%1)**.7+A[2*b%R|0],A[b%R|0]=(c+=(r*2/3-c)/256,r*2/3-c+A[.995*b%R|0]/3+A[b*2/3%R|0]/4))/2:this.A??=Array(R=24575).fill(a=b=c=0)"
             },
             {
+                "description": "doing this for fun lmao",
+                "mode": "Floatbeat",
+                "date": "Apr 24, 2025",
+                "sampleRate": 36000,
+                "fileOriginal": true,
+                "file": "baenhohoho2.js"
+            },
+            {
+                "description": "wtf is this shitty ass beat",
+                "mode": "Floatbeat",
+                "url": "https://dollchan.net/btb/res/117.html#7564",
+                "date": "Apr 26, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "codeOriginal": "y=t?y:[0,0,s=sin,c=cos],k=(x,y)=>x%1>y?-1:1,(u=>{l=t>>12;a=t*2**((((-l/8&17|9)^l/8&9+(l&5)/4)+t%(-'00197768'[l/4&7]+4)*7)/12-1);h=i=1;for(;i<u;i++){y[0]+=(c(3*PI*a*i/512)-y[0])/23}y[1]+=(s(PI*i*a/256)-y[1])/12;return [[y[0],y[1]],[y[1],y[0]]][t>>16&1].map(x=>x/.8**min(t/2**14*(r=1+(t>>15&1))%2,3)/2+k(127*min(t/2**15*r%1,.48*r)**.3/(1+!!(-t>>14&3)),(t>>16&1?-t>>16&1||1&&.4:.5))*.8**min(t/4**6*r%8,3)/2+s(random()-.5)*.1**min(t/4**6%4,5)/2).reduce((x,y)=>[x,-y])})(3)"
+            },
+            {
                 "description": "foldeddeadbeef69",
                 "mode": "Floatbeat",
                 "url": "https://www.reddit.com/r/bytebeat/comments/1k9ct1x/foldeddeadbeef69_baenhohoho/",
@@ -2464,7 +2481,7 @@
             },
             {
                 "description": "Tanmode",
-                "mode": "tanmode",
+                "mode": "Tanmode",
                 "url": "https://dollchan.net/btb/res/284.html#2231",
                 "date": "Sep 05, 2023",
                 "sampleRate": 7350,

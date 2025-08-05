@@ -191,7 +191,7 @@ class audioProcessor extends AudioWorkletProcessor {
 					return funcValue == 0 ? 0 : ((this.lastByteValue[ch] = ((Math.log2(Math.abs(funcValue)) * (neg ? -16 : 16)) + (neg ? -127 : 128)) & 255) / 127.5 - 1);
 				};
 				break;
-			case 'tanmode':
+			case 'Tanmode':
 				this.getValues = (funcValue, ch) => {
 					const outValue = Math.max(Math.min(Math.tan(funcValue * Math.PI / 128), 1), -1);
 					this.lastByteValue[ch] = Math.round((outValue + 1) * 127.5);
