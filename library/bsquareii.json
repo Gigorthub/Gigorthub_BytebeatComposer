@@ -659,8 +659,19 @@
         "description": "remix of my unnamed May 16th bytebeat",
         "url": "https://www.reddit.com/r/bytebeat/comments/1miqhy7/remix_of_my_unnamed_may_16th_bytebeat/",
         "date": "Aug 05, 2025",
-        "sampleRate": 27000,
-        "mode": "Floatbeat",
-        "codeOriginal": "t?0:c=0,C=cos,S=sin,l=t>>11,A=l/4,B=l/8,L=l>>8,a=PI*t/64*2**((((A&10|4)^(B&13|4)+(A&14|11)/6)+(t%([1,0,1,2,0,1,2,1][A&7]+5))*7)/12),b=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15e3)),d=c+=(b-c)/(3+(t>>8&31)),d*=2,d+sin(cbrt(t*8&131071)*8/(1+(t>>14&1)/2))*5/4*max(1-t/4**7%1*4/3,0)+(random()-.5)*2*max(1-t/4**7%1*8/3,0)*(t>>14&1)"
+        "children": [
+            {
+                "sampleRate": 27000,
+                "mode": "Floatbeat",
+                "codeOriginal": "t?0:c=0,C=cos,S=sin,l=t>>11,A=l/4,B=l/8,L=l>>8,a=PI*t/64*2**((((A&10|4)^(B&13|4)+(A&14|11)/6)+(t%([1,0,1,2,0,1,2,1][A&7]+5))*7)/12),b=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15e3)),d=c+=(b-c)/(3+(t>>8&31)),d*=2,d+sin(cbrt(t*8&131071)*8/(1+(h=t>>14&1)/3))*[5/4,7/4][h]*max(1-t/4**7%1*4/3,0)+(random()-.5)*2*max(1-t/4**7%1*8/3,0)*h"
+            },
+            {
+                "description": "with SWANG rhythm",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1miqhy7/comment/n794dxv/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+                "sampleRate": 27000,
+                "mode": "Floatbeat",
+                "codeOriginal": "t?t-=[0,t/2&4096-1024*(t>>15&1)][t>>19&1]:c=0,C=cos,S=sin,l=t>>11,A=l/4,B=l/8,L=l>>8,a=PI*t/64*2**((((A&10|4)^(B&13|4)+(A&14|11)/6)+(t%([1,0,1,2,0,1,2,1][A&7]+5))*7)/12),b=S(S(S(S(a+S(a))+C(a/2))+C(2*a)+S(t*PI/8192)+C(t*PI/12e3))+a/2+C(a*3/4)+S(5/4*a)+4*S(t*PI/15e3)),d=c+=(b-c)/(3+(t>>8&31)),d*=2,d+sin(cbrt(t*8&131071)*8/(1+(h=t>>14&1)/3))*[5/4,7/4][h]*max(1-t/4**7%1*4/3,0)+(random()-.5)*2*max(1-t/4**7%1*8/3,0)*h"
+            }
+        ]
     }
 ]

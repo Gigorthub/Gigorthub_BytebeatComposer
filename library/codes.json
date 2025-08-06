@@ -348,6 +348,14 @@
                 "codeOriginal": "c=h=>(h/2.1%31)+(h/2%32),(c(t*1.08)+c(t*1.28)+c(t*1.6)+c(t*(t&65536?2.16:.95)))*(-t>>9&31)/90+(sin(sqrt(t&32767)*2.5)*50)/1.2+random()*(-t>>3&127)*'1000'[t>>10&3]*((t>>9&31)+19)/200+41"
             },
             {
+                "description": "gdi skid repellent",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1kzki7c/gdi_skid_repellent/",
+                "date": "May 30, 2025",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+                "codeOriginal": "t/=1.5,w=v=>cos(sqrt(v&255)/4.5),d=(-t>>5&127)*(-t>>12&1),k=cbrt(sin(sqrt(t&8191)))*(-t>>6&127)/230,s=sin(t/7.5&t>>6)*d/300,h=random()*(t>>1&1)*d/670,st=v1=>(w(v1/1.002)+w(v1*1.002))/20,st(t*(t&8192?2:1)*[1,1.2,1.35,1.5,1.6,1.8,2,t&131072?.9:1.5][t>>14&7])+asin(sin(t*PI*[1,1,1.2,t&16384?.9:1.5][t>>15&3]/256))/4.5+[k,h,s,k,h,k,s,0,k,h,s,k,0,s,s,k][t>>13&15]"
+            },
+            {
                 "description": "harmonic polyrhythms",
                 "url": "https://www.reddit.com/r/9237923792873917/comments/1kztepu/harmonic_polyrhythms/",
                 "date": "May 31, 2025",
@@ -1727,34 +1735,34 @@
             },
             {
                 "description": "sync.fil",
-                "date": "Jun 1, 2023",
+                "date": "Jun 01, 2023",
                 "stereo": true,
                 "sampleRate": 53000,
                 "codeOriginal": "t/=5.5,l=[1,0.8][1&t>>14]*(3&t>>10)*t, [l%128+l%127,96+l%96|32*random()*(t>>9&3)*(-l>>1&5)|t>>6]"
             },
             {
                 "description": "Rhythimic Sierpinski Custom 'Game Levels' Creation",
-                "date": "Jun 2, 2023",
+                "date": "Jun 02, 2023",
                 "sampleRate": 10000,
                 "codeOriginal": "t*(t&16384?4.8:6)*(4-(3&-t>>9)>>(t>>9&1)>>(t&t>>8))|t>>(t&8192?5:4)|t>>3"
             },
             {
                 "description": "Cycle Infinite",
-                "date": "Jun 2, 2023",
+                "date": "Jun 02, 2023",
                 "stereo": true,
                 "sampleRate": 38000,
                 "codeOriginal": "r=t>>7,e=3*random()*(-(t>>6&t>>9)&45),[t*(1.0596**[4,5,9,12][3&t>>12])*[1,1.125][1&t>>16]|[-r,r,r,-r,r,r,-r,-r][7&t>>13],e]"
             },
             {
                 "description": "effect.fil",
-                "date": "Jun 3, 2023",
+                "date": "Jun 03, 2023",
                 "stereo": true,
                 "sampleRate": 44100,
                 "codeOriginal": "q=1.0596,a=q*t,b=a*q,c=b*q,d=c*q,e=d*q,f=e*q,[(((r=[1,1.2,1.6,1.5][3&t>>15])*[a,c,d,f][(t>>12)%4]&127)^(([a,b,e,f][3&t>>12]*r&127)/2))*(-t>>10&3),3*random()*(-t>>9&45)|t>>5]"
             },
             {
                 "description": "retro[fxi]",
-                "date": "Jun 5, 2023",
+                "date": "Jun 05, 2023",
                 "sampleRate": 29000,
                 "codeOriginal": [
                     "a=(sin(t/7^t/40|t)*(-t>>9&14)+40)*'00110001'[t>>12&7]/1.63,",
@@ -2914,6 +2922,13 @@
                 "sampleRate": 44100,
                 "mode": "Floatbeat",
                 "codeOriginal": "T=pow(2,-4/12),sA=(x,y,z)=>x>>y,sB=(x,y)=>x[y%x.length],vibr=(x,y,z)=>x+sin(t/y)*z,ffm=(x)=>(pi=x*3.14159,((pow(2,sin(pi/64))+abs(sin(pi/32)+sin(pow(2,cos(pi/256))+tan(sin(pi/64)))))*32)/128-.5),s1=[0,0,0,-4,-4,-4,3,3],s2=(t*1.2&262144?t*1.2&131072?[0,2,7]:[0,3,7]:t*1.2&131072?[0,5,7]:[0,5,3]),v=[4000,4000,4000,4000,4000,4000,4000,600],kr=[1,3,2,1],kv=[16,32,64,16],ker=[.1,.2,.15,.1],ffm(vibr(t*pow(2,sB(s1,sA(t*1.2,15))/12),4000,50)*T)+ffm(vibr(t*2*pow(2,sB(s2,sA(t*1.2,13))/12),sB(v,sA(t*1.2,16)),50)*T)+sin(4/((t*sB(kr,sA(t*1.2,15))/32768*1.2%1)+.05))*sB(kv,sA(t*1.2,15))/exp(t*sB(kr,sA(t*1.2,15))/32768*1.2%1/sB(ker,sA(t*1.2,15)))"
+            },
+            {
+                "description": "hi here's your remisse",
+                "url": "https://www.reddit.com/r/bytebeat/comments/1kzki7c/comment/mvv8x5x/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+                "date": "Jun 03, 2025",
+                "mode": "Floatbeat",
+                "codeOriginal": "rd=t*2*\"1122112112112112\"[t/1024&15],qd=rd*pow(2,(t&32768?[0,3,5,7,8,10,12,-2]:[0,3,5,7,8,10,12,7])[t/4096&7]/12),lqd=t*2*pow(2,[0,0,3,(t&4096?-2:7)][t/8192&3]/12),((qd/2%128+((lqd&64?-lqd:lqd)&127)+sin(sin(t*1e15)*1e5)*64/exp(t/1024%1/.1)+sin(4e3/((t%4096)+50))*512/exp(t/4096%1/.6)+sin(sin(t*1e17)*1e8)*512/exp(t/4096%1/.095)*(1&t>>12))*.5)/127-.5"
             }
         ]
     },
