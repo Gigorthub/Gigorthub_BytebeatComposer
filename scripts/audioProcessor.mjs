@@ -198,6 +198,15 @@ class audioProcessor extends AudioWorkletProcessor {
 					return outValue;
 				};
 				break;
+			case 'PIbeat':
+				this.getValues = (funcValue, ch) => {
+					const outValue = Math.max(Math.min(funcValue, Math.PI), (Math.PI*-1));
+					this.lastByteValue[ch] = Math.round((outValue + Math.PI) * 127.5);
+					return outValue;
+			case 'Inverted Bytebeat':
+				this.getValues = (funcValue, ch) =>
+					(this.lastByteValue[ch] = (funcValue + 256) & 255) / 127.5 - 1;
+				break;
 			default: this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = NaN);
 			}
 		}
@@ -240,7 +249,9 @@ class audioProcessor extends AudioWorkletProcessor {
 			/*sin that loops every 128 "steps", instead of every pi steps*/"sinf": function (x) { return Math.sin(x / (128 / Math.PI)) },
 			/*cos that loops every 128 "steps", instead of every pi steps*/"cosf": function (x) { return Math.cos(x / (128 / Math.PI)) },
 			/*tan that loops every 128 "steps", instead of every pi steps*/"tanf": function (x) { return Math.tan(x / (128 / Math.PI)) },
-			/*converts t into a string composed of it's bits, regex's that*/"regG": function (t, X) { return X.test(t.toString(2)) }
+			/*converts t into a string composed of it's bits, regex's that*/"regG": function (t, X) { return X.test(t.toString(2)) },
+			/*divides t by a number*/"dvd": function (x,y) { return ((x & 255) / y) },
+			/*16-bit*/"hxdcml": function (x) { return ((x & 15) * 16) }
 			/*corrupt sound"crpt": function(x,y=8) {return chyx.br(chyx.br(x,y)+t,y)^chyx.br(t,y)},
 			decorrupt sound"decrpt": function(x,y=8) {return chyx.br(chyx.br(x^chyx.br(t,y),y)-t,y)},*/
 		}
