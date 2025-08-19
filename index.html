@@ -67,6 +67,8 @@
 					<option value="Tanmode" title="mode by psub, taken from psubscirbe-bytebeat.neocities.org">Tanmode</option>
 					<!--option value="loghack" title="Deprecated exotic mode.">LogHack</option>
 					<option value="loghack2" title="Deprecated exotic mode.">LogHack2</option-->
+					<option value="PIbeat" title="my own mode.">PIbeat</option>
+					<option value="Inverted Bytebeat" title="my another own mode.">Inverted Bytebeat</option>
 				</select>
 				<div class="controls-group controls-grow">
 					<input type="text" id="control-samplerate" title="Set sample rate (in Hz) then press Enter">
@@ -74,12 +76,14 @@
 						<option value="4000">4kHz</option>
 						<option value="6000">6kHz</option>
 						<option value="8000">8kHz</option>
+						<option value="10000">10kHz</option>
 						<option value="11025">11025Hz</option>
 						<option value="12000">12kHz</option>
 						<option value="16000">16kHz</option>
 						<option value="22050">22050Hz</option>
 						<option value="24000">24kHz</option>
 						<option value="32000">32kHz</option>
+						<option value="33075">33075Hz</option>
 						<option value="44100">44100Hz</option>
 						<option value="48000">48kHz</option>
 					</select>
@@ -144,7 +148,11 @@
 						<li>bitC: <b>(X,Y,Z)</b> => <i>X</i>&amp;<i>Y</i>?<i>Z</i>:0</li>
 						<li>br: <b>(T,SIZE)</b> => Bit reverses <i>SIZE</i> bits of <i>T</i>, discards the other bits</li>
 						<li><b><i>sinf, cosf, tanf</i>: (X)</b> => <i>sin, cos, tan</i> but inputting t will output the same freqency as t by itself. AKA the function loops around every 256 "steps" instead of every 2pi steps</li>
-						<li>regG: <b>(T,regEx)</b> => takes a string of <i>T</i>'s bits, and tests against <i>regEx</i> for a match. Outputs a boolean.</li>
+						<li>regG: <b>(T,regEx)</b> => takes a string of <i>T</i>'s bits, and tests against <i>regEx</i> for a match. Outputs a boolean.</l>
+					</ul>
+					Custom functions by Gigorthub (Me) include: <ul>
+						<li>dvd: <b>(X,Y)</b> => ((<i>X</i>)&255)/<i>Y</i></li>
+						<li>hxdcml: <b>(X)</b> => ((<i>X</i>)&15)*16</li>
 					</ul>
 					<b>Note from Chasyxx (modified by BSquareII):</b><br>
 					Using any of these functions makes your code exotic, meaning that it won't be added to the dollchan.net library.<br>
@@ -160,15 +168,22 @@
 			</details>
 			<details class="library-content">
 				<summary class="library-header">
-					<h1>BSquareII &mdash; codes made by the creator of website</h1>
+					<h1>BSquareII &mdash; codes made by the creator of original website</h1>
 					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
 				</summary>
 				<div id="library-bsquareii" class="library-container"></div>
 			</details>
+			<details class="library-content">
+				<summary class="library-header">
+					<h1>Gigorthub &mdash; codes made by the creator of website</h1>
+					<svg class="loading-wait hidden"><use xlink:href="#symbol-wait"/></svg>
+				</summary>
+				<div id="library-gigorthub" class="library-container"></div>
+			</details>
 			<footer>
 				<a class="link" href="https://dollchan.net/btb" title="Bytebeat discussion threads" target="_blank">Dollchan's btb discussion board</a><br>
-				<a class="link" href="https://github.com/BSquareII/BSquare_BytebeatComposer" title="Github repo" target="_blank">Source code on github</a><br>
-				<a class="link" href="https://bsquareii.github.io/" target="_blank">My main website</a><br>
+				<a class="link" href="https://github.com/Gigorthub/Gigorthub_BytebeatComposer" title="Github repo" target="_blank">Source code on github</a><br>
+				<a class="link" href="https://Gigorthub.github.io/" target="_blank">My main website</a><br>
 				Fork created on Mar 16, 2025<br>
 				<b>Last Updated: </b>Aug 05, 2025
 			</footer>
