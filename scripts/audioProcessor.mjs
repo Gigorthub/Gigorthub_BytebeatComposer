@@ -200,7 +200,7 @@ class audioProcessor extends AudioWorkletProcessor {
 				break;
 			case 'PIbeat':
 				this.getValues = (funcValue, ch) => {
-					const outValue = Math.max(Math.min(funcValue, Math.PI), (Math.PI*-1));
+					const outValue = Math.max(Math.min(funcValue, Math.PI), (Math.PI * -1));
 					this.lastByteValue[ch] = Math.round((outValue + Math.PI) * 127.5);
 					return outValue;
 			case 'Inverted Bytebeat':
