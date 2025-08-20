@@ -21,13 +21,13 @@ class audioProcessor extends AudioWorkletProcessor {
 	}
 	static deleteGlobals() {
 		// Delete single letter variables to prevent persistent variable errors (covers a good enough range)
-		for(let i = 0; i < 26; ++i) {
+		for (let i = 0; i < 26; ++i) {
 			delete globalThis[String.fromCharCode(65 + i)];
 			delete globalThis[String.fromCharCode(97 + i)];
 		}
 		// Delete global variables
-		for(const name in globalThis) {
-			if(Object.prototype.hasOwnProperty.call(globalThis, name)) {
+		for (const name in globalThis) {
+			if (Object.prototype.hasOwnProperty.call(globalThis, name)) {
 				delete globalThis[name];
 			}
 		}
@@ -36,10 +36,10 @@ class audioProcessor extends AudioWorkletProcessor {
 		Object.getOwnPropertyNames(globalThis).forEach(name => {
 			const prop = globalThis[name];
 			const type = typeof prop;
-			if((type === 'object' || type === 'function') && name !== 'globalThis') {
+			if ((type === 'object' || type === 'function') && name !== 'globalThis') {
 				Object.freeze(prop);
 			}
-			if(type === 'function' && Object.prototype.hasOwnProperty.call(prop, 'prototype')) {
+			if (type === 'function' && Object.prototype.hasOwnProperty.call(prop, 'prototype')) {
 				Object.freeze(prop.prototype);
 			}
 			Object.defineProperty(globalThis, name, { writable: false, configurable: false });
@@ -47,32 +47,31 @@ class audioProcessor extends AudioWorkletProcessor {
 	}
 	static getErrorMessage(err, time) {
 		const when = time === null ? 'compilation' : 't=' + time;
-		if(!(err instanceof Error)) {
-			return `${ when } thrown: ${ typeof err === 'string' ? err : JSON.stringify(err) }`;
+		if (!(err instanceof Error)) {
+			return `${when} thrown: ${typeof err === 'string' ? err : JSON.stringify(err)}`;
 		}
 		const { message, lineNumber, columnNumber } = err;
-		return `${ when } error: ${ typeof message === 'string' ? message : JSON.stringify(message) }${
-			typeof lineNumber === 'number' && typeof columnNumber === 'number' ?
-				` (at line ${ lineNumber - 3 }, character ${ +columnNumber })` : '' }`;
+		return `${when} error: ${typeof message === 'string' ? message : JSON.stringify(message)}${typeof lineNumber === 'number' && typeof columnNumber === 'number' ?
+				` (at line ${lineNumber - 3}, character ${+columnNumber})` : ''}`;
 	}
 	process(inputs, [chData], parameters) {
 		const chDataLen = chData[0].length;
-		if(!chDataLen || !this.isPlaying) {
+		if (!chDataLen || !this.isPlaying) {
 			return true;
 		}
 		let time = this.sampleRatio * this.audioSample;
 		let { byteSample } = this;
 		const drawBuffer = [];
-		for(let i = 0; i < chDataLen; ++i) {
+		for (let i = 0; i < chDataLen; ++i) {
 			time += this.sampleRatio;
 			const currentTime = Math.floor(time);
-			if(this.lastTime !== currentTime) {
+			if (this.lastTime !== currentTime) {
 				let funcValue;
 				const currentSample = Math.floor(byteSample);
 				try {
 					funcValue = this.func(currentSample);
-				} catch(err) {
-					if(this.errorDisplayed) {
+				} catch (err) {
+					if (this.errorDisplayed) {
 						this.errorDisplayed = false;
 						this.sendData({
 							error: {
@@ -86,23 +85,23 @@ class audioProcessor extends AudioWorkletProcessor {
 				funcValue = Array.isArray(funcValue) ? [funcValue[0], funcValue[1]] : [funcValue, funcValue];
 				let hasValue = false;
 				let ch = 2;
-				while(ch--) {
+				while (ch--) {
 					try {
 						funcValue[ch] = +funcValue[ch];
-					} catch(err) {
+					} catch (err) {
 						funcValue[ch] = NaN;
 					}
-					if(funcValue[ch] === this.lastFuncValue[ch]) {
+					if (funcValue[ch] === this.lastFuncValue[ch]) {
 						continue;
-					} else if(!isNaN(funcValue[ch])) {
+					} else if (!isNaN(funcValue[ch])) {
 						this.outValue[ch] = this.getValues(funcValue[ch], ch);
 						hasValue = true;
-					} else if(!isNaN(this.lastFuncValue[ch])) {
+					} else if (!isNaN(this.lastFuncValue[ch])) {
 						this.lastByteValue[ch] = NaN;
 						hasValue = true;
 					}
 				}
-				if(hasValue) {
+				if (hasValue) {
 					drawBuffer.push({ t: currentSample, value: [...this.lastByteValue] });
 				}
 				byteSample += currentTime - this.lastTime;
@@ -112,111 +111,92 @@ class audioProcessor extends AudioWorkletProcessor {
 			chData[0][i] = this.outValue[0];
 			chData[1][i] = this.outValue[1];
 		}
-		if(Math.abs(byteSample) > Number.MAX_SAFE_INTEGER) {
+		if (Math.abs(byteSample) > Number.MAX_SAFE_INTEGER) {
 			this.resetTime();
 			return true;
 		}
 		this.audioSample += chDataLen;
 		let isSend = false;
 		const data = {};
-		if(byteSample !== this.byteSample) {
+		if (byteSample !== this.byteSample) {
 			isSend = true;
 			data.byteSample = this.byteSample = byteSample;
 		}
-		if(drawBuffer.length) {
+		if (drawBuffer.length) {
 			isSend = true;
 			data.drawBuffer = drawBuffer;
 		}
-		if(isSend) {
+		if (isSend) {
 			this.sendData(data);
 		}
 		return true;
 	}
 	receiveData(data) {
-		if(data.byteSample !== undefined) {
+		if (data.byteSample !== undefined) {
 			this.byteSample = +data.byteSample || 0;
 			this.resetValues();
 		}
-		if(data.errorDisplayed === true) {
+		if (data.errorDisplayed === true) {
 			this.errorDisplayed = true;
 		}
-		if(data.isPlaying !== undefined) {
+		if (data.isPlaying !== undefined) {
 			this.isPlaying = data.isPlaying;
 		}
-		if(data.playbackSpeed !== undefined) {
+		if (data.playbackSpeed !== undefined) {
 			const sampleRatio = this.sampleRatio / this.playbackSpeed;
 			this.playbackSpeed = data.playbackSpeed;
 			this.setSampleRatio(sampleRatio);
 		}
-		if(data.mode !== undefined) {
-			switch(data.mode) {
-			case 'Bytebeat':
-				this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = funcValue & 255) / 127.5 - 1;
-				break;
-			case 'Signed Bytebeat':
-				this.getValues = (funcValue, ch) =>
-					(this.lastByteValue[ch] = (funcValue + 128) & 255) / 127.5 - 1;
-				break;
-			case 'Floatbeat':
-				this.getValues = (funcValue, ch) => {
-					const outValue = Math.max(Math.min(funcValue, 1), -1);
-					this.lastByteValue[ch] = Math.round((outValue + 1) * 127.5);
-					return outValue;
-				};
-				break;
-			case 'Bitbeat':
-				this.getValues = (funcValue, ch) => {
-					this.lastByteValue[ch] = funcValue & 1 ? 255 : 0;
-					return (funcValue & 1) - 0.5;
-				};
-				break;
-			case '2048':
-				this.getValues = (funcValue, ch) => {
-					this.lastByteValue[ch] = funcValue / 8 & 255;
-					return (funcValue & 2047) / 1023.5 - 1
-				};
-				break;
-			case 'logmode':
-				this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = (Math.log2(funcValue) * 32) & 255) / 127.5 - 1;
-				break;
-			case 'logHack':
-				this.getValues = (funcValue, ch) => {
-					const neg = (funcValue < 0) ? -32 : 32;
-					return (this.lastByteValue[ch] = (Math.log2(Math.abs(funcValue)) * neg) & 255) / 127.5 - 1;
-				};
-				break;
-			case 'logHack2':
-				this.getValues = (funcValue, ch) => {
-					const neg = funcValue < 0
-					return funcValue == 0 ? 0 : ((this.lastByteValue[ch] = ((Math.log2(Math.abs(funcValue)) * (neg ? -16 : 16)) + (neg ? -127 : 128)) & 255) / 127.5 - 1);
-				};
-				break;
-			case 'Tanmode':
-				this.getValues = (funcValue, ch) => {
-					const outValue = Math.max(Math.min(Math.tan(funcValue * Math.PI / 128), 1), -1);
-					this.lastByteValue[ch] = Math.round((outValue + 1) * 127.5);
-					return outValue;
-				};
-				break;
-			case 'PIbeat':
-				this.getValues = (funcValue, ch) => {
-					const outValue = Math.max(Math.min(funcValue, Math.PI), (Math.PI * -1));
-					this.lastByteValue[ch] = Math.round((outValue + Math.PI) * 127.5);
-					return outValue;
-			case 'Inverted Bytebeat':
-				this.getValues = (funcValue, ch) =>
-					(this.lastByteValue[ch] = (funcValue + 256) & 255) / 127.5 - 1;
-				break;
-			default: this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = NaN);
+		if (data.mode !== undefined) {
+			switch (data.mode) {
+				case 'Bytebeat':
+					this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = funcValue & 255) / 127.5 - 1;
+					break;
+				case 'Signed Bytebeat':
+					this.getValues = (funcValue, ch) =>
+						(this.lastByteValue[ch] = (funcValue + 128) & 255) / 127.5 - 1;
+					break;
+				case 'Floatbeat':
+					this.getValues = (funcValue, ch) => {
+						const outValue = Math.max(Math.min(funcValue, 1), -1);
+						this.lastByteValue[ch] = Math.round((outValue + 1) * 127.5);
+						return outValue;
+					};
+					break;
+				case 'Bitbeat':
+					this.getValues = (funcValue, ch) => {
+						this.lastByteValue[ch] = funcValue & 1 ? 255 : 0;
+						return (funcValue & 1) - 0.5;
+					};
+					break;
+				case 'Tanmode':
+					this.getValues = (funcValue, ch) => {
+						const outValue = Math.max(Math.min(Math.tan(funcValue * Math.PI / 128), 1), -1);
+						this.lastByteValue[ch] = Math.round((outValue + 1) * 127.5);
+						return outValue;
+					};
+					break;
+				case 'PIbeat':
+					this.getValues = (funcValue, ch) => {
+						const outValue = Math.max(Math.min(funcValue, Math.PI), (Math.PI * -1));
+						this.lastByteValue[ch] = Math.round((outValue + Math.PI) * 127.5);
+						return outValue;
+					};
+					break;
+				case 'Inverted Bytebeat':
+					this.getValues = (funcValue, ch) =>
+						(this.lastByteValue[ch] = (funcValue + 256) & 255) / 127.5 - 1;
+					break;
+				default: this.getValues = (funcValue, ch) => (this.lastByteValue[ch] = NaN);
 			}
 		}
-		if(data.setFunction !== undefined) {
+		if (data.setFunction !== undefined) {
 			this.setFunction(data.setFunction);
 		}
-		if(data.resetTime === true) {
+		if (data.resetTime === true) {
 			this.resetTime();
 		}
-		if(data.sampleRatio !== undefined) {
+		if (data.sampleRatio !== undefined) {
 			this.setSampleRatio(data.sampleRatio);
 		}
 	}
@@ -235,10 +215,10 @@ class audioProcessor extends AudioWorkletProcessor {
 		this.outValue = [0, 0];
 	}
 	setFunction(codeText) {
-	    const chyx = {
+		const chyx = {
 			/*bit*/        "bitC": function (x, y, z) { return x & y ? z : 0 },
 			/*bit reverse*/"br": function (x, size = 8) {
-				if(size > 32) { throw new Error("br() Size cannot be greater than 32") } else {
+				if (size > 32) { throw new Error("br() Size cannot be greater than 32") } else {
 					let result = 0;
 					for (let idx = 0; idx < (size - 0); idx++) {
 						result += chyx.bitC(x, 2 ** idx, 2 ** (size - (idx + 1)))
@@ -250,7 +230,7 @@ class audioProcessor extends AudioWorkletProcessor {
 			/*cos that loops every 128 "steps", instead of every pi steps*/"cosf": function (x) { return Math.cos(x / (128 / Math.PI)) },
 			/*tan that loops every 128 "steps", instead of every pi steps*/"tanf": function (x) { return Math.tan(x / (128 / Math.PI)) },
 			/*converts t into a string composed of it's bits, regex's that*/"regG": function (t, X) { return X.test(t.toString(2)) },
-			/*divides t by a number*/"dvd": function (x,y) { return ((x & 255) / y) },
+			/*divides t by a number*/"dvd": function (x, y) { return ((x & 255) / y) },
 			/*16-bit*/"hxdcml": function (x) { return ((x & 15) * 16) }
 			/*corrupt sound"crpt": function(x,y=8) {return chyx.br(chyx.br(x,y)+t,y)^chyx.br(t,y)},
 			decorrupt sound"decrpt": function(x,y=8) {return chyx.br(chyx.br(x^chyx.br(t,y),y)-t,y)},*/
@@ -271,12 +251,12 @@ class audioProcessor extends AudioWorkletProcessor {
 		let isCompiled = false;
 		const oldFunc = this.func;
 		try {
-			this.func = new Function(...params, 't', `return 0,\n${ codeText || 0 };`)
+			this.func = new Function(...params, 't', `return 0,\n${codeText || 0};`)
 				.bind(globalThis, ...values);
 			isCompiled = true;
 			this.func(0);
-		} catch(err) {
-			if(!isCompiled) {
+		} catch (err) {
+			if (!isCompiled) {
 				this.func = oldFunc;
 			}
 			this.errorDisplayed = false;
