@@ -10,7 +10,6 @@
    {
         "description": "feedableface",
         "mode": "Floatbeat",
-        "url": "https://www.reddit.com/r/bytebeat/comments/1mgovav/squsinsaw_floatbeat/",
         "sampleRate": 75000,
         "codeOriginal": "l=0,t?0:a=Array(n=24832).fill(0),f=(z,v)=>sin(l++<z?f(z,v)-v:(l=0,v)),x=a.shift(),t/=5+sin(t/164882)/95,f=q=>(a.push(q/4-a[n/2|0]/2+a[n/4|0]/3),x),f(sign(sin(t/1.5*(0xfeedabeefab1eface*((t>>13)+16553)).toString(5)[t/1.5>>10&15]*PI/[32,48,64,24][t*1.25>>15&3])))"
     },
